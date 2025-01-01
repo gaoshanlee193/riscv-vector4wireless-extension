@@ -18,9 +18,9 @@ instbasedir = $(UCB_VLSI_HOME)/install
 # Sources
 #--------------------------------------------------------------------
 
-bmarks = dhrystone \
-	helloworld \
-	coremark 
+bmarks = helloworld 
+	#coremark   \
+        #dhrystone 
 
 #--------------------------------------------------------------------
 # Build rules
@@ -30,7 +30,7 @@ RISCV_PREFIX ?= riscv$(XLEN)-wing-elf-
 RISCV_GCC ?= $(RISCV_PREFIX)gcc
 
 #ISA Configs   Default:M134
-    MARCH_CFG = rv32imcv_zicsr_zicntr_zvw
+    MARCH_CFG = rv32imc_zve32x_zicsr_zicntr_zvw
     ABI_CFG   = ilp32
     CORE_CFG  = CUSTOM
 
@@ -38,7 +38,7 @@ ifdef MTIME_BASE_ADDR
 	MTIME_FLAG = -DMTIME_BASE_ADDR=$(MTIME_BASE_ADDR)
 endif
 
-RISCV_GCC_OPTS ?= -DPREALLOCATE=1 -mcmodel=medany -static -std=gnu89 -O2 -g3 -fno-inline -fno-builtin-printf -fno-shrink-wrap-separate --specs=nano.specs -u _printf_float -march=$(MARCH_CFG) -mabi=$(ABI_CFG) -DCORE_$(CORE) $(MTIME_FLAG)
+RISCV_GCC_OPTS ?= -DPREALLOCATE=1 -mcmodel=medany -static -std=gnu89 -O3 -g3 -fno-inline -fno-builtin-printf -fno-shrink-wrap-separate -u _printf_float -march=$(MARCH_CFG) -mabi=$(ABI_CFG) -DCORE_$(CORE) $(MTIME_FLAG)
 #RISCV_GCC_OPTS ?= -specs=semihost.specs -DPREALLOCATE=1 -mcmodel=medany -static -std=gnu99 -O2 -fno-inline -march=$(MARCH_CFG) -mabi=$(ABI_CFG)
 
 #RISCV_LINK ?= $(RISCV_GCC) -T $(src_dir)/common/test.ld $(incs) -vec

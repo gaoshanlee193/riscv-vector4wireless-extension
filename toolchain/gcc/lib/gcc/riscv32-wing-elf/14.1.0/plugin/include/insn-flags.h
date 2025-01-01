@@ -20911,771 +20911,639 @@
 #define HAVE_pred_vdscmacorvvm8qi (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm8qi (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm8qi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm8qi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm8qi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm8qi (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm8qi (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm8qi (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm8qi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm8qi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm8qi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm8qi (TARGET_ZVW)
-#define HAVE_pred_vnlmrvvm8qi (TARGET_ZVW)
+#define HAVE_pred_vnlervvm8qi (TARGET_ZVW)
 #define HAVE_pred_vcpackrvvm8qi (TARGET_ZVW)
+#define HAVE_pred_vredmaxirvvm8qi (TARGET_ZVW)
+#define HAVE_pred_vredminirvvm8qi (TARGET_ZVW)
+#define HAVE_pred_vnlmrvvm8qi (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm4qi (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm4qi (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm4qi (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm4qi (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm4qi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm4qi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm4qi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm4qi (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm4qi (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm4qi (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm4qi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm4qi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm4qi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm4qi (TARGET_ZVW)
-#define HAVE_pred_vnlmrvvm4qi (TARGET_ZVW)
+#define HAVE_pred_vnlervvm4qi (TARGET_ZVW)
 #define HAVE_pred_vcpackrvvm4qi (TARGET_ZVW)
+#define HAVE_pred_vredmaxirvvm4qi (TARGET_ZVW)
+#define HAVE_pred_vredminirvvm4qi (TARGET_ZVW)
+#define HAVE_pred_vnlmrvvm4qi (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm2qi (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm2qi (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm2qi (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm2qi (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm2qi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm2qi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm2qi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm2qi (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm2qi (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm2qi (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm2qi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm2qi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm2qi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm2qi (TARGET_ZVW)
-#define HAVE_pred_vnlmrvvm2qi (TARGET_ZVW)
+#define HAVE_pred_vnlervvm2qi (TARGET_ZVW)
 #define HAVE_pred_vcpackrvvm2qi (TARGET_ZVW)
+#define HAVE_pred_vredmaxirvvm2qi (TARGET_ZVW)
+#define HAVE_pred_vredminirvvm2qi (TARGET_ZVW)
+#define HAVE_pred_vnlmrvvm2qi (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm1qi (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm1qi (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm1qi (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm1qi (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm1qi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm1qi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm1qi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm1qi (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm1qi (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm1qi (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm1qi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm1qi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm1qi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm1qi (TARGET_ZVW)
-#define HAVE_pred_vnlmrvvm1qi (TARGET_ZVW)
+#define HAVE_pred_vnlervvm1qi (TARGET_ZVW)
 #define HAVE_pred_vcpackrvvm1qi (TARGET_ZVW)
+#define HAVE_pred_vredmaxirvvm1qi (TARGET_ZVW)
+#define HAVE_pred_vredminirvvm1qi (TARGET_ZVW)
+#define HAVE_pred_vnlmrvvm1qi (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm8hi (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm8hi (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm8hi (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm8hi (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm8hi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm8hi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm8hi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm8hi (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm8hi (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm8hi (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm8hi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm8hi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm8hi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm8hi (TARGET_ZVW)
-#define HAVE_pred_vnlmrvvm8hi (TARGET_ZVW)
+#define HAVE_pred_vnlervvm8hi (TARGET_ZVW)
 #define HAVE_pred_vcpackrvvm8hi (TARGET_ZVW)
+#define HAVE_pred_vredmaxirvvm8hi (TARGET_ZVW)
+#define HAVE_pred_vredminirvvm8hi (TARGET_ZVW)
+#define HAVE_pred_vnlmrvvm8hi (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm4hi (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm4hi (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm4hi (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm4hi (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm4hi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm4hi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm4hi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm4hi (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm4hi (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm4hi (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm4hi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm4hi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm4hi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm4hi (TARGET_ZVW)
-#define HAVE_pred_vnlmrvvm4hi (TARGET_ZVW)
+#define HAVE_pred_vnlervvm4hi (TARGET_ZVW)
 #define HAVE_pred_vcpackrvvm4hi (TARGET_ZVW)
+#define HAVE_pred_vredmaxirvvm4hi (TARGET_ZVW)
+#define HAVE_pred_vredminirvvm4hi (TARGET_ZVW)
+#define HAVE_pred_vnlmrvvm4hi (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm2hi (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm2hi (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm2hi (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm2hi (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm2hi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm2hi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm2hi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm2hi (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm2hi (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm2hi (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm2hi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm2hi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm2hi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm2hi (TARGET_ZVW)
-#define HAVE_pred_vnlmrvvm2hi (TARGET_ZVW)
+#define HAVE_pred_vnlervvm2hi (TARGET_ZVW)
 #define HAVE_pred_vcpackrvvm2hi (TARGET_ZVW)
+#define HAVE_pred_vredmaxirvvm2hi (TARGET_ZVW)
+#define HAVE_pred_vredminirvvm2hi (TARGET_ZVW)
+#define HAVE_pred_vnlmrvvm2hi (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm1hi (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm1hi (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm1hi (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm1hi (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vnlmrvvm1hi (TARGET_ZVW)
+#define HAVE_pred_vnlervvm1hi (TARGET_ZVW)
 #define HAVE_pred_vcpackrvvm1hi (TARGET_ZVW)
+#define HAVE_pred_vredmaxirvvm1hi (TARGET_ZVW)
+#define HAVE_pred_vredminirvvm1hi (TARGET_ZVW)
+#define HAVE_pred_vnlmrvvm1hi (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm8si (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm8si (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm8si (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm8si (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm8si (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm8si (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm8si (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm8si (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm8si (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm8si (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm8si (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm8si (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm8si (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm8si (TARGET_ZVW)
-#define HAVE_pred_vnlmrvvm8si (TARGET_ZVW)
+#define HAVE_pred_vnlervvm8si (TARGET_ZVW)
 #define HAVE_pred_vcpackrvvm8si (TARGET_ZVW)
+#define HAVE_pred_vredmaxirvvm8si (TARGET_ZVW)
+#define HAVE_pred_vredminirvvm8si (TARGET_ZVW)
+#define HAVE_pred_vnlmrvvm8si (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm4si (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm4si (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm4si (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm4si (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm4si (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm4si (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm4si (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm4si (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm4si (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm4si (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm4si (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm4si (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm4si (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm4si (TARGET_ZVW)
-#define HAVE_pred_vnlmrvvm4si (TARGET_ZVW)
+#define HAVE_pred_vnlervvm4si (TARGET_ZVW)
 #define HAVE_pred_vcpackrvvm4si (TARGET_ZVW)
+#define HAVE_pred_vredmaxirvvm4si (TARGET_ZVW)
+#define HAVE_pred_vredminirvvm4si (TARGET_ZVW)
+#define HAVE_pred_vnlmrvvm4si (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm2si (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm2si (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm2si (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm2si (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm2si (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm2si (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm2si (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm2si (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm2si (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm2si (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm2si (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm2si (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm2si (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm2si (TARGET_ZVW)
-#define HAVE_pred_vnlmrvvm2si (TARGET_ZVW)
+#define HAVE_pred_vnlervvm2si (TARGET_ZVW)
 #define HAVE_pred_vcpackrvvm2si (TARGET_ZVW)
+#define HAVE_pred_vredmaxirvvm2si (TARGET_ZVW)
+#define HAVE_pred_vredminirvvm2si (TARGET_ZVW)
+#define HAVE_pred_vnlmrvvm2si (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm1si (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm1si (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm1si (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm1si (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm1si (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm1si (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm1si (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm1si (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm1si (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm1si (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm1si (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm1si (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm1si (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm1si (TARGET_ZVW)
-#define HAVE_pred_vnlmrvvm1si (TARGET_ZVW)
+#define HAVE_pred_vnlervvm1si (TARGET_ZVW)
 #define HAVE_pred_vcpackrvvm1si (TARGET_ZVW)
+#define HAVE_pred_vredmaxirvvm1si (TARGET_ZVW)
+#define HAVE_pred_vredminirvvm1si (TARGET_ZVW)
+#define HAVE_pred_vnlmrvvm1si (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdsmacorvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacorvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacoirvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacorrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjorvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjoirvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjorrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulrrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulirvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljrrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljirvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vnlmrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vnlervvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vcpackrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vredmaxirvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vredminirvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vnlmrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdsmulrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdsmacorvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacorvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacoirvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacorrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjorvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjoirvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjorrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulrrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulirvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljrrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljirvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vnlmrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vnlervvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vcpackrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vredmaxirvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vredminirvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vnlmrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdsmulrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdsmacorvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacorvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacoirvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacorrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjorvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjoirvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjorrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulrrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulirvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljrrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljirvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vnlmrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vnlervvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vcpackrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vredmaxirvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vredminirvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vnlmrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdsmulrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdsmacorvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacorvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacoirvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacorrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjorvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjoirvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjorrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulrrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulirvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljrrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljirvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vnlmrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vnlervvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vcpackrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vredmaxirvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vredminirvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vnlmrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdsmulrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdsmacorvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacorvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacoirvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacorrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjorvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjoirvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjorrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulrrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulirvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljrrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljirvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vnlmrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vnlervvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vcpackrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vredmaxirvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vredminirvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vnlmrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdsmulrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdsmacorvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacorvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacoirvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacorrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjorvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjoirvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjorrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulrrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulirvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljrrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljirvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vnlmrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vnlervvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vcpackrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vredmaxirvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vredminirvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vnlmrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdsmulrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdsmacorvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacorvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacoirvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacorrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjorvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjoirvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjorrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmulrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmulrrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmulirvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmuljrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmuljrrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmuljirvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vnlmrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vnlervvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vcpackrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vredmaxirvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vredminirvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vnlmrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdsmulrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdsmacorvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacorvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacoirvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacorrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjorvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjoirvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjorrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulrrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulirvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljrrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljirvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vnlmrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vnlervvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vcpackrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vredmaxirvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vredminirvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vnlmrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdsmulrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdsmacorvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacorvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacoirvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacorrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjorvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjoirvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjorrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmulrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmulrrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmulirvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmuljrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmuljrrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmuljirvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vnlmrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vnlervvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vcpackrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vredmaxirvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vredminirvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vnlmrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdsmulrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdsmacorvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacorvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacoirvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacorrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjorvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjoirvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjorrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmulrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmulrrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmulirvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmuljrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmuljrrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmuljirvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vnlmrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vcpackrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vnlervvm8qi (TARGET_ZVW)
-#define HAVE_pred_vredmaxirvvm8qi (TARGET_ZVW)
-#define HAVE_pred_vredminirvvm8qi (TARGET_ZVW)
-#define HAVE_pred_vnlervvm4qi (TARGET_ZVW)
-#define HAVE_pred_vredmaxirvvm4qi (TARGET_ZVW)
-#define HAVE_pred_vredminirvvm4qi (TARGET_ZVW)
-#define HAVE_pred_vnlervvm2qi (TARGET_ZVW)
-#define HAVE_pred_vredmaxirvvm2qi (TARGET_ZVW)
-#define HAVE_pred_vredminirvvm2qi (TARGET_ZVW)
-#define HAVE_pred_vnlervvm1qi (TARGET_ZVW)
-#define HAVE_pred_vredmaxirvvm1qi (TARGET_ZVW)
-#define HAVE_pred_vredminirvvm1qi (TARGET_ZVW)
-#define HAVE_pred_vnlervvm8hi (TARGET_ZVW)
-#define HAVE_pred_vredmaxirvvm8hi (TARGET_ZVW)
-#define HAVE_pred_vredminirvvm8hi (TARGET_ZVW)
-#define HAVE_pred_vnlervvm4hi (TARGET_ZVW)
-#define HAVE_pred_vredmaxirvvm4hi (TARGET_ZVW)
-#define HAVE_pred_vredminirvvm4hi (TARGET_ZVW)
-#define HAVE_pred_vnlervvm2hi (TARGET_ZVW)
-#define HAVE_pred_vredmaxirvvm2hi (TARGET_ZVW)
-#define HAVE_pred_vredminirvvm2hi (TARGET_ZVW)
-#define HAVE_pred_vnlervvm1hi (TARGET_ZVW)
-#define HAVE_pred_vredmaxirvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vredminirvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vnlervvm8si (TARGET_ZVW)
-#define HAVE_pred_vredmaxirvvm8si (TARGET_ZVW)
-#define HAVE_pred_vredminirvvm8si (TARGET_ZVW)
-#define HAVE_pred_vnlervvm4si (TARGET_ZVW)
-#define HAVE_pred_vredmaxirvvm4si (TARGET_ZVW)
-#define HAVE_pred_vredminirvvm4si (TARGET_ZVW)
-#define HAVE_pred_vnlervvm2si (TARGET_ZVW)
-#define HAVE_pred_vredmaxirvvm2si (TARGET_ZVW)
-#define HAVE_pred_vredminirvvm2si (TARGET_ZVW)
-#define HAVE_pred_vnlervvm1si (TARGET_ZVW)
-#define HAVE_pred_vredmaxirvvm1si (TARGET_ZVW)
-#define HAVE_pred_vredminirvvm1si (TARGET_ZVW)
-#define HAVE_pred_vnlervvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vredmaxirvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vredminirvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vnlervvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vredmaxirvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vredminirvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vnlervvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vredmaxirvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vredminirvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vnlervvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vredmaxirvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vredminirvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vnlervvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vredmaxirvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vredminirvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vnlervvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vredmaxirvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vredminirvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vnlervvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vredmaxirvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vredminirvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vnlervvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vredmaxirvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vredminirvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vnlervvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vredmaxirvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vredminirvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vnlervvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vcpackrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vredmaxirvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vredminirvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vnlmrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdsmulrvvm8qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm8qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm8qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm8qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm8qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm8qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm8qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm8qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm8qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm8qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm8qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm8qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm8qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm8qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vnlervvm8qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vnlmrvvm8qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm4qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm4qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm4qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm4qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm4qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm4qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm4qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm4qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm4qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm4qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm4qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm4qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm4qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm4qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vnlervvm4qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vnlmrvvm4qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm2qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm2qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm2qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm2qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm2qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm2qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm2qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm2qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm2qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm2qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm2qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm2qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm2qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm2qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vnlervvm2qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vnlmrvvm2qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm1qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm1qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm1qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm1qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm1qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm1qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm1qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm1qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm1qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm1qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm1qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm1qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm1qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm1qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vnlervvm1qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vnlmrvvm1qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm8hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm8hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm8hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm8hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm8hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm8hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm8hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm8hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm8hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm8hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm8hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm8hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm8hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm8hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vnlervvm8hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vnlmrvvm8hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm4hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm4hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm4hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm4hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm4hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm4hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm4hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm4hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm4hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm4hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm4hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm4hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm4hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm4hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vnlervvm4hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vnlmrvvm4hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm2hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm2hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm2hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm2hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm2hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm2hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm2hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm2hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm2hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm2hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm2hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm2hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm2hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm2hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vnlervvm2hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vnlmrvvm2hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm1hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm1hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm1hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm1hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm1hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm1hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm1hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm1hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm1hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm1hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm1hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm1hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm1hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm1hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vnlervvm1hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vnlmrvvm1hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm8si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm8si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm8si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm8si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm8si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm8si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm8si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm8si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm8si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm8si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm8si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm8si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm8si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm8si_scalar (TARGET_ZVW)
+#define HAVE_pred_vnlervvm8si_scalar (TARGET_ZVW)
 #define HAVE_pred_vnlmrvvm8si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm4si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm4si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm4si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm4si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm4si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm4si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm4si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm4si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm4si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm4si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm4si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm4si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm4si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm4si_scalar (TARGET_ZVW)
+#define HAVE_pred_vnlervvm4si_scalar (TARGET_ZVW)
 #define HAVE_pred_vnlmrvvm4si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm2si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm2si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm2si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm2si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm2si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm2si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm2si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm2si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm2si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm2si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm2si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm2si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm2si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm2si_scalar (TARGET_ZVW)
+#define HAVE_pred_vnlervvm2si_scalar (TARGET_ZVW)
 #define HAVE_pred_vnlmrvvm2si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm1si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacorvvm1si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorvvm1si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacoirvvm1si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdscmacorrvvm1si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorvvm1si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjoirvvm1si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmacjorrvvm1si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrvvm1si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulrrvvm1si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmulirvvm1si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrvvm1si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljrrvvm1si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdscmuljirvvm1si_scalar (TARGET_ZVW)
+#define HAVE_pred_vnlervvm1si_scalar (TARGET_ZVW)
 #define HAVE_pred_vnlmrvvm1si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmulrvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdsmacorvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacorvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacoirvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacorrvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjorvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjoirvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjorrvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulrvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulrrvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulirvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljrvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljrrvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljirvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vnlervvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vnlmrvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdsmulrvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdsmacorvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacorvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacoirvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacorrvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjorvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjoirvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjorrvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulrvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulrrvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulirvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljrvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljrrvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljirvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vnlervvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vnlmrvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdsmulrvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdsmacorvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacorvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacoirvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacorrvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjorvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjoirvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjorrvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulrvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulrrvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulirvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljrvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljrrvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljirvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vnlervvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vnlmrvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdsmulrvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdsmacorvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacorvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacoirvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdscmacorrvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjorvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjoirvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmacjorrvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulrvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulrrvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmulirvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljrvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljrrvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscmuljirvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vnlervvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vnlmrvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vdsmulrvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdsmacorvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacorvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacoirvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacorrvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjorvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjoirvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjorrvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulrvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulrrvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulirvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljrvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljrrvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljirvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vnlervvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vnlmrvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdsmulrvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdsmacorvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacorvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacoirvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacorrvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjorvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjoirvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjorrvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulrvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulrrvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulirvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljrvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljrrvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljirvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vnlervvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vnlmrvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdsmulrvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdsmacorvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacorvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacoirvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacorrvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjorvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjoirvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjorrvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmulrvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmulrrvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmulirvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmuljrvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmuljrrvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmuljirvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vnlervvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vnlmrvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdsmulrvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdsmacorvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacorvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacoirvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdscmacorrvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjorvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjoirvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmacjorrvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulrvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulrrvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmulirvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljrvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljrrvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscmuljirvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vnlervvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vnlmrvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vdsmulrvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdsmacorvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacorvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacoirvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacorrvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjorvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjoirvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjorrvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmulrvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmulrrvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmulirvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmuljrvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmuljrrvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmuljirvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vnlervvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vnlmrvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdsmulrvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdsmacorvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacorvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacoirvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmacorrvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjorvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjoirvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscmacjorrvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vnlervvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vnlmrvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmulrvvm8qi (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm8qi (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm8qi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm8qi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm8qi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm8qi (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm4qi (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm4qi (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm4qi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm4qi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm4qi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm4qi (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm2qi (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm2qi (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm2qi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm2qi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm2qi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm2qi (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm1qi (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm1qi (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm1qi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm1qi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm1qi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm1qi (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm8hi (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm8hi (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm8hi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm8hi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm8hi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm8hi (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm4hi (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm4hi (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm4hi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm4hi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm4hi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm4hi (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm2hi (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm2hi (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm2hi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm2hi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm2hi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm2hi (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm1hi (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm1hi (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm1hi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm1hi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm1hi (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm1hi (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm8si (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm8si (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm8si (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm8si (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm8si (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm8si (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm4si (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm4si (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm4si (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm4si (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm4si (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm4si (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm2si (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm2si (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm2si (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm2si (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm2si (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm2si (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm1si (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm1si (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm1si (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm1si (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm1si (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm1si (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulrrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulirvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljrrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljirvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulrrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulirvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljrrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljirvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulrrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulirvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljrrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljirvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulrrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulirvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljrrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljirvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulrrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulirvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljrrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljirvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulrrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulirvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljrrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljirvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmulrrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmulirvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmuljrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmuljrrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmuljirvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmulrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulrrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulirvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljrrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljirvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmulrrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmulirvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmuljrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmuljrrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmuljirvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmulrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmulrrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmulirvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmuljrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmuljrrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmuljirvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmulrvvm8qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm8qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm8qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm8qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm8qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm8qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm4qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm4qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm4qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm4qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm4qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm4qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm2qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm2qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm2qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm2qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm2qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm2qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm1qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm1qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm1qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm1qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm1qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm1qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm8hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm8hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm8hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm8hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm8hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm8hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm4hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm4hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm4hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm4hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm4hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm4hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm2hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm2hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm2hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm2hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm2hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm2hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm1hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm1hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm1hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm1hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm1hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm1hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm8si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm8si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm8si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm8si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm8si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm8si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm4si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm4si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm4si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm4si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm4si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm4si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm2si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm2si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm2si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm2si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm2si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm2si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm1si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrrvvm1si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulirvvm1si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrvvm1si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljrrvvm1si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmuljirvvm1si_scalar (TARGET_ZVW)
+#define HAVE_pred_vdscmulrvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulrrvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulirvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljrvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljrrvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljirvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulrvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulrrvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulirvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljrvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljrrvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljirvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulrvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulrrvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulirvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljrvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljrrvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljirvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulrvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulrrvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulirvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljrvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljrrvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmuljirvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscmulrvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulrrvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulirvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljrvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljrrvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljirvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulrvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulrrvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulirvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljrvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljrrvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljirvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulrvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmulrrvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmulirvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmuljrvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmuljrrvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmuljirvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmulrvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulrrvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulirvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljrvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljrrvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmuljirvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscmulrvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmulrrvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmulirvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmuljrvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmuljrrvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscmuljirvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmulrvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmulrrvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmulirvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmuljrvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmuljrrvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdscmuljirvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vnlmrvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vnlervvm8qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vnlervvm4qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vnlervvm2qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vnlervvm1qi_scalar (TARGET_ZVW)
-#define HAVE_pred_vnlervvm8hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vnlervvm4hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vnlervvm2hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vnlervvm1hi_scalar (TARGET_ZVW)
-#define HAVE_pred_vnlervvm8si_scalar (TARGET_ZVW)
-#define HAVE_pred_vnlervvm4si_scalar (TARGET_ZVW)
-#define HAVE_pred_vnlervvm2si_scalar (TARGET_ZVW)
-#define HAVE_pred_vnlervvm1si_scalar (TARGET_ZVW)
-#define HAVE_pred_vnlervvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vnlervvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vnlervvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vnlervvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vnlervvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vnlervvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vnlervvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vnlervvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vnlervvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vnlervvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vdsredsumnrvvm8qi (TARGET_ZVW)
 #define HAVE_pred_vdsredsumnrvvm4qi (TARGET_ZVW)
 #define HAVE_pred_vdsredsumnrvvm2qi (TARGET_ZVW)
@@ -21702,24 +21570,56 @@
 #define HAVE_pred_vdsredsumnrvvm4qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsredsumnrvvm2qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsredsumnrvvm1qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdsredsumnrvvmf2qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdsredsumnrvvmf4qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdsredsumnrvvmf8qi_scalar ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
 #define HAVE_pred_vdsredsumnrvvm8hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsredsumnrvvm4hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsredsumnrvvm2hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsredsumnrvvm1hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdsredsumnrvvmf2hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdsredsumnrvvmf4hi_scalar ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
 #define HAVE_pred_vdsredsumnrvvm8si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsredsumnrvvm4si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsredsumnrvvm2si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsredsumnrvvm1si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdsredsumnrvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdsredsumnrvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdsredsumnrvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdsredsumnrvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdsredsumnrvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdsredsumnrvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdsredsumnrvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdsredsumnrvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdsredsumnrvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdsredsumnrvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdsredsumnrvvmf2si_scalar ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
+#define HAVE_pred_vdsredsumnv1qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1QImode)))
+#define HAVE_pred_vdsredsumnv2qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2QImode)))
+#define HAVE_pred_vdsredsumnv4qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4QImode)))
+#define HAVE_pred_vdsredsumnv8qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8QImode)))
+#define HAVE_pred_vdsredsumnv16qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16QImode)))
+#define HAVE_pred_vdsredsumnv32qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32QImode)))
+#define HAVE_pred_vdsredsumnv64qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64QImode) && TARGET_MIN_VLEN >= 64))
+#define HAVE_pred_vdsredsumnv128qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128QImode) && TARGET_MIN_VLEN >= 128))
+#define HAVE_pred_vdsredsumnv256qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256QImode) && TARGET_MIN_VLEN >= 256))
+#define HAVE_pred_vdsredsumnv512qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512QImode) && TARGET_MIN_VLEN >= 512))
+#define HAVE_pred_vdsredsumnv1024qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024QImode) && TARGET_MIN_VLEN >= 1024))
+#define HAVE_pred_vdsredsumnv2048qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2048QImode) && TARGET_MIN_VLEN >= 2048))
+#define HAVE_pred_vdsredsumnv4096qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4096QImode) && TARGET_MIN_VLEN >= 4096))
+#define HAVE_pred_vdsredsumnv1hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1HImode)))
+#define HAVE_pred_vdsredsumnv2hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2HImode)))
+#define HAVE_pred_vdsredsumnv4hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4HImode)))
+#define HAVE_pred_vdsredsumnv8hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8HImode)))
+#define HAVE_pred_vdsredsumnv16hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16HImode)))
+#define HAVE_pred_vdsredsumnv32hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32HImode) && TARGET_MIN_VLEN >= 64))
+#define HAVE_pred_vdsredsumnv64hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64HImode) && TARGET_MIN_VLEN >= 128))
+#define HAVE_pred_vdsredsumnv128hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128HImode) && TARGET_MIN_VLEN >= 256))
+#define HAVE_pred_vdsredsumnv256hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256HImode) && TARGET_MIN_VLEN >= 512))
+#define HAVE_pred_vdsredsumnv512hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512HImode) && TARGET_MIN_VLEN >= 1024))
+#define HAVE_pred_vdsredsumnv1024hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024HImode) && TARGET_MIN_VLEN >= 2048))
+#define HAVE_pred_vdsredsumnv2048hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2048HImode) && TARGET_MIN_VLEN >= 4096))
+#define HAVE_pred_vdsredsumnv1si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1SImode)))
+#define HAVE_pred_vdsredsumnv2si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2SImode)))
+#define HAVE_pred_vdsredsumnv4si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4SImode)))
+#define HAVE_pred_vdsredsumnv8si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8SImode)))
+#define HAVE_pred_vdsredsumnv16si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16SImode) && TARGET_MIN_VLEN >= 64))
+#define HAVE_pred_vdsredsumnv32si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32SImode) && TARGET_MIN_VLEN >= 128))
+#define HAVE_pred_vdsredsumnv64si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64SImode) && TARGET_MIN_VLEN >= 256))
+#define HAVE_pred_vdsredsumnv128si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128SImode) && TARGET_MIN_VLEN >= 512))
+#define HAVE_pred_vdsredsumnv256si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256SImode) && TARGET_MIN_VLEN >= 1024))
+#define HAVE_pred_vdsredsumnv512si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512SImode) && TARGET_MIN_VLEN >= 2048))
+#define HAVE_pred_vdsredsumnv1024si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024SImode) && TARGET_MIN_VLEN >= 4096))
 #define HAVE_pred_vfslrvvm8qi (TARGET_ZVW)
 #define HAVE_pred_vfsrrvvm8qi (TARGET_ZVW)
 #define HAVE_pred_vfslrvvm4qi (TARGET_ZVW)
@@ -21764,136 +21664,136 @@
 #define HAVE_pred_vfsrrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vfslrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vfsrrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscredsumrvvm8qi (TARGET_ZVW)
-#define HAVE_pred_vdsredsumrvvm8qi (TARGET_ZVW)
-#define HAVE_pred_vdscredsumrvvm4qi (TARGET_ZVW)
-#define HAVE_pred_vdsredsumrvvm4qi (TARGET_ZVW)
-#define HAVE_pred_vdscredsumrvvm2qi (TARGET_ZVW)
-#define HAVE_pred_vdsredsumrvvm2qi (TARGET_ZVW)
-#define HAVE_pred_vdscredsumrvvm1qi (TARGET_ZVW)
-#define HAVE_pred_vdsredsumrvvm1qi (TARGET_ZVW)
-#define HAVE_pred_vdscredsumrvvm8hi (TARGET_ZVW)
-#define HAVE_pred_vdsredsumrvvm8hi (TARGET_ZVW)
-#define HAVE_pred_vdscredsumrvvm4hi (TARGET_ZVW)
-#define HAVE_pred_vdsredsumrvvm4hi (TARGET_ZVW)
-#define HAVE_pred_vdscredsumrvvm2hi (TARGET_ZVW)
-#define HAVE_pred_vdsredsumrvvm2hi (TARGET_ZVW)
-#define HAVE_pred_vdscredsumrvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vdsredsumrvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vdscredsumrvvm8si (TARGET_ZVW)
-#define HAVE_pred_vdsredsumrvvm8si (TARGET_ZVW)
-#define HAVE_pred_vdscredsumrvvm4si (TARGET_ZVW)
-#define HAVE_pred_vdsredsumrvvm4si (TARGET_ZVW)
-#define HAVE_pred_vdscredsumrvvm2si (TARGET_ZVW)
-#define HAVE_pred_vdsredsumrvvm2si (TARGET_ZVW)
-#define HAVE_pred_vdscredsumrvvm1si (TARGET_ZVW)
-#define HAVE_pred_vdsredsumrvvm1si (TARGET_ZVW)
-#define HAVE_pred_vdscredsumrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdsredsumrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscredsumrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdsredsumrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscredsumrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdsredsumrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscredsumrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdsredsumrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdscredsumrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdsredsumrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscredsumrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdsredsumrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscredsumrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdsredsumrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscredsumrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdsredsumrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdscredsumrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdsredsumrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdscredsumrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdsredsumrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vlsbrvvm8qi (TARGET_ZVW)
 #define HAVE_pred_vconjrvvm8qi (TARGET_ZVW)
+#define HAVE_pred_vdscredsumrvvm8qi (TARGET_ZVW)
+#define HAVE_pred_vdsredsumrvvm8qi (TARGET_ZVW)
 #define HAVE_pred_vcunpackrrvvm8qi (TARGET_ZVW)
 #define HAVE_pred_vcunpackirvvm8qi (TARGET_ZVW)
 #define HAVE_pred_vlsbrvvm4qi (TARGET_ZVW)
 #define HAVE_pred_vconjrvvm4qi (TARGET_ZVW)
+#define HAVE_pred_vdscredsumrvvm4qi (TARGET_ZVW)
+#define HAVE_pred_vdsredsumrvvm4qi (TARGET_ZVW)
 #define HAVE_pred_vcunpackrrvvm4qi (TARGET_ZVW)
 #define HAVE_pred_vcunpackirvvm4qi (TARGET_ZVW)
 #define HAVE_pred_vlsbrvvm2qi (TARGET_ZVW)
 #define HAVE_pred_vconjrvvm2qi (TARGET_ZVW)
+#define HAVE_pred_vdscredsumrvvm2qi (TARGET_ZVW)
+#define HAVE_pred_vdsredsumrvvm2qi (TARGET_ZVW)
 #define HAVE_pred_vcunpackrrvvm2qi (TARGET_ZVW)
 #define HAVE_pred_vcunpackirvvm2qi (TARGET_ZVW)
 #define HAVE_pred_vlsbrvvm1qi (TARGET_ZVW)
 #define HAVE_pred_vconjrvvm1qi (TARGET_ZVW)
+#define HAVE_pred_vdscredsumrvvm1qi (TARGET_ZVW)
+#define HAVE_pred_vdsredsumrvvm1qi (TARGET_ZVW)
 #define HAVE_pred_vcunpackrrvvm1qi (TARGET_ZVW)
 #define HAVE_pred_vcunpackirvvm1qi (TARGET_ZVW)
 #define HAVE_pred_vlsbrvvm8hi (TARGET_ZVW)
 #define HAVE_pred_vconjrvvm8hi (TARGET_ZVW)
+#define HAVE_pred_vdscredsumrvvm8hi (TARGET_ZVW)
+#define HAVE_pred_vdsredsumrvvm8hi (TARGET_ZVW)
 #define HAVE_pred_vcunpackrrvvm8hi (TARGET_ZVW)
 #define HAVE_pred_vcunpackirvvm8hi (TARGET_ZVW)
 #define HAVE_pred_vlsbrvvm4hi (TARGET_ZVW)
 #define HAVE_pred_vconjrvvm4hi (TARGET_ZVW)
+#define HAVE_pred_vdscredsumrvvm4hi (TARGET_ZVW)
+#define HAVE_pred_vdsredsumrvvm4hi (TARGET_ZVW)
 #define HAVE_pred_vcunpackrrvvm4hi (TARGET_ZVW)
 #define HAVE_pred_vcunpackirvvm4hi (TARGET_ZVW)
 #define HAVE_pred_vlsbrvvm2hi (TARGET_ZVW)
 #define HAVE_pred_vconjrvvm2hi (TARGET_ZVW)
+#define HAVE_pred_vdscredsumrvvm2hi (TARGET_ZVW)
+#define HAVE_pred_vdsredsumrvvm2hi (TARGET_ZVW)
 #define HAVE_pred_vcunpackrrvvm2hi (TARGET_ZVW)
 #define HAVE_pred_vcunpackirvvm2hi (TARGET_ZVW)
 #define HAVE_pred_vlsbrvvm1hi (TARGET_ZVW)
 #define HAVE_pred_vconjrvvm1hi (TARGET_ZVW)
+#define HAVE_pred_vdscredsumrvvm1hi (TARGET_ZVW)
+#define HAVE_pred_vdsredsumrvvm1hi (TARGET_ZVW)
 #define HAVE_pred_vcunpackrrvvm1hi (TARGET_ZVW)
 #define HAVE_pred_vcunpackirvvm1hi (TARGET_ZVW)
 #define HAVE_pred_vlsbrvvm8si (TARGET_ZVW)
 #define HAVE_pred_vconjrvvm8si (TARGET_ZVW)
+#define HAVE_pred_vdscredsumrvvm8si (TARGET_ZVW)
+#define HAVE_pred_vdsredsumrvvm8si (TARGET_ZVW)
 #define HAVE_pred_vcunpackrrvvm8si (TARGET_ZVW)
 #define HAVE_pred_vcunpackirvvm8si (TARGET_ZVW)
 #define HAVE_pred_vlsbrvvm4si (TARGET_ZVW)
 #define HAVE_pred_vconjrvvm4si (TARGET_ZVW)
+#define HAVE_pred_vdscredsumrvvm4si (TARGET_ZVW)
+#define HAVE_pred_vdsredsumrvvm4si (TARGET_ZVW)
 #define HAVE_pred_vcunpackrrvvm4si (TARGET_ZVW)
 #define HAVE_pred_vcunpackirvvm4si (TARGET_ZVW)
 #define HAVE_pred_vlsbrvvm2si (TARGET_ZVW)
 #define HAVE_pred_vconjrvvm2si (TARGET_ZVW)
+#define HAVE_pred_vdscredsumrvvm2si (TARGET_ZVW)
+#define HAVE_pred_vdsredsumrvvm2si (TARGET_ZVW)
 #define HAVE_pred_vcunpackrrvvm2si (TARGET_ZVW)
 #define HAVE_pred_vcunpackirvvm2si (TARGET_ZVW)
 #define HAVE_pred_vlsbrvvm1si (TARGET_ZVW)
 #define HAVE_pred_vconjrvvm1si (TARGET_ZVW)
+#define HAVE_pred_vdscredsumrvvm1si (TARGET_ZVW)
+#define HAVE_pred_vdsredsumrvvm1si (TARGET_ZVW)
 #define HAVE_pred_vcunpackrrvvm1si (TARGET_ZVW)
 #define HAVE_pred_vcunpackirvvm1si (TARGET_ZVW)
 #define HAVE_pred_vlsbrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vconjrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscredsumrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdsredsumrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vcunpackrrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vcunpackirvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vlsbrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vconjrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscredsumrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdsredsumrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vcunpackrrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vcunpackirvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vlsbrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vconjrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscredsumrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdsredsumrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vcunpackrrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vcunpackirvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vlsbrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vconjrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdscredsumrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
+#define HAVE_pred_vdsredsumrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vcunpackrrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vcunpackirvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vlsbrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vconjrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscredsumrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdsredsumrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vcunpackrrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vcunpackirvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vlsbrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vconjrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscredsumrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdsredsumrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vcunpackrrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vcunpackirvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vlsbrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vconjrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscredsumrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdsredsumrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vcunpackrrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vcunpackirvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vlsbrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vconjrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdscredsumrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vdsredsumrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vcunpackrrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vcunpackirvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
 #define HAVE_pred_vlsbrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vconjrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscredsumrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdsredsumrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vcunpackrrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vcunpackirvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vlsbrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vconjrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdscredsumrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdsredsumrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vcunpackrrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vcunpackirvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vpermrvvm8qi (TARGET_ZVW)
@@ -22044,102 +21944,50 @@
 #define HAVE_pred_vlfch2wv128di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 1024))
 #define HAVE_pred_vlfch2wv256di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 2048))
 #define HAVE_pred_vlfch2wv512di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 4096))
+#define HAVE_pred_vlfcpa2crvvm8qi (TARGET_ZVW)
+#define HAVE_pred_vlfcpa2crvvm4qi (TARGET_ZVW)
+#define HAVE_pred_vlfcpa2crvvm2qi (TARGET_ZVW)
+#define HAVE_pred_vlfcpa2crvvm1qi (TARGET_ZVW)
 #define HAVE_pred_vlfcpa2crvvm8hi (TARGET_ZVW)
 #define HAVE_pred_vlfcpa2crvvm4hi (TARGET_ZVW)
 #define HAVE_pred_vlfcpa2crvvm2hi (TARGET_ZVW)
 #define HAVE_pred_vlfcpa2crvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vlfcpa2crvvmf2hi (TARGET_ZVW)
-#define HAVE_pred_vlfcpa2crvvmf4hi ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
 #define HAVE_pred_vlfcpa2crvvm8si (TARGET_ZVW)
 #define HAVE_pred_vlfcpa2crvvm4si (TARGET_ZVW)
 #define HAVE_pred_vlfcpa2crvvm2si (TARGET_ZVW)
 #define HAVE_pred_vlfcpa2crvvm1si (TARGET_ZVW)
-#define HAVE_pred_vlfcpa2crvvmf2si ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
 #define HAVE_pred_vlfcpa2crvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vlfcpa2crvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vlfcpa2crvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vlfcpa2crvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vlfcpa2cv1hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1HImode)))
-#define HAVE_pred_vlfcpa2cv2hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2HImode)))
-#define HAVE_pred_vlfcpa2cv4hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4HImode)))
-#define HAVE_pred_vlfcpa2cv8hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8HImode)))
-#define HAVE_pred_vlfcpa2cv16hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16HImode)))
-#define HAVE_pred_vlfcpa2cv32hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32HImode) && TARGET_MIN_VLEN >= 64))
-#define HAVE_pred_vlfcpa2cv64hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64HImode) && TARGET_MIN_VLEN >= 128))
-#define HAVE_pred_vlfcpa2cv128hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128HImode) && TARGET_MIN_VLEN >= 256))
-#define HAVE_pred_vlfcpa2cv256hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256HImode) && TARGET_MIN_VLEN >= 512))
-#define HAVE_pred_vlfcpa2cv512hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512HImode) && TARGET_MIN_VLEN >= 1024))
-#define HAVE_pred_vlfcpa2cv1024hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024HImode) && TARGET_MIN_VLEN >= 2048))
-#define HAVE_pred_vlfcpa2cv2048hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2048HImode) && TARGET_MIN_VLEN >= 4096))
-#define HAVE_pred_vlfcpa2cv1si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1SImode)))
-#define HAVE_pred_vlfcpa2cv2si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2SImode)))
-#define HAVE_pred_vlfcpa2cv4si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4SImode)))
-#define HAVE_pred_vlfcpa2cv8si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8SImode)))
-#define HAVE_pred_vlfcpa2cv16si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16SImode) && TARGET_MIN_VLEN >= 64))
-#define HAVE_pred_vlfcpa2cv32si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32SImode) && TARGET_MIN_VLEN >= 128))
-#define HAVE_pred_vlfcpa2cv64si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64SImode) && TARGET_MIN_VLEN >= 256))
-#define HAVE_pred_vlfcpa2cv128si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128SImode) && TARGET_MIN_VLEN >= 512))
-#define HAVE_pred_vlfcpa2cv256si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256SImode) && TARGET_MIN_VLEN >= 1024))
-#define HAVE_pred_vlfcpa2cv512si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512SImode) && TARGET_MIN_VLEN >= 2048))
-#define HAVE_pred_vlfcpa2cv1024si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024SImode) && TARGET_MIN_VLEN >= 4096))
-#define HAVE_pred_vlfcpa2cv1di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1DImode) && TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vlfcpa2cv2di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2DImode) && TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vlfcpa2cv4di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4DImode) && TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vlfcpa2cv8di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 64))
-#define HAVE_pred_vlfcpa2cv16di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 128))
-#define HAVE_pred_vlfcpa2cv32di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 256))
-#define HAVE_pred_vlfcpa2cv64di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 512))
-#define HAVE_pred_vlfcpa2cv128di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 1024))
-#define HAVE_pred_vlfcpa2cv256di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 2048))
-#define HAVE_pred_vlfcpa2cv512di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 4096))
+#define HAVE_pred_vlfcpa2crvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vlfcpa2crvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vlfcpa2crvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vlfcpa2crvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vlfcpa2crvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vlfcpa2crvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vlfcpb2crvvm8qi (TARGET_ZVW)
+#define HAVE_pred_vlfcpb2crvvm4qi (TARGET_ZVW)
+#define HAVE_pred_vlfcpb2crvvm2qi (TARGET_ZVW)
+#define HAVE_pred_vlfcpb2crvvm1qi (TARGET_ZVW)
 #define HAVE_pred_vlfcpb2crvvm8hi (TARGET_ZVW)
 #define HAVE_pred_vlfcpb2crvvm4hi (TARGET_ZVW)
 #define HAVE_pred_vlfcpb2crvvm2hi (TARGET_ZVW)
 #define HAVE_pred_vlfcpb2crvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vlfcpb2crvvmf2hi (TARGET_ZVW)
-#define HAVE_pred_vlfcpb2crvvmf4hi ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
 #define HAVE_pred_vlfcpb2crvvm8si (TARGET_ZVW)
 #define HAVE_pred_vlfcpb2crvvm4si (TARGET_ZVW)
 #define HAVE_pred_vlfcpb2crvvm2si (TARGET_ZVW)
 #define HAVE_pred_vlfcpb2crvvm1si (TARGET_ZVW)
-#define HAVE_pred_vlfcpb2crvvmf2si ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
 #define HAVE_pred_vlfcpb2crvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vlfcpb2crvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vlfcpb2crvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vlfcpb2crvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vlfcpb2cv1hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1HImode)))
-#define HAVE_pred_vlfcpb2cv2hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2HImode)))
-#define HAVE_pred_vlfcpb2cv4hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4HImode)))
-#define HAVE_pred_vlfcpb2cv8hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8HImode)))
-#define HAVE_pred_vlfcpb2cv16hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16HImode)))
-#define HAVE_pred_vlfcpb2cv32hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32HImode) && TARGET_MIN_VLEN >= 64))
-#define HAVE_pred_vlfcpb2cv64hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64HImode) && TARGET_MIN_VLEN >= 128))
-#define HAVE_pred_vlfcpb2cv128hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128HImode) && TARGET_MIN_VLEN >= 256))
-#define HAVE_pred_vlfcpb2cv256hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256HImode) && TARGET_MIN_VLEN >= 512))
-#define HAVE_pred_vlfcpb2cv512hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512HImode) && TARGET_MIN_VLEN >= 1024))
-#define HAVE_pred_vlfcpb2cv1024hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024HImode) && TARGET_MIN_VLEN >= 2048))
-#define HAVE_pred_vlfcpb2cv2048hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2048HImode) && TARGET_MIN_VLEN >= 4096))
-#define HAVE_pred_vlfcpb2cv1si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1SImode)))
-#define HAVE_pred_vlfcpb2cv2si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2SImode)))
-#define HAVE_pred_vlfcpb2cv4si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4SImode)))
-#define HAVE_pred_vlfcpb2cv8si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8SImode)))
-#define HAVE_pred_vlfcpb2cv16si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16SImode) && TARGET_MIN_VLEN >= 64))
-#define HAVE_pred_vlfcpb2cv32si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32SImode) && TARGET_MIN_VLEN >= 128))
-#define HAVE_pred_vlfcpb2cv64si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64SImode) && TARGET_MIN_VLEN >= 256))
-#define HAVE_pred_vlfcpb2cv128si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128SImode) && TARGET_MIN_VLEN >= 512))
-#define HAVE_pred_vlfcpb2cv256si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256SImode) && TARGET_MIN_VLEN >= 1024))
-#define HAVE_pred_vlfcpb2cv512si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512SImode) && TARGET_MIN_VLEN >= 2048))
-#define HAVE_pred_vlfcpb2cv1024si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024SImode) && TARGET_MIN_VLEN >= 4096))
-#define HAVE_pred_vlfcpb2cv1di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1DImode) && TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vlfcpb2cv2di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2DImode) && TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vlfcpb2cv4di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4DImode) && TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vlfcpb2cv8di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 64))
-#define HAVE_pred_vlfcpb2cv16di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 128))
-#define HAVE_pred_vlfcpb2cv32di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 256))
-#define HAVE_pred_vlfcpb2cv64di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 512))
-#define HAVE_pred_vlfcpb2cv128di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 1024))
-#define HAVE_pred_vlfcpb2cv256di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 2048))
-#define HAVE_pred_vlfcpb2cv512di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 4096))
+#define HAVE_pred_vlfcpb2crvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vlfcpb2crvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vlfcpb2crvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vlfcpb2crvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vlfcpb2crvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vlfcpb2crvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vsfch2brvvm8hi (TARGET_ZVW)
 #define HAVE_pred_vsfch2brvvm4hi (TARGET_ZVW)
 #define HAVE_pred_vsfch2brvvm2hi (TARGET_ZVW)
@@ -22266,102 +22114,50 @@
 #define HAVE_pred_vsfcw2hv128di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 1024))
 #define HAVE_pred_vsfcw2hv256di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 2048))
 #define HAVE_pred_vsfcw2hv512di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 4096))
+#define HAVE_pred_vsfcc2parvvm8qi (TARGET_ZVW)
+#define HAVE_pred_vsfcc2parvvm4qi (TARGET_ZVW)
+#define HAVE_pred_vsfcc2parvvm2qi (TARGET_ZVW)
+#define HAVE_pred_vsfcc2parvvm1qi (TARGET_ZVW)
 #define HAVE_pred_vsfcc2parvvm8hi (TARGET_ZVW)
 #define HAVE_pred_vsfcc2parvvm4hi (TARGET_ZVW)
 #define HAVE_pred_vsfcc2parvvm2hi (TARGET_ZVW)
 #define HAVE_pred_vsfcc2parvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vsfcc2parvvmf2hi (TARGET_ZVW)
-#define HAVE_pred_vsfcc2parvvmf4hi ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
 #define HAVE_pred_vsfcc2parvvm8si (TARGET_ZVW)
 #define HAVE_pred_vsfcc2parvvm4si (TARGET_ZVW)
 #define HAVE_pred_vsfcc2parvvm2si (TARGET_ZVW)
 #define HAVE_pred_vsfcc2parvvm1si (TARGET_ZVW)
-#define HAVE_pred_vsfcc2parvvmf2si ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
 #define HAVE_pred_vsfcc2parvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vsfcc2parvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vsfcc2parvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vsfcc2parvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vsfcc2pav1hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1HImode)))
-#define HAVE_pred_vsfcc2pav2hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2HImode)))
-#define HAVE_pred_vsfcc2pav4hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4HImode)))
-#define HAVE_pred_vsfcc2pav8hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8HImode)))
-#define HAVE_pred_vsfcc2pav16hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16HImode)))
-#define HAVE_pred_vsfcc2pav32hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32HImode) && TARGET_MIN_VLEN >= 64))
-#define HAVE_pred_vsfcc2pav64hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64HImode) && TARGET_MIN_VLEN >= 128))
-#define HAVE_pred_vsfcc2pav128hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128HImode) && TARGET_MIN_VLEN >= 256))
-#define HAVE_pred_vsfcc2pav256hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256HImode) && TARGET_MIN_VLEN >= 512))
-#define HAVE_pred_vsfcc2pav512hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512HImode) && TARGET_MIN_VLEN >= 1024))
-#define HAVE_pred_vsfcc2pav1024hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024HImode) && TARGET_MIN_VLEN >= 2048))
-#define HAVE_pred_vsfcc2pav2048hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2048HImode) && TARGET_MIN_VLEN >= 4096))
-#define HAVE_pred_vsfcc2pav1si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1SImode)))
-#define HAVE_pred_vsfcc2pav2si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2SImode)))
-#define HAVE_pred_vsfcc2pav4si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4SImode)))
-#define HAVE_pred_vsfcc2pav8si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8SImode)))
-#define HAVE_pred_vsfcc2pav16si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16SImode) && TARGET_MIN_VLEN >= 64))
-#define HAVE_pred_vsfcc2pav32si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32SImode) && TARGET_MIN_VLEN >= 128))
-#define HAVE_pred_vsfcc2pav64si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64SImode) && TARGET_MIN_VLEN >= 256))
-#define HAVE_pred_vsfcc2pav128si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128SImode) && TARGET_MIN_VLEN >= 512))
-#define HAVE_pred_vsfcc2pav256si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256SImode) && TARGET_MIN_VLEN >= 1024))
-#define HAVE_pred_vsfcc2pav512si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512SImode) && TARGET_MIN_VLEN >= 2048))
-#define HAVE_pred_vsfcc2pav1024si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024SImode) && TARGET_MIN_VLEN >= 4096))
-#define HAVE_pred_vsfcc2pav1di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1DImode) && TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vsfcc2pav2di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2DImode) && TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vsfcc2pav4di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4DImode) && TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vsfcc2pav8di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 64))
-#define HAVE_pred_vsfcc2pav16di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 128))
-#define HAVE_pred_vsfcc2pav32di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 256))
-#define HAVE_pred_vsfcc2pav64di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 512))
-#define HAVE_pred_vsfcc2pav128di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 1024))
-#define HAVE_pred_vsfcc2pav256di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 2048))
-#define HAVE_pred_vsfcc2pav512di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 4096))
+#define HAVE_pred_vsfcc2parvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vsfcc2parvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vsfcc2parvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vsfcc2parvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vsfcc2parvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vsfcc2parvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vsfcc2pbrvvm8qi (TARGET_ZVW)
+#define HAVE_pred_vsfcc2pbrvvm4qi (TARGET_ZVW)
+#define HAVE_pred_vsfcc2pbrvvm2qi (TARGET_ZVW)
+#define HAVE_pred_vsfcc2pbrvvm1qi (TARGET_ZVW)
 #define HAVE_pred_vsfcc2pbrvvm8hi (TARGET_ZVW)
 #define HAVE_pred_vsfcc2pbrvvm4hi (TARGET_ZVW)
 #define HAVE_pred_vsfcc2pbrvvm2hi (TARGET_ZVW)
 #define HAVE_pred_vsfcc2pbrvvm1hi (TARGET_ZVW)
-#define HAVE_pred_vsfcc2pbrvvmf2hi (TARGET_ZVW)
-#define HAVE_pred_vsfcc2pbrvvmf4hi ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
 #define HAVE_pred_vsfcc2pbrvvm8si (TARGET_ZVW)
 #define HAVE_pred_vsfcc2pbrvvm4si (TARGET_ZVW)
 #define HAVE_pred_vsfcc2pbrvvm2si (TARGET_ZVW)
 #define HAVE_pred_vsfcc2pbrvvm1si (TARGET_ZVW)
-#define HAVE_pred_vsfcc2pbrvvmf2si ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
 #define HAVE_pred_vsfcc2pbrvvm8di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vsfcc2pbrvvm4di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vsfcc2pbrvvm2di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
 #define HAVE_pred_vsfcc2pbrvvm1di ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vsfcc2pbv1hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1HImode)))
-#define HAVE_pred_vsfcc2pbv2hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2HImode)))
-#define HAVE_pred_vsfcc2pbv4hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4HImode)))
-#define HAVE_pred_vsfcc2pbv8hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8HImode)))
-#define HAVE_pred_vsfcc2pbv16hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16HImode)))
-#define HAVE_pred_vsfcc2pbv32hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32HImode) && TARGET_MIN_VLEN >= 64))
-#define HAVE_pred_vsfcc2pbv64hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64HImode) && TARGET_MIN_VLEN >= 128))
-#define HAVE_pred_vsfcc2pbv128hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128HImode) && TARGET_MIN_VLEN >= 256))
-#define HAVE_pred_vsfcc2pbv256hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256HImode) && TARGET_MIN_VLEN >= 512))
-#define HAVE_pred_vsfcc2pbv512hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512HImode) && TARGET_MIN_VLEN >= 1024))
-#define HAVE_pred_vsfcc2pbv1024hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024HImode) && TARGET_MIN_VLEN >= 2048))
-#define HAVE_pred_vsfcc2pbv2048hi ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2048HImode) && TARGET_MIN_VLEN >= 4096))
-#define HAVE_pred_vsfcc2pbv1si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1SImode)))
-#define HAVE_pred_vsfcc2pbv2si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2SImode)))
-#define HAVE_pred_vsfcc2pbv4si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4SImode)))
-#define HAVE_pred_vsfcc2pbv8si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8SImode)))
-#define HAVE_pred_vsfcc2pbv16si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16SImode) && TARGET_MIN_VLEN >= 64))
-#define HAVE_pred_vsfcc2pbv32si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32SImode) && TARGET_MIN_VLEN >= 128))
-#define HAVE_pred_vsfcc2pbv64si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64SImode) && TARGET_MIN_VLEN >= 256))
-#define HAVE_pred_vsfcc2pbv128si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128SImode) && TARGET_MIN_VLEN >= 512))
-#define HAVE_pred_vsfcc2pbv256si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256SImode) && TARGET_MIN_VLEN >= 1024))
-#define HAVE_pred_vsfcc2pbv512si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512SImode) && TARGET_MIN_VLEN >= 2048))
-#define HAVE_pred_vsfcc2pbv1024si ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024SImode) && TARGET_MIN_VLEN >= 4096))
-#define HAVE_pred_vsfcc2pbv1di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1DImode) && TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vsfcc2pbv2di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2DImode) && TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vsfcc2pbv4di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4DImode) && TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vsfcc2pbv8di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 64))
-#define HAVE_pred_vsfcc2pbv16di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 128))
-#define HAVE_pred_vsfcc2pbv32di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 256))
-#define HAVE_pred_vsfcc2pbv64di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 512))
-#define HAVE_pred_vsfcc2pbv128di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 1024))
-#define HAVE_pred_vsfcc2pbv256di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 2048))
-#define HAVE_pred_vsfcc2pbv512di ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512DImode) && TARGET_VECTOR_ELEN_64 && TARGET_MIN_VLEN >= 4096))
+#define HAVE_pred_vsfcc2pbrvvmf2qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vsfcc2pbrvvmf4qi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vsfcc2pbrvvmf8qi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vsfcc2pbrvvmf2hi ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
+#define HAVE_pred_vsfcc2pbrvvmf4hi ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vsfcc2pbrvvmf2si ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
 #define HAVE_pred_vpharotrvvm8qi (TARGET_ZVW)
 #define HAVE_pred_vpharotrvvm4qi (TARGET_ZVW)
 #define HAVE_pred_vpharotrvvm2qi (TARGET_ZVW)
@@ -22388,24 +22184,56 @@
 #define HAVE_pred_vpharotrvvm4qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vpharotrvvm2qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vpharotrvvm1qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vpharotrvvmf2qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vpharotrvvmf4qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vpharotrvvmf8qi_scalar ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
 #define HAVE_pred_vpharotrvvm8hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vpharotrvvm4hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vpharotrvvm2hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vpharotrvvm1hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vpharotrvvmf2hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vpharotrvvmf4hi_scalar ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
 #define HAVE_pred_vpharotrvvm8si_scalar (TARGET_ZVW)
 #define HAVE_pred_vpharotrvvm4si_scalar (TARGET_ZVW)
 #define HAVE_pred_vpharotrvvm2si_scalar (TARGET_ZVW)
 #define HAVE_pred_vpharotrvvm1si_scalar (TARGET_ZVW)
-#define HAVE_pred_vpharotrvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vpharotrvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vpharotrvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vpharotrvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vpharotrvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vpharotrvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vpharotrvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vpharotrvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vpharotrvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vpharotrvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vpharotrvvmf2si_scalar ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
+#define HAVE_pred_vpharotv1qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1QImode)))
+#define HAVE_pred_vpharotv2qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2QImode)))
+#define HAVE_pred_vpharotv4qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4QImode)))
+#define HAVE_pred_vpharotv8qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8QImode)))
+#define HAVE_pred_vpharotv16qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16QImode)))
+#define HAVE_pred_vpharotv32qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32QImode)))
+#define HAVE_pred_vpharotv64qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64QImode) && TARGET_MIN_VLEN >= 64))
+#define HAVE_pred_vpharotv128qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128QImode) && TARGET_MIN_VLEN >= 128))
+#define HAVE_pred_vpharotv256qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256QImode) && TARGET_MIN_VLEN >= 256))
+#define HAVE_pred_vpharotv512qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512QImode) && TARGET_MIN_VLEN >= 512))
+#define HAVE_pred_vpharotv1024qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024QImode) && TARGET_MIN_VLEN >= 1024))
+#define HAVE_pred_vpharotv2048qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2048QImode) && TARGET_MIN_VLEN >= 2048))
+#define HAVE_pred_vpharotv4096qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4096QImode) && TARGET_MIN_VLEN >= 4096))
+#define HAVE_pred_vpharotv1hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1HImode)))
+#define HAVE_pred_vpharotv2hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2HImode)))
+#define HAVE_pred_vpharotv4hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4HImode)))
+#define HAVE_pred_vpharotv8hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8HImode)))
+#define HAVE_pred_vpharotv16hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16HImode)))
+#define HAVE_pred_vpharotv32hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32HImode) && TARGET_MIN_VLEN >= 64))
+#define HAVE_pred_vpharotv64hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64HImode) && TARGET_MIN_VLEN >= 128))
+#define HAVE_pred_vpharotv128hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128HImode) && TARGET_MIN_VLEN >= 256))
+#define HAVE_pred_vpharotv256hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256HImode) && TARGET_MIN_VLEN >= 512))
+#define HAVE_pred_vpharotv512hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512HImode) && TARGET_MIN_VLEN >= 1024))
+#define HAVE_pred_vpharotv1024hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024HImode) && TARGET_MIN_VLEN >= 2048))
+#define HAVE_pred_vpharotv2048hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2048HImode) && TARGET_MIN_VLEN >= 4096))
+#define HAVE_pred_vpharotv1si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1SImode)))
+#define HAVE_pred_vpharotv2si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2SImode)))
+#define HAVE_pred_vpharotv4si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4SImode)))
+#define HAVE_pred_vpharotv8si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8SImode)))
+#define HAVE_pred_vpharotv16si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16SImode) && TARGET_MIN_VLEN >= 64))
+#define HAVE_pred_vpharotv32si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32SImode) && TARGET_MIN_VLEN >= 128))
+#define HAVE_pred_vpharotv64si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64SImode) && TARGET_MIN_VLEN >= 256))
+#define HAVE_pred_vpharotv128si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128SImode) && TARGET_MIN_VLEN >= 512))
+#define HAVE_pred_vpharotv256si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256SImode) && TARGET_MIN_VLEN >= 1024))
+#define HAVE_pred_vpharotv512si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512SImode) && TARGET_MIN_VLEN >= 2048))
+#define HAVE_pred_vpharotv1024si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024SImode) && TARGET_MIN_VLEN >= 4096))
 #define HAVE_pred_vdsmacrvvm8qi (TARGET_ZVW)
 #define HAVE_pred_vdscmacrvvm8qi (TARGET_ZVW)
 #define HAVE_pred_vdscmacjrvvm8qi (TARGET_ZVW)
@@ -22564,24 +22392,56 @@
 #define HAVE_pred_vdsmacinirvvm4qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacinirvvm2qi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacinirvvm1qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdsmacinirvvmf2qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdsmacinirvvmf4qi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdsmacinirvvmf8qi_scalar ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
 #define HAVE_pred_vdsmacinirvvm8hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacinirvvm4hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacinirvvm2hi_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacinirvvm1hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdsmacinirvvmf2hi_scalar (TARGET_ZVW)
+#define HAVE_pred_vdsmacinirvvmf4hi_scalar ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
 #define HAVE_pred_vdsmacinirvvm8si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacinirvvm4si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacinirvvm2si_scalar (TARGET_ZVW)
 #define HAVE_pred_vdsmacinirvvm1si_scalar (TARGET_ZVW)
-#define HAVE_pred_vdsmacinirvvm8di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdsmacinirvvm4di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdsmacinirvvm2di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdsmacinirvvm1di_scalar ((TARGET_ZVW) && (TARGET_VECTOR_ELEN_64))
-#define HAVE_pred_vdsmacinirvvmf2qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdsmacinirvvmf4qi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdsmacinirvvmf8qi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdsmacinirvvmf2hi_scalar ((TARGET_ZVW) && (!TARGET_XTHEADVECTOR))
-#define HAVE_pred_vdsmacinirvvmf4hi_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
-#define HAVE_pred_vdsmacinirvvmf2si_scalar ((TARGET_ZVW) && ((TARGET_MIN_VLEN > 32) && (!TARGET_XTHEADVECTOR)))
+#define HAVE_pred_vdsmacinirvvmf2si_scalar ((TARGET_ZVW) && (TARGET_MIN_VLEN > 32))
+#define HAVE_pred_vdsmaciniv1qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1QImode)))
+#define HAVE_pred_vdsmaciniv2qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2QImode)))
+#define HAVE_pred_vdsmaciniv4qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4QImode)))
+#define HAVE_pred_vdsmaciniv8qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8QImode)))
+#define HAVE_pred_vdsmaciniv16qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16QImode)))
+#define HAVE_pred_vdsmaciniv32qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32QImode)))
+#define HAVE_pred_vdsmaciniv64qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64QImode) && TARGET_MIN_VLEN >= 64))
+#define HAVE_pred_vdsmaciniv128qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128QImode) && TARGET_MIN_VLEN >= 128))
+#define HAVE_pred_vdsmaciniv256qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256QImode) && TARGET_MIN_VLEN >= 256))
+#define HAVE_pred_vdsmaciniv512qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512QImode) && TARGET_MIN_VLEN >= 512))
+#define HAVE_pred_vdsmaciniv1024qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024QImode) && TARGET_MIN_VLEN >= 1024))
+#define HAVE_pred_vdsmaciniv2048qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2048QImode) && TARGET_MIN_VLEN >= 2048))
+#define HAVE_pred_vdsmaciniv4096qi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4096QImode) && TARGET_MIN_VLEN >= 4096))
+#define HAVE_pred_vdsmaciniv1hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1HImode)))
+#define HAVE_pred_vdsmaciniv2hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2HImode)))
+#define HAVE_pred_vdsmaciniv4hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4HImode)))
+#define HAVE_pred_vdsmaciniv8hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8HImode)))
+#define HAVE_pred_vdsmaciniv16hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16HImode)))
+#define HAVE_pred_vdsmaciniv32hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32HImode) && TARGET_MIN_VLEN >= 64))
+#define HAVE_pred_vdsmaciniv64hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64HImode) && TARGET_MIN_VLEN >= 128))
+#define HAVE_pred_vdsmaciniv128hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128HImode) && TARGET_MIN_VLEN >= 256))
+#define HAVE_pred_vdsmaciniv256hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256HImode) && TARGET_MIN_VLEN >= 512))
+#define HAVE_pred_vdsmaciniv512hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512HImode) && TARGET_MIN_VLEN >= 1024))
+#define HAVE_pred_vdsmaciniv1024hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024HImode) && TARGET_MIN_VLEN >= 2048))
+#define HAVE_pred_vdsmaciniv2048hi_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2048HImode) && TARGET_MIN_VLEN >= 4096))
+#define HAVE_pred_vdsmaciniv1si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1SImode)))
+#define HAVE_pred_vdsmaciniv2si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V2SImode)))
+#define HAVE_pred_vdsmaciniv4si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V4SImode)))
+#define HAVE_pred_vdsmaciniv8si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V8SImode)))
+#define HAVE_pred_vdsmaciniv16si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V16SImode) && TARGET_MIN_VLEN >= 64))
+#define HAVE_pred_vdsmaciniv32si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V32SImode) && TARGET_MIN_VLEN >= 128))
+#define HAVE_pred_vdsmaciniv64si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V64SImode) && TARGET_MIN_VLEN >= 256))
+#define HAVE_pred_vdsmaciniv128si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V128SImode) && TARGET_MIN_VLEN >= 512))
+#define HAVE_pred_vdsmaciniv256si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V256SImode) && TARGET_MIN_VLEN >= 1024))
+#define HAVE_pred_vdsmaciniv512si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V512SImode) && TARGET_MIN_VLEN >= 2048))
+#define HAVE_pred_vdsmaciniv1024si_scalar ((TARGET_ZVW) && (riscv_vector::vls_mode_valid_p (V1024SImode) && TARGET_MIN_VLEN >= 4096))
 #define HAVE_pred_vlnlprvvm8qi (TARGET_ZVW)
 #define HAVE_pred_vlnlprvvm4qi (TARGET_ZVW)
 #define HAVE_pred_vlnlprvvm2qi (TARGET_ZVW)
@@ -53544,820 +53404,720 @@ extern rtx        gen_riscv_cv_simd_cplxmul_r_si                 (rtx, rtx, rtx,
 extern rtx        gen_riscv_cv_simd_cplxmul_i_si                 (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_riscv_cv_simd_cplxconj_si                  (rtx, rtx);
 extern rtx        gen_riscv_cv_simd_subrotmj_si                  (rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm8qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm8qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm8qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm8qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvm8qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm4qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm4qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm4qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm4qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvm4qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm2qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm2qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm2qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm2qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvm2qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm1qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm1qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm1qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm1qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm1qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm1qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm1qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm1qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm1qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm1qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm1qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm1qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm1qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm1qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm1qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvm1qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm8hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm8hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm8hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm8hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm8hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm8hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm8hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm8hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm8hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm8hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm8hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm8hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm8hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm8hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm8hi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvm8hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm4hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm4hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm4hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm4hi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvm4hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm2hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm2hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm2hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm2hi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvm2hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm1hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm1hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm1hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm1hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm1hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm1hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm1hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm1hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm1hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm1hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm1hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm1hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm1hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm1hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm1hi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvm1hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm8si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm8si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm8si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm8si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm8si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm8si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm8si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm8si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm8si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm8si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm8si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm8si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm8si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm8si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm8si                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvm8si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm4si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm4si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm4si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm4si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm4si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm4si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm4si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm4si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm4si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm4si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm4si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm4si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm4si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm4si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm4si                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvm4si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm2si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm2si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm2si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm2si                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvm2si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm1si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm1si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm1si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm1si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm1si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm1si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm1si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm1si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm1si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm1si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm1si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm1si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm1si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm1si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm1si                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvm1si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm8di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm8di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm8di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm8di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm8di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm8di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm8di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm8di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm8di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm8di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm8di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm8di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm8di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm8di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm8di                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvm8di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm4di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm4di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm4di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm4di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm4di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm4di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm4di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm4di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm4di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm4di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm4di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm4di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm4di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm4di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm4di                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvm4di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm2di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm2di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm2di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm2di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm2di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm2di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm2di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm2di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm2di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm2di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm2di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm2di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm2di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm2di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm2di                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvm2di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm1di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm1di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm1di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm1di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm1di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm1di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm1di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm1di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm1di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm1di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm1di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm1di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm1di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm1di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm1di                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvm1di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvmf2qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvmf2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvmf2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvmf2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvmf2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvmf2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvmf2qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvmf2qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvmf2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvmf2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvmf2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvmf2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvmf2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvmf2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvmf2qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvmf2qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvmf4qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvmf4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvmf4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvmf4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvmf4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvmf4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvmf4qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvmf4qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvmf4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvmf4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvmf4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvmf4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvmf4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvmf4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvmf4qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvmf4qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvmf8qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvmf8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvmf8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvmf8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvmf8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvmf8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvmf8qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvmf8qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvmf8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvmf8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvmf8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvmf8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvmf8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvmf8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvmf8qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvmf8qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvmf2hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvmf2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvmf2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvmf2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvmf2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvmf2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvmf2hi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvmf2hi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvmf2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvmf2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvmf2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvmf2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvmf2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvmf2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvmf2hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvmf2hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvmf4hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvmf4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvmf4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvmf4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvmf4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvmf4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvmf4hi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvmf4hi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvmf4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvmf4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvmf4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvmf4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvmf4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvmf4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvmf4hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvmf4hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvmf2si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvmf2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvmf2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvmf2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvmf2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvmf2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvmf2si                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvmf2si                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvmf2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvmf2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvmf2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvmf2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvmf2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvmf2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvmf2si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vcpackrvvmf2si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm8qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm8qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm8qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvm8qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvm8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvm8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm8qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm4qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm4qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm4qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvm4qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvm4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvm4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm4qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm2qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm2qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm2qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvm2qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvm2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvm2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm2qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm1qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm1qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm1qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm1qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm1qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm1qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvm1qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvm1qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvm1qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm1qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm8hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm8hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm8hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm8hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm8hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm8hi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvm8hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvm8hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvm8hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm8hi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm4hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm4hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm4hi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvm4hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvm4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvm4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm4hi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm2hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm2hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm2hi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvm2hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvm2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvm2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm2hi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm1hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm1hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm1hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm1hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm1hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm1hi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvm1hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvm1hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvm1hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm1hi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm8si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm8si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm8si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm8si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm8si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm8si                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvm8si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvm8si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvm8si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm8si                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm4si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm4si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm4si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm4si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm4si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm4si                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvm4si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvm4si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvm4si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm4si                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm2si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm2si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm2si                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvm2si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvm2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvm2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm2si                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm1si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm1si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm1si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm1si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm1si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm1si                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvm1si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvm1si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvm1si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm1si                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm8di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm8di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm8di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm8di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm8di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm8di                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvm8di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvm8di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvm8di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm8di                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm4di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm4di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm4di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm4di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm4di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm4di                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvm4di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvm4di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvm4di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm4di                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm2di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm2di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm2di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm2di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm2di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm2di                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvm2di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvm2di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvm2di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm2di                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm1di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm1di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm1di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm1di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm1di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm1di                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvm1di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvm1di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvm1di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm1di                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvmf2qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvmf2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvmf2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvmf2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvmf2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvmf2qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvmf2qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvmf2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvmf2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvmf2qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvmf4qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvmf4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvmf4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvmf4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvmf4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvmf4qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvmf4qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvmf4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvmf4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvmf4qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvmf8qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvmf8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvmf8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvmf8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvmf8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvmf8qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvmf8qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvmf8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvmf8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvmf8qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvmf2hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvmf2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvmf2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvmf2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvmf2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvmf2hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvmf2hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvmf2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvmf2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvmf2hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvmf4hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvmf4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvmf4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvmf4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvmf4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvmf4hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvmf4hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvmf4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvmf4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvmf4hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvmf2si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvmf2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvmf2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvmf2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvmf2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvmf2si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vcpackrvvmf2si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredmaxirvvmf2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vredminirvvmf2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm8qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm8qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm8qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm8qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm8qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm8qi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm4qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm4qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm4qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm4qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm4qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm4qi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm2qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm2qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm2qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm2qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm2qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm2qi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm1qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm1qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm1qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm1qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm1qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm1qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm1qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm1qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm1qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm1qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm1qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm1qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm1qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm1qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm1qi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm8hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm8hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm8hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm8hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm8hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm8hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm8hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm8hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm8hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm8hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm8hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm8hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm8hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm8hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm8hi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm4hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm4hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm4hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm4hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm4hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm4hi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm2hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm2hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm2hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm2hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm2hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm2hi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm1hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm1hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm1hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm1hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm1hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm1hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm1hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm1hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm1hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm1hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm1hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm1hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm1hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm1hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm1hi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm8si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm8si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm8si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm8si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm8si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm8si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm8si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm8si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm8si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm8si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm8si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm8si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm8si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm8si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm8si_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm4si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm4si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm4si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm4si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm4si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm4si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm4si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm4si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm4si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm4si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm4si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm4si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm4si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm4si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm4si_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm2si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm2si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm2si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm2si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm2si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm2si_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm1si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm1si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm1si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm1si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm1si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm1si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm1si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm1si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm1si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm1si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm1si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm1si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm1si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm1si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm1si_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm8di_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm8di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm8di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm8di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm8di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm8di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm8di_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm8di_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm8di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm8di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm8di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm8di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm8di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm8di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm8di_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm4di_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm4di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm4di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm4di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm4di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm4di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm4di_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm4di_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm4di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm4di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm4di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm4di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm4di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm4di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm4di_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm2di_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm2di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm2di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm2di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm2di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm2di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm2di_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm2di_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm2di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm2di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm2di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm2di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm2di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm2di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm2di_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvm1di_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvm1di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvm1di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvm1di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvm1di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvm1di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvm1di_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvm1di_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvm1di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvm1di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvm1di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvm1di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvm1di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvm1di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvm1di_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvmf2qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvmf2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvmf2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvmf2qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvmf2qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvmf2qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvmf2qi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvmf2qi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvmf2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvmf2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvmf2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvmf2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvmf2qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvmf2qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvmf2qi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvmf4qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvmf4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvmf4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvmf4qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvmf4qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvmf4qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvmf4qi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvmf4qi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvmf4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvmf4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvmf4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvmf4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvmf4qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvmf4qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvmf4qi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvmf8qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvmf8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvmf8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvmf8qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvmf8qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvmf8qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvmf8qi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvmf8qi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvmf8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvmf8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvmf8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvmf8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvmf8qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvmf8qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvmf8qi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvmf2hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvmf2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvmf2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvmf2hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvmf2hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvmf2hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvmf2hi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvmf2hi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvmf2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvmf2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvmf2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvmf2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvmf2hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvmf2hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvmf2hi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvmf4hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvmf4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvmf4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvmf4hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvmf4hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvmf4hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvmf4hi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvmf4hi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvmf4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvmf4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvmf4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvmf4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvmf4hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvmf4hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvmf4hi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmulrvvmf2si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacorvvmf2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorvvmf2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacoirvvmf2si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacorrvvmf2si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorvvmf2si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjoirvvmf2si_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjorrvvmf2si_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrvvmf2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulrrvvmf2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmulirvvmf2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrvvmf2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljrrvvmf2si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmuljirvvmf2si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vnlmrvvmf2si_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvmf2si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm8qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm8qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm8qi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm8qi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm4qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm4qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm4qi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm4qi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm2qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm2qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm2qi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm2qi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm1qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm1qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm1qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm1qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm1qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm1qi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm1qi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm8hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm8hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm8hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm8hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm8hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm8hi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm8hi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm4hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm4hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm4hi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm4hi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm2hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm2hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm2hi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm2hi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm1hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm1hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm1hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm1hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm1hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm1hi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm1hi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm8si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm8si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm8si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm8si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm8si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm8si_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm8si_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm4si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm4si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm4si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm4si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm4si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm4si_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm4si_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm2si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm2si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm2si_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm2si_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm1si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm1si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm1si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm1si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm1si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm1si_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm1si_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm8di_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm8di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm8di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm8di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm8di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm8di_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm8di_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm4di_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm4di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm4di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm4di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm4di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm4di_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm4di_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm2di_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm2di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm2di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm2di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm2di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm2di_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm2di_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvm1di_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvm1di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvm1di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvm1di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvm1di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvm1di_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvm1di_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvmf2qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvmf2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvmf2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvmf2qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvmf2qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvmf2qi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvmf2qi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvmf4qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvmf4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvmf4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvmf4qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvmf4qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvmf4qi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvmf4qi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvmf8qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvmf8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvmf8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvmf8qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvmf8qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvmf8qi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvmf8qi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvmf2hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvmf2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvmf2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvmf2hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvmf2hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvmf2hi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvmf2hi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvmf4hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvmf4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvmf4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvmf4hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvmf4hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvmf4hi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvmf4hi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmulrvvmf2si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacorvvmf2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorvvmf2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacoirvvmf2si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacorrvvmf2si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vnlervvmf2si_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm1qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm8hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm1hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm8si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm4si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm1si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm8di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm4di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm2di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm1di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvmf2qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvmf4qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvmf8qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvmf2hi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvmf4hi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvmf2si                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm8qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm4qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm2qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm1qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm8hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm4hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm2hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm1hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm8si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm4si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm2si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm1si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm8di_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm4di_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm2di_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvm1di_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvmf2qi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvmf4qi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvmf8qi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvmf2hi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvmf4hi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumnrvvmf2si_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vnlmrvvmf2si_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm8qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm4qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm2qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm1qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm1qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm1qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm1qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm1qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm1qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm8hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm8hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm8hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm8hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm8hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm8hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm4hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm2hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm1hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm1hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm1hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm1hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm1hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm1hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm8si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm8si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm8si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm8si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm8si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm8si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm4si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm4si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm4si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm4si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm4si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm4si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm2si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm1si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm1si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm1si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm1si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm1si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm1si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm8di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm8di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm8di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm8di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm8di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm8di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm4di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm4di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm4di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm4di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm4di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm4di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm2di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm2di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm2di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm2di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm2di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm2di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm1di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm1di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm1di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm1di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm1di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm1di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvmf2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvmf2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvmf2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvmf2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvmf2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvmf2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvmf4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvmf4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvmf4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvmf4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvmf4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvmf4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvmf8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvmf8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvmf8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvmf8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvmf8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvmf8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvmf2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvmf2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvmf2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvmf2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvmf2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvmf2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvmf4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvmf4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvmf4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvmf4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvmf4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvmf4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvmf2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvmf2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvmf2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvmf2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvmf2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvmf2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm8qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm4qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm2qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm1qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm1qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm1qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm1qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm1qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm1qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm8hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm8hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm8hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm8hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm8hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm8hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm4hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm2hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm1hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm1hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm1hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm1hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm1hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm1hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm8si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm8si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm8si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm8si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm8si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm8si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm4si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm4si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm4si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm4si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm4si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm4si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm2si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm1si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm1si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm1si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm1si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm1si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm1si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm8di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm8di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm8di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm8di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm8di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm8di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm4di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm4di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm4di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm4di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm4di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm4di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm2di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm2di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm2di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm2di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm2di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm2di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvm1di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvm1di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvm1di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvm1di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvm1di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvm1di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvmf2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvmf2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvmf2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvmf2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvmf2qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvmf2qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvmf4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvmf4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvmf4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvmf4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvmf4qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvmf4qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvmf8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvmf8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvmf8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvmf8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvmf8qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvmf8qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvmf2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvmf2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvmf2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvmf2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvmf2hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvmf2hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvmf4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvmf4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvmf4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvmf4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvmf4hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvmf4hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrvvmf2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulrrvvmf2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmulirvvmf2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrvvmf2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljrrvvmf2si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmuljirvvmf2si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm1qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm8hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm1hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm8si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm4si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm1si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm8di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm4di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm2di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm1di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvmf2qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvmf4qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvmf8qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvmf2hi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvmf4hi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvmf2si                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm8qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm4qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm2qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm1qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvmf2qi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvmf4qi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvmf8qi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm8hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm4hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm2hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm1hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvmf2hi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvmf4hi_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm8si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm4si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm2si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvm1si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnrvvmf2si_scalar             (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv1qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv2qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv4qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv8qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv16qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv32qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv64qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv128qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv256qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv512qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv1024qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv2048qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv4096qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv1hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv2hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv4hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv8hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv16hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv32hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv64hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv128hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv256hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv512hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv1024hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv2048hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv1si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv2si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv4si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv8si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv16si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv32si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv64si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv128si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv256si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv512si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumnv1024si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vfslrvvm8qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vfsrrvvm8qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vfslrvvm4qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx);
@@ -54402,136 +54162,136 @@ extern rtx        gen_pred_vfslrvvmf4hi                          (rtx, rtx, rtx,
 extern rtx        gen_pred_vfsrrvvmf4hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vfslrvvmf2si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vfsrrvvmf2si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvm8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvm8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvm4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvm4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvm2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvm2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvm1qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvm1qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvm8hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvm8hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvm4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvm4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvm2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvm2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvm1hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvm1hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvm8si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvm8si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvm4si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvm4si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvm2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvm2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvm1si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvm1si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvm8di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvm8di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvm4di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvm4di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvm2di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvm2di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvm1di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvm1di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvmf2qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvmf2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvmf4qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvmf4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvmf8qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvmf8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvmf2hi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvmf2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvmf4hi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvmf4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscredsumrvvmf2si                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsredsumrvvmf2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvm8qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvm8qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvm8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvm8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvm8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvm8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvm4qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvm4qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvm4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvm4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvm4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvm4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvm2qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvm2qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvm2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvm2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvm2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvm2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvm1qi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvm1qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvm1qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvm1qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvm1qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvm1qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvm8hi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvm8hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvm8hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvm8hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvm8hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvm8hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvm4hi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvm4hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvm4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvm4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvm4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvm4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvm2hi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvm2hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvm2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvm2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvm2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvm2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvm1hi                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvm1hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvm1hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvm1hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvm1hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvm1hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvm8si                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvm8si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvm8si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvm8si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvm8si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvm8si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvm4si                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvm4si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvm4si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvm4si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvm4si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvm4si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvm2si                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvm2si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvm2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvm2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvm2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvm2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvm1si                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvm1si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvm1si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvm1si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvm1si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvm1si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvm8di                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvm8di                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvm8di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvm8di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvm8di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvm8di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvm4di                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvm4di                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvm4di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvm4di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvm4di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvm4di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvm2di                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvm2di                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvm2di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvm2di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvm2di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvm2di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvm1di                           (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvm1di                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvm1di                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvm1di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvm1di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvm1di                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvmf2qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvmf2qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvmf2qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvmf2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvmf2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvmf2qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvmf4qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvmf4qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvmf4qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvmf4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvmf4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvmf4qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvmf8qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvmf8qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvmf8qi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvmf8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvmf8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvmf8qi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvmf2hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvmf2hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvmf2hi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvmf2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvmf2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvmf2hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvmf4hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvmf4hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvmf4hi                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvmf4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvmf4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvmf4hi                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlsbrvvmf2si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vconjrvvmf2si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscredsumrvvmf2si                    (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsredsumrvvmf2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackrrvvmf2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vcunpackirvvmf2si                     (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vpermrvvm8qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx);
@@ -54682,102 +54442,50 @@ extern rtx        gen_pred_vlfch2wv64di                          (rtx, rtx, rtx,
 extern rtx        gen_pred_vlfch2wv128di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfch2wv256di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfch2wv512di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpa2crvvm8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpa2crvvm4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpa2crvvm2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpa2crvvm1qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpa2crvvm8hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpa2crvvm4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpa2crvvm2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpa2crvvm1hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2crvvmf2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2crvvmf4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpa2crvvm8si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpa2crvvm4si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpa2crvvm2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpa2crvvm1si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2crvvmf2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpa2crvvm8di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpa2crvvm4di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpa2crvvm2di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpa2crvvm1di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv1hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv2hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv4hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv8hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv16hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv32hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv64hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv128hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv256hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv512hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv1024hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv2048hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv1si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv2si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv4si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv8si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv16si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv32si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv64si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv128si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv256si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv512si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv1024si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv1di                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv2di                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv4di                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv8di                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv16di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv32di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv64di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv128di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv256di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpa2cv512di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpa2crvvmf2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpa2crvvmf4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpa2crvvmf8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpa2crvvmf2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpa2crvvmf4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpa2crvvmf2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpb2crvvm8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpb2crvvm4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpb2crvvm2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpb2crvvm1qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpb2crvvm8hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpb2crvvm4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpb2crvvm2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpb2crvvm1hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2crvvmf2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2crvvmf4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpb2crvvm8si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpb2crvvm4si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpb2crvvm2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpb2crvvm1si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2crvvmf2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpb2crvvm8di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpb2crvvm4di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpb2crvvm2di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlfcpb2crvvm1di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv1hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv2hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv4hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv8hi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv16hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv32hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv64hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv128hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv256hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv512hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv1024hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv2048hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv1si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv2si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv4si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv8si                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv16si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv32si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv64si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv128si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv256si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv512si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv1024si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv1di                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv2di                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv4di                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv8di                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv16di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv32di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv64di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv128di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv256di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vlfcpb2cv512di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpb2crvvmf2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpb2crvvmf4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpb2crvvmf8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpb2crvvmf2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpb2crvvmf4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vlfcpb2crvvmf2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfch2brvvm8hi                        (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfch2brvvm4hi                        (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfch2brvvm2hi                        (rtx, rtx, rtx, rtx, rtx);
@@ -54904,102 +54612,50 @@ extern rtx        gen_pred_vsfcw2hv64di                          (rtx, rtx, rtx,
 extern rtx        gen_pred_vsfcw2hv128di                         (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcw2hv256di                         (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcw2hv512di                         (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2parvvm8qi                       (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2parvvm4qi                       (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2parvvm2qi                       (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2parvvm1qi                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2parvvm8hi                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2parvvm4hi                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2parvvm2hi                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2parvvm1hi                       (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2parvvmf2hi                      (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2parvvmf4hi                      (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2parvvm8si                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2parvvm4si                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2parvvm2si                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2parvvm1si                       (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2parvvmf2si                      (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2parvvm8di                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2parvvm4di                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2parvvm2di                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2parvvm1di                       (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav1hi                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav2hi                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav4hi                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav8hi                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav16hi                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav32hi                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav64hi                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav128hi                        (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav256hi                        (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav512hi                        (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav1024hi                       (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav2048hi                       (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav1si                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav2si                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav4si                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav8si                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav16si                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav32si                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav64si                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav128si                        (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav256si                        (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav512si                        (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav1024si                       (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav1di                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav2di                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav4di                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav8di                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav16di                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav32di                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav64di                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav128di                        (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav256di                        (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pav512di                        (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2parvvmf2qi                      (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2parvvmf4qi                      (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2parvvmf8qi                      (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2parvvmf2hi                      (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2parvvmf4hi                      (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2parvvmf2si                      (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2pbrvvm8qi                       (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2pbrvvm4qi                       (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2pbrvvm2qi                       (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2pbrvvm1qi                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2pbrvvm8hi                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2pbrvvm4hi                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2pbrvvm2hi                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2pbrvvm1hi                       (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbrvvmf2hi                      (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbrvvmf4hi                      (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2pbrvvm8si                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2pbrvvm4si                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2pbrvvm2si                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2pbrvvm1si                       (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbrvvmf2si                      (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2pbrvvm8di                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2pbrvvm4di                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2pbrvvm2di                       (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vsfcc2pbrvvm1di                       (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv1hi                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv2hi                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv4hi                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv8hi                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv16hi                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv32hi                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv64hi                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv128hi                        (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv256hi                        (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv512hi                        (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv1024hi                       (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv2048hi                       (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv1si                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv2si                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv4si                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv8si                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv16si                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv32si                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv64si                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv128si                        (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv256si                        (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv512si                        (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv1024si                       (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv1di                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv2di                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv4di                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv8di                          (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv16di                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv32di                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv64di                         (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv128di                        (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv256di                        (rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vsfcc2pbv512di                        (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2pbrvvmf2qi                      (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2pbrvvmf4qi                      (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2pbrvvmf8qi                      (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2pbrvvmf2hi                      (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2pbrvvmf4hi                      (rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vsfcc2pbrvvmf2si                      (rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vpharotrvvm8qi                        (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vpharotrvvm4qi                        (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vpharotrvvm2qi                        (rtx, rtx, rtx, rtx, rtx, rtx);
@@ -55026,156 +54682,188 @@ extern rtx        gen_pred_vpharotrvvm8qi_scalar                 (rtx, rtx, rtx,
 extern rtx        gen_pred_vpharotrvvm4qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vpharotrvvm2qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vpharotrvvm1qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotrvvmf2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotrvvmf4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotrvvmf8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vpharotrvvm8hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vpharotrvvm4hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vpharotrvvm2hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vpharotrvvm1hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotrvvmf2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotrvvmf4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vpharotrvvm8si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vpharotrvvm4si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vpharotrvvm2si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vpharotrvvm1si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vpharotrvvm8di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vpharotrvvm4di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vpharotrvvm2di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vpharotrvvm1di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vpharotrvvmf2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vpharotrvvmf4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vpharotrvvmf8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vpharotrvvmf2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vpharotrvvmf4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vpharotrvvmf2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm8qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm8qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm4qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm4qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm2qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm2qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm1qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm1qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm1qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm8hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm8hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm8hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm4hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm4hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm2hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm2hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm1hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm1hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm1hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm8si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm8si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm8si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm4si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm4si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm4si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm2si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm2si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm1si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm1si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm1si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm8di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm8di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm8di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm4di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm4di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm4di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm2di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm2di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm2di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm1di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm1di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm1di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvmf2qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvmf2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvmf2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvmf4qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvmf4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvmf4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvmf8qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvmf8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvmf8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvmf2hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvmf2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvmf2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvmf4hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvmf4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvmf4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvmf2si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvmf2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvmf2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm8qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm8qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm4qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm4qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm2qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm2qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm1qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm1qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm1qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm8hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm8hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm8hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm4hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm4hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm2hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm2hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm1hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm1hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm1hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm8si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm8si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm8si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm4si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm4si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm4si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm2si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm2si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm1si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm1si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm1si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm8di_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm8di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm8di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm4di_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm4di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm4di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm2di_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm2di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm2di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvm1di_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvm1di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvm1di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvmf2qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvmf2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvmf2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvmf4qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvmf4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvmf4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvmf8qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvmf8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvmf8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvmf2hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvmf2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvmf2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvmf4hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvmf4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvmf4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacrvvmf2si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacrvvmf2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdscmacjrvvmf2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv1qi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv2qi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv4qi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv8qi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv16qi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv32qi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv64qi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv128qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv256qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv512qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv1024qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv2048qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv4096qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv1hi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv2hi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv4hi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv8hi_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv16hi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv32hi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv64hi_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv128hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv256hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv512hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv1024hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv2048hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv1si_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv2si_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv4si_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv8si_scalar                    (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv16si_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv32si_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv64si_scalar                   (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv128si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv256si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv512si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vpharotv1024si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm8qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm8qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm4qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm4qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm2qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm2qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm1qi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm1qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm1qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm8hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm8hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm8hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm4hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm4hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm2hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm2hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm1hi                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm1hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm1hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm8si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm8si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm8si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm4si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm4si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm4si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm2si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm2si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm1si                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm1si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm1si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm8di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm8di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm8di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm4di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm4di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm4di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm2di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm2di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm2di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm1di                         (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm1di                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm1di                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvmf2qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvmf2qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvmf2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvmf4qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvmf4qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvmf4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvmf8qi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvmf8qi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvmf8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvmf2hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvmf2hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvmf2hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvmf4hi                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvmf4hi                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvmf4hi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvmf2si                        (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvmf2si                       (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvmf2si                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm8qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm8qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm4qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm4qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm2qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm2qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm1qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm1qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm1qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm8hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm8hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm8hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm4hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm4hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm2hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm2hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm1hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm1hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm1hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm8si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm8si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm8si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm4si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm4si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm4si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm2si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm2si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm1si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm1si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm1si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm8di_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm8di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm8di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm4di_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm4di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm4di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm2di_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm2di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm2di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvm1di_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvm1di_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvm1di_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvmf2qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvmf2qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvmf2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvmf4qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvmf4qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvmf4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvmf8qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvmf8qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvmf8qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvmf2hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvmf2hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvmf2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvmf4hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvmf4hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvmf4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacrvvmf2si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacrvvmf2si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdscmacjrvvmf2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vdsmacinirvvm8qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vdsmacinirvvm4qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vdsmacinirvvm2qi                      (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
@@ -55202,24 +54890,56 @@ extern rtx        gen_pred_vdsmacinirvvm8qi_scalar               (rtx, rtx, rtx,
 extern rtx        gen_pred_vdsmacinirvvm4qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vdsmacinirvvm2qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vdsmacinirvvm1qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacinirvvmf2qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacinirvvmf4qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacinirvvmf8qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vdsmacinirvvm8hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vdsmacinirvvm4hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vdsmacinirvvm2hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vdsmacinirvvm1hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacinirvvmf2hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmacinirvvmf4hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vdsmacinirvvm8si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vdsmacinirvvm4si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vdsmacinirvvm2si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vdsmacinirvvm1si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacinirvvm8di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacinirvvm4di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacinirvvm2di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacinirvvm1di_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacinirvvmf2qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacinirvvmf4qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacinirvvmf8qi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacinirvvmf2hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-extern rtx        gen_pred_vdsmacinirvvmf4hi_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vdsmacinirvvmf2si_scalar              (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv1qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv2qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv4qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv8qi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv16qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv32qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv64qi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv128qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv256qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv512qi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv1024qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv2048qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv4096qi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv1hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv2hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv4hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv8hi_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv16hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv32hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv64hi_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv128hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv256hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv512hi_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv1024hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv2048hi_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv1si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv2si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv4si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv8si_scalar                  (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv16si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv32si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv64si_scalar                 (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv128si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv256si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv512si_scalar                (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx        gen_pred_vdsmaciniv1024si_scalar               (rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlnlprvvm8qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlnlprvvm4qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 extern rtx        gen_pred_vlnlprvvm2qi                          (rtx, rtx, rtx, rtx, rtx, rtx, rtx);

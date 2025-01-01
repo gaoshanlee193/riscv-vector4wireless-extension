@@ -2950,15 +2950,6 @@ gen_pred_v (int arg0, machine_mode arg1, rtx x0, rtx x1, rtx x2, rtx x3, rtx x4,
   return res;
 }
 
-extern rtx maybe_gen_pred_v (int, machine_mode, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-inline rtx
-gen_pred_v (int arg0, machine_mode arg1, rtx x0, rtx x1, rtx x2, rtx x3, rtx x4, rtx x5, rtx x6, rtx x7, rtx x8, rtx x9)
-{
-  rtx res = maybe_gen_pred_v (arg0, arg1, x0, x1, x2, x3, x4, x5, x6, x7, x8, x9);
-  gcc_assert (res);
-  return res;
-}
-
 extern rtx maybe_gen_pred_v (int, machine_mode, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 inline rtx
 gen_pred_v (int arg0, machine_mode arg1, rtx x0, rtx x1, rtx x2, rtx x3, rtx x4, rtx x5, rtx x6, rtx x7, rtx x8)
@@ -4039,20 +4030,47 @@ code_for_pred_v_scalar (int arg0, machine_mode arg1)
   return code;
 }
 
-extern rtx maybe_gen_pred_v_scalar (int, machine_mode, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
-inline rtx
-gen_pred_v_scalar (int arg0, machine_mode arg1, rtx x0, rtx x1, rtx x2, rtx x3, rtx x4, rtx x5, rtx x6, rtx x7, rtx x8, rtx x9)
-{
-  rtx res = maybe_gen_pred_v_scalar (arg0, arg1, x0, x1, x2, x3, x4, x5, x6, x7, x8, x9);
-  gcc_assert (res);
-  return res;
-}
-
 extern rtx maybe_gen_pred_v_scalar (int, machine_mode, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 inline rtx
 gen_pred_v_scalar (int arg0, machine_mode arg1, rtx x0, rtx x1, rtx x2, rtx x3, rtx x4, rtx x5, rtx x6, rtx x7, rtx x8)
 {
   rtx res = maybe_gen_pred_v_scalar (arg0, arg1, x0, x1, x2, x3, x4, x5, x6, x7, x8);
+  gcc_assert (res);
+  return res;
+}
+
+extern insn_code maybe_code_for_pred_vdscmul (int, machine_mode);
+inline insn_code
+code_for_pred_vdscmul (int arg0, machine_mode arg1)
+{
+  insn_code code = maybe_code_for_pred_vdscmul (arg0, arg1);
+  gcc_assert (code != CODE_FOR_nothing);
+  return code;
+}
+
+extern rtx maybe_gen_pred_vdscmul (int, machine_mode, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+inline rtx
+gen_pred_vdscmul (int arg0, machine_mode arg1, rtx x0, rtx x1, rtx x2, rtx x3, rtx x4, rtx x5, rtx x6, rtx x7, rtx x8)
+{
+  rtx res = maybe_gen_pred_vdscmul (arg0, arg1, x0, x1, x2, x3, x4, x5, x6, x7, x8);
+  gcc_assert (res);
+  return res;
+}
+
+extern insn_code maybe_code_for_pred_vdscmul_scalar (int, machine_mode);
+inline insn_code
+code_for_pred_vdscmul_scalar (int arg0, machine_mode arg1)
+{
+  insn_code code = maybe_code_for_pred_vdscmul_scalar (arg0, arg1);
+  gcc_assert (code != CODE_FOR_nothing);
+  return code;
+}
+
+extern rtx maybe_gen_pred_vdscmul_scalar (int, machine_mode, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+inline rtx
+gen_pred_vdscmul_scalar (int arg0, machine_mode arg1, rtx x0, rtx x1, rtx x2, rtx x3, rtx x4, rtx x5, rtx x6, rtx x7, rtx x8)
+{
+  rtx res = maybe_gen_pred_vdscmul_scalar (arg0, arg1, x0, x1, x2, x3, x4, x5, x6, x7, x8);
   gcc_assert (res);
   return res;
 }
@@ -4066,11 +4084,11 @@ code_for_pred_vdsredsumn (machine_mode arg0)
   return code;
 }
 
-extern rtx maybe_gen_pred_vdsredsumn (machine_mode, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx maybe_gen_pred_vdsredsumn (machine_mode, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 inline rtx
-gen_pred_vdsredsumn (machine_mode arg0, rtx x0, rtx x1, rtx x2, rtx x3, rtx x4, rtx x5, rtx x6, rtx x7, rtx x8, rtx x9)
+gen_pred_vdsredsumn (machine_mode arg0, rtx x0, rtx x1, rtx x2, rtx x3, rtx x4, rtx x5, rtx x6, rtx x7, rtx x8)
 {
-  rtx res = maybe_gen_pred_vdsredsumn (arg0, x0, x1, x2, x3, x4, x5, x6, x7, x8, x9);
+  rtx res = maybe_gen_pred_vdsredsumn (arg0, x0, x1, x2, x3, x4, x5, x6, x7, x8);
   gcc_assert (res);
   return res;
 }
@@ -4084,11 +4102,11 @@ code_for_pred_vdsredsumn_scalar (machine_mode arg0)
   return code;
 }
 
-extern rtx maybe_gen_pred_vdsredsumn_scalar (machine_mode, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx maybe_gen_pred_vdsredsumn_scalar (machine_mode, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 inline rtx
-gen_pred_vdsredsumn_scalar (machine_mode arg0, rtx x0, rtx x1, rtx x2, rtx x3, rtx x4, rtx x5, rtx x6, rtx x7, rtx x8, rtx x9)
+gen_pred_vdsredsumn_scalar (machine_mode arg0, rtx x0, rtx x1, rtx x2, rtx x3, rtx x4, rtx x5, rtx x6, rtx x7, rtx x8)
 {
-  rtx res = maybe_gen_pred_vdsredsumn_scalar (arg0, x0, x1, x2, x3, x4, x5, x6, x7, x8, x9);
+  rtx res = maybe_gen_pred_vdsredsumn_scalar (arg0, x0, x1, x2, x3, x4, x5, x6, x7, x8);
   gcc_assert (res);
   return res;
 }
@@ -4354,11 +4372,11 @@ code_for_pred_vds (int arg0, machine_mode arg1)
   return code;
 }
 
-extern rtx maybe_gen_pred_vds (int, machine_mode, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx maybe_gen_pred_vds (int, machine_mode, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 inline rtx
-gen_pred_vds (int arg0, machine_mode arg1, rtx x0, rtx x1, rtx x2, rtx x3, rtx x4, rtx x5, rtx x6, rtx x7, rtx x8, rtx x9)
+gen_pred_vds (int arg0, machine_mode arg1, rtx x0, rtx x1, rtx x2, rtx x3, rtx x4, rtx x5, rtx x6, rtx x7, rtx x8)
 {
-  rtx res = maybe_gen_pred_vds (arg0, arg1, x0, x1, x2, x3, x4, x5, x6, x7, x8, x9);
+  rtx res = maybe_gen_pred_vds (arg0, arg1, x0, x1, x2, x3, x4, x5, x6, x7, x8);
   gcc_assert (res);
   return res;
 }
@@ -4372,11 +4390,11 @@ code_for_pred_vds_scalar (int arg0, machine_mode arg1)
   return code;
 }
 
-extern rtx maybe_gen_pred_vds_scalar (int, machine_mode, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
+extern rtx maybe_gen_pred_vds_scalar (int, machine_mode, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx, rtx);
 inline rtx
-gen_pred_vds_scalar (int arg0, machine_mode arg1, rtx x0, rtx x1, rtx x2, rtx x3, rtx x4, rtx x5, rtx x6, rtx x7, rtx x8, rtx x9)
+gen_pred_vds_scalar (int arg0, machine_mode arg1, rtx x0, rtx x1, rtx x2, rtx x3, rtx x4, rtx x5, rtx x6, rtx x7, rtx x8)
 {
-  rtx res = maybe_gen_pred_vds_scalar (arg0, arg1, x0, x1, x2, x3, x4, x5, x6, x7, x8, x9);
+  rtx res = maybe_gen_pred_vds_scalar (arg0, arg1, x0, x1, x2, x3, x4, x5, x6, x7, x8);
   gcc_assert (res);
   return res;
 }
