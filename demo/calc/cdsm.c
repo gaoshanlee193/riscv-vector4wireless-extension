@@ -95,10 +95,10 @@ int32_t op_testzvwCdsm()
 		asm volatile("vmv.x.s  %[result], v12;" :[result]"=&r"(*pz):);
 
 		asm volatile("vsetvli %[vl], %[avl],209;":[vl] "=&r" (vl):[avl] "r" (64));
-		asm volatile("vdscmacjo.vv v12, v4, v6;"::);
+		asm volatile("vdscmacjo.vv v22, v4, v6;"::);
 
 		asm volatile("vsetvli %[vl], %[avl],208;":[vl] "=&r" (vl):[avl] "r" (32));
-		asm volatile("vdscredsum.v v14,v12;"::);
+		asm volatile("vdscredsum.v v14,v22;"::);
 
 		asm volatile("vsetvli %[vl], %[avl],208;":[vl] "=&r" (vl):[avl] "r" (1));
 		asm volatile("vmv.x.s  %[result], v14;" :[result]"=&r"(*pz):);
@@ -137,17 +137,17 @@ int32_t op_testrvvCdsm()
 		asm volatile("vsrl.vx v10, v8, %[num16];"::[num16]"r"(16));//VALU2 RE0(L)
 		asm volatile("vsrl.vx v14, v30, %[num16];"::[num16]"r"(16));//VALU2 RE1(L)
 		asm volatile("vmul.vv v16, v10, v14;"::);//VALU1  RE0(L)*RE1(L)
-		asm volatile("vadd.vv v16, v16, v26;"::);//VALU1   RE0(L)*RE1(L)+IM0(L)*IM1(L)
+		asm volatile("vadd.vv v20, v16, v26;"::);//VALU1   RE0(L)*RE1(L)+IM0(L)*IM1(L)
 		asm volatile("vmul.vv v28, v6, v14;"::);//VALU1  IM0(L)*RE1(L)
 		asm volatile("vsetvli %[vl], %[avl],209;":[vl] "=&r" (vl):[avl] "r" (32));
-		asm volatile("vredsum.vs v22, v16, v26;"::);//VALU2
+		asm volatile("vredsum.vs v22, v20, v26;"::);//VALU2
 		asm volatile("vsetvli %[vl], %[avl],209;":[vl] "=&r" (vl):[avl] "r" (64));
 		asm volatile("vmul.vv v18, v10, v12;"::);//VALU1  IM1(L)*RE0(L)
-		asm volatile("vsub.vv v18, v28, v18;"::);//VALU1  IM0(L)*RE1(L)-IM1(L)*RE0(L)
+		asm volatile("vsub.vv v24, v28, v18;"::);//VALU1  IM0(L)*RE1(L)-IM1(L)*RE0(L)
 		asm volatile("vsetvli %[vl], %[avl],209;":[vl] "=&r" (vl):[avl] "r" (32));
-		asm volatile("vredsum.vs v20, v18, v26;"::);//VALU2
+		asm volatile("vredsum.vs v16, v24, v26;"::);//VALU2
 		asm volatile("vsetvli %[vl], %[avl],208;":[vl] "=&r" (vl):[avl] "r" (1));
-		asm volatile("vsll.vx v0, v20, %[num16];"::[num16]"r"(16));//VALU2
+		asm volatile("vsll.vx v0, v16, %[num16];"::[num16]"r"(16));//VALU2
 		asm volatile("vxor.vv v2, v0, v22;"::);//VALU1
 		asm volatile("vmv.x.s %[result], v2;"::[result]"r"(*pz));//VALU2
     }
