@@ -97,12 +97,12 @@ int32_t op_testrvvWap()
 		asm volatile("vsrl.vx v13, v9, %[num16];"::[num16]"r"(16));//VALU2 IM1(L)
 		asm volatile("vmul.vv v6, v5, v5;"::);//VALU1 RE(L)*RE(L)
 		asm volatile("vsll.vx v14, v9, %[num16];"::[num16]"r"(16));//VALU2 RE1(H)
-		asm volatile("vsra.vx v6, v6, %[mulShfit];"::[mulShfit]"r"(0));//VALU2
+		asm volatile("vsra.vx v31, v6, %[mulShfit];"::[mulShfit]"r"(0));//VALU2
 		asm volatile("vmul.vv v7, v3, v3;"::);//VALU1 IM(L)*IM(L)
 		asm volatile("vsrl.vx v15, v14, %[num16];"::[num16]"r"(16));//VALU2 RE1(L)
-		asm volatile("vsra.vx v7, v7, %[mulShfit];"::[mulShfit]"r"(0));//VALU2
+		asm volatile("vsra.vx v30, v7, %[mulShfit];"::[mulShfit]"r"(0));//VALU2
 		asm volatile("vmul.vv v17, v13, v13;"::);//VALU1 IM1(L)*IM1(L)
-		asm volatile("vadd.vv v8, v7, v6;"::[num16]"r"(16));//VALU1 RE(L)*RE(L)+IM(L)*IM(L)
+		asm volatile("vadd.vv v8, v30, v31;"::[num16]"r"(16));//VALU1 RE(L)*RE(L)+IM(L)*IM(L)
 		asm volatile("vmul.vv v16, v15, v15;"::);//VALU1 RE1(L)*RE1(L)
 		asm volatile("vsra.vv v11, v8, v1;"::);//VALU2 vsra(RE(L)*RE(L)+IM(L)*IM(L))
 		asm volatile("vadd.vv v10, v17, v16;"::);//VALU1 RE1(L)*RE1(L)+IM1(L)*IM1(L)
