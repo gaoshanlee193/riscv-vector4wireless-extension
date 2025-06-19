@@ -3,96 +3,6 @@
 #include "op_common.h"
 #include "op_const_coef.h"
 
-typedef struct {
-    uint8_t m0;
-    uint8_t m1;
-    uint8_t m2;
-    uint8_t m3;
-    uint8_t m4;
-    uint8_t m5;
-    uint8_t m6;
-    uint8_t pad0;
-    int16_t m7[MAX_RX_NUM];
-    int16_t m8[MAX_RX_NUM];
-#if 0
-    int16_t m9[MAX_RX_NUM];
-#else
-    int16_t m10;
-    int16_t m11;
-#endif
-    uint32_t m12;
-    uint32_t m13;
-    int32_t m14[2];
-} op_model1_param_t;
-
-
-void op_model1_calc(op_model1_param_t *pParam)
-{
-    size_t vl1;
-    uint32_t m12 = pParam->m12;
-    uint32_t m4 = pParam->m4;
-    uint32_t m6 = pParam->m6;
-    volatile uint32_t addr0,addr1;
-    uint32_t vcsrA0M0R0Sa = ACCSFT0 | MULSFT0 | VXRM_RNU | VXSAT1;
-    uint32_t vtypeL1E32 = MA | TA | E32 | M1;
-    uint32_t loop;
-
-    asm volatile ("csrw vcsr,%[vcsrA0M0R0Sa]"::[vcsrA0M0R0Sa] "r" (vcsrA0M0R0Sa));
-
-    for (loop = 0; loop < m6; loop++)
-    {
-        asm volatile ("vsetvl %v1,%[av1],%[vtype]":[v1] "=r" (vl1): [av1] "r" (m4),[vtype] "r" (vtypeL1E32));
-        addr0 = pParam->m12 + loop * 2 * m4 * 4;
-        addr1 = pParam->m12 + (loop * 2 + 1) * m4 * 4;
-        asm volatile (
-            "vle32.v v1,(%[addr0]);\
-            vle32.v v2,(%[addr1]);"
-            :
-            : [addr0] "r" (addr0),[addr1] "r" (addr1)
-            : "memory"
-        );
-    }
-}
-
-
-void model1_ut()
-{
-    int32_t result = 1;
-    size_t count0 = 0;
-    size_t count1 = 0;
-    int32_t result0,result1;
-    op_model1_param_t para;
-    int32_t cirSel[64] =
-    {
-        0xffdb19c5,0x001b02d8,0xfff602fd,0xffd8fd57,0x001cfd50,0x001f0267,0xffee0265,0xffe4fdea,
-        0x003ffdf5,0x004e01c1,0xffcb01aa,0xffddfec7,0x003cfed1,0x002c00ce,0xffae00d1,0x002dff9c,
-        0xfffa19b5,0x001b02d1,0xfff802df,0xffc7fd50,0x0024fd50,0x001e026d,0xffd9025e,0xffa7fe17,
-        0x004bfef0,0x004901a4,0xffb0019c,0xffdcfe9f,0x004dfecb,0x002f00e1,0xffd700e9,0x004bff77,
-        0xffec19b6,0x001402dc,0xffdf02db,0xffcafd59,0x0026fd46,0x00290263,0xffcd0259,0xffd3fdf0,
-        0x0028fde9,0x002b019e,0xffeb01a2,0xfff4feba,0x0033fec9,0x002100da,0xffbd00e5,0x0016ff8f,
-        0xfffa19c9,0x000702e6,0xffdd02f7,0xffe7fd64,0x0013fd5c,0x00210246,0xffd60265,0xffcefdfb,
-        0x002cfde4,0x004501b4,0xffd201c1,0xffbefec8,0x002dfec2,0x001600cc,0xffc800d9,0x0016ff9b
-    };
-
-    para.m10 = 0x3ffd;
-    para.m11 = 0;
-    para.m0 = 0;
-    para.m1 = 0;
-    para.m3 = 2;
-    para.m4 = 0x0010;
-    para.m5 = 0;
-    para.m6 = 2;
-    para.m7[0] = 2;
-    para.m7[1] = 2;
-    para.m8[0] = 0x001E;
-    para.m8[1] = 0x001E;
-    para.m10 = 0;
-    para.m11 = 0x3ffd;
-    para.m12 = (uint32_t)&cirSel[0];
-
-    op_model1_calc(&para);
-}
-
 void vdscmul_ut()
 {
     uint32_t vs1 = 0x1C1C;
@@ -126,6 +36,9 @@ void vdscmul_ut()
     uint32_t len = 1;
     uint32_t vtypeL1E32 = MA | TA | M1 | E32;
     uint32_t vcsrA0M15R0Sa = ACCSFT0 | MULSFT15 | VXRM_RNU | VXSAT1;
+
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, 32);
+    dm2vm((int32_t *)vsrc2, (int32_t *)VM_SRC2_ADDR, 32);
 
     asm volatile("vsetvl %[vl],%[avl],%[vtype]"
                  : [vl] "=r" (vl)
@@ -162,8 +75,9 @@ void vdscmul_ut()
     vdscmul.vv v12,v6,v0;\
     vse32.v v12,(%[vdst]);"
     :
-    : [vcsrA0M15R0Sa] "r" (vcsrA0M15R0Sa),[vsrc1] "r" (vsrc1),[vsrc2] "r" (vsrc2),[vdst] "r" (vdst)
+    : [vcsrA0M15R0Sa] "r" (vcsrA0M15R0Sa),[vsrc1] "r" (VM_SRC1_ADDR),[vsrc2] "r" (VM_SRC2_ADDR),[vdst] "r" (VM_RST1_ZVW_ADDR)
     );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, len);
 
     for (i = 0; i < len; i++)
     {
@@ -211,6 +125,9 @@ void vdscmac_ut()
     uint32_t vtypeL1E32 = MA | TA | M1 | E32;
     uint32_t vcsrA4M15R0Sa = ACCSFT4 | MULSFT15 | VXRM_RNU | VXSAT1;
 
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, 32);
+    dm2vm((int32_t *)vsrc2, (int32_t *)VM_SRC2_ADDR, 32);
+
     asm volatile("vsetvl %[vl],%[avl],%[vtype]"
                  : [vl] "=r" (vl)
                  : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
@@ -250,8 +167,9 @@ void vdscmac_ut()
     vdscmaco.vv v12,v6,v0;\
     vse32.v v12,(%[vdst]);"
     :
-    : [vcsrA4M15R0Sa] "r" (vcsrA4M15R0Sa),[vsrc1] "r" (vsrc1),[vsrc2] "r" (vsrc2),[vdst] "r" (vdst)
+    : [vcsrA4M15R0Sa] "r" (vcsrA4M15R0Sa),[vsrc1] "r" (VM_SRC1_ADDR),[vsrc2] "r" (VM_SRC2_ADDR),[vdst] "r" (VM_RST1_ZVW_ADDR)
     );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, len);
 
     for (i = 0; i < len; i++)
     {
@@ -287,6 +205,8 @@ void vperm_ut()
     uint32_t len = 32;
     uint32_t vtypeL1E32 = MA | TA | M1 | E32;
 
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
+
     asm volatile("vsetvl %[vl],%[avl],%[vtype]"
                  : [vl] "=r" (vl)
                  : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
@@ -296,8 +216,9 @@ void vperm_ut()
     vperm.vi v1,v0,8;\
     vse32.v v1,(%[vdst]);"
     :
-    : [vsrc1] "r" (vsrc1),[vdst] "r" (vdst)
+    : [vsrc1] "r" (VM_SRC1_ADDR),[vdst] "r" (VM_RST1_ZVW_ADDR)
     );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, len);
 
     for (i = 0; i < len; i++)
     {
@@ -305,7 +226,7 @@ void vperm_ut()
         {
             printf("vperm0_ut data comparison failed at index %d vdst[%d] vdst8Tv[%d]!\n",i,vdst,vdst8Tv);
             return; 
-            }
+        }
     }
     printf("vperm0_ut passed!\n");
 }
@@ -321,6 +242,9 @@ int32_t op_testMvZero()
                    
     avl = 64;
     vtypeE = TA | MA | M2 | E32;
+
+    dm2vm((int32_t *)gAddr, (int32_t *)VM_SRC1_ADDR, avl);
+
     asm volatile("vsetvl %[vl],%[avl],%[vtype]": [vl] "=r" (vl) : [avl] "r" (avl),[vtype] "r" (vtypeE));
 
 /*
@@ -334,38 +258,58 @@ int32_t op_testMvZero()
     asm volatile("vle32.v %[vA],(%[gAddr]);\
                   vdsmacini.v %[vA];" 
                   :[vA]"+vr"(vA)
-                  :[gAddr]"r"(gAddr)); 
+                  :[gAddr]"r"(VM_SRC1_ADDR)); 
                                       
     asm volatile("vse32.v %[vA],(%[gRes]);" 
                   :[vA]"=vr"(vA)
-                  :[gRes]"r"(gRes));                              
+                  :[gRes]"r"(VM_RST1_ZVW_ADDR));                              
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)gRes, 1);
     return 0;
 }
 
-int32_t gMacj[64] ={
-0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,
-0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,
-0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,
-0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001,0x00010001
+int32_t gMacj[64] =
+{
+    0x00020002,0xFFFE0002,0x0002FFFE,0xFFFEFFFE,0x00020002,0x00020002,0x00020002,0x00020002,
+    0x00020002,0xFFFE0002,0x0002FFFE,0xFFFEFFFE,0x00020002,0x00020002,0x00020002,0x00020002,
+    0x00020002,0xFFFE0002,0x0002FFFE,0xFFFEFFFE,0x00020002,0x00020002,0x00020002,0x00020002,
+    0x00020002,0xFFFE0002,0x0002FFFE,0xFFFEFFFE,0x00020002,0x00020002,0x00020002,0x00020002,
+    0x00020002,0xFFFE0002,0x0002FFFE,0xFFFEFFFE,0x00020002,0x00020002,0x00020002,0x00020002,
+    0x00020002,0xFFFE0002,0x0002FFFE,0xFFFEFFFE,0x00020002,0x00020002,0x00020002,0x00020002,
+    0x00020002,0xFFFE0002,0x0002FFFE,0xFFFEFFFE,0x00020002,0x00020002,0x00020002,0x00020002,
+    0x00020002,0xFFFE0002,0x0002FFFE,0xFFFEFFFE,0x00020002,0x00020002,0x00020002,0x00020002,
 };
 
 void vvdscmacjor_utm1()
 {
     size_t vl,avl;
     uint32_t vtypeE;
-    int32_t shiftBit = 0;
-    
-    vint32m1_t vAcc,vA;
+    int32_t shiftBit = 1;
+    uint32_t vcsrA1M0R0Sa = ACCSFT1 | MULSFT0 | VXRM_RNU | VXSAT1;
+    int32_t vdst[32];
+    int32_t vdstTv[32] =
+    {
+        0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,
+        0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,
+        0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,
+        0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004
+    };
+    vint32m1_t vAcc,vA,vShift;
                    
     avl = 32;
     vtypeE = TA | MA | M1 | E32;
+
+    dm2vm((int32_t *)gMacj, (int32_t *)VM_SRC1_ADDR, avl);
+
     asm volatile("vsetvl %[vl],%[avl],%[vtype]": [vl] "=r" (vl) : [avl] "r" (avl),[vtype] "r" (vtypeE)); 
+    asm volatile("csrw vcsr,%[vcsrA1M0R0Sa];": : [vcsrA1M0R0Sa] "r" (vcsrA1M0R0Sa));   
     
     asm volatile("vle32.v %[vA],(%[gMacj]);" 
                   :[vA]"+vr"(vA)
-                  :[gMacj]"r"(gMacj)); 
+                  :[gMacj]"r"(VM_SRC1_ADDR)); 
                   
-    asm volatile("vdsmacini.s %[shiftBit];" : :[shiftBit]"r"(shiftBit)); 
+    //asm volatile("vdsmacini.s %[shiftBit];" : :[shiftBit]"r"(shiftBit));
+    asm volatile("vmv.v.x %[vShift],%[shiftBit];" : :[vShift]"vr"(vShift),[shiftBit]"r"(shiftBit));
+    asm volatile("vdsmacini.v %[vShift];" : :[vShift]"vr"(vShift));
                                    
     asm volatile("vdscmacj.vv %[vA],%[vA];" 
                   :
@@ -378,31 +322,52 @@ void vvdscmacjor_utm1()
 
     asm volatile("vse32.v %[vAcc],(%[gRes]);" 
                   :[vAcc]"=vr"(vAcc)
-                  :[gRes]"r"(gRes));   
+                  :[gRes]"r"(VM_RST1_ZVW_ADDR));   
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, avl);
     int32_t i;
-    for (i = 0; i < 1; i++)
+    for (i = 0; i < avl ; i++)
     {
-      printf("res[%d] = %x\n",i,gRes[i]);
-    }                 
-                                             
-                  
+        if (vdst[i] != vdstTv[i])
+        {
+            printf("vdscmacjor.vv_ut data comparison failed at index %d vdst[%d] vdstTv[%d]!\n",i,vdst[i],vdstTv[i]);
+            return;
+        }
+    }
+    printf("vdscmacjor.vv_ut passed!\n");
 }
 
 void vvdscmacjor_utm2()
 {
     size_t vl,avl;
     uint32_t vtypeE;
-    int32_t shiftBit = 0;
+    int32_t shiftBit = 1;
+    uint32_t vcsrA1M0R0Sa = ACCSFT1 | MULSFT0 | VXRM_RNU | VXSAT1;
+    int32_t vdst[64];
+    int32_t vdstTv[64] =
+    {
+            0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,
+            0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,
+            0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,
+            0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,
+            0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,
+            0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,
+            0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,
+            0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004,0x00000004
+    };
     
     vint32m2_t vAcc,vA;
    
     avl = 64;
     vtypeE = TA | MA | M2 | E32;
+
+    dm2vm((int32_t *)gMacj, (int32_t *)VM_SRC1_ADDR, avl);
+
     asm volatile("vsetvl %[vl],%[avl],%[vtype]": [vl] "=r" (vl) : [avl] "r" (avl),[vtype] "r" (vtypeE)); 
+    asm volatile("csrw vcsr,%[vcsrA1M0R0Sa];": : [vcsrA1M0R0Sa] "r" (vcsrA1M0R0Sa));   
     
     asm volatile("vle32.v %[vA],(%[gMacj]);" 
                   :[vA]"+vr"(vA)
-                  :[gMacj]"r"(gMacj)); 
+                  :[gMacj]"r"(VM_SRC1_ADDR)); 
                   
     asm volatile("vdsmacini.s %[shiftBit];" : :[shiftBit]"r"(shiftBit)); 
                                                      
@@ -412,13 +377,18 @@ void vvdscmacjor_utm2()
                   
     asm volatile("vse32.v %[vAcc],(%[gRes]);" 
                   :[vAcc]"=vr"(vAcc)
-                  :[gRes]"r"(gRes)); 
-     int32_t i;                         
-   for (i = 0; i < 1; i++)
+                  :[gRes]"r"(VM_RST1_ZVW_ADDR)); 
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)gRes, 1);
+    int32_t i;                         
+    for (i = 0; i < avl ; i++)
     {
-      printf("res[%d] = %x\n",i,gRes[i]);
-    }                                                  
-                  
+        if (vdst[i] != vdstTv[i])
+        {
+            printf("vdscmacjor.vv_ut data comparison failed at index %d vdst[%d] vdstTv[%d]!\n",i,vdst[i],vdstTv[i]);
+            return;
+        }
+    }
+    printf("vdscmacjor.vv_ut passed!\n");
 }
 
 
@@ -442,19 +412,25 @@ void vdscmacjoi_ut()
 {
     size_t vl,avl;
     uint32_t vtypeE;
-    int32_t shiftBit = 0;
+    int32_t shiftBit = 1;
+    int32_t vdstTv[32] =
+    {
+        0x00002000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,
+        0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000
+    };
     
     vint32m1_t vAcc,vS1,vS2;
     vint32m1_t vZ;     
     avl = 32;
     vtypeE = TA | MA | M1 | E32;
+    
+    dm2vm((int32_t *)gMacjMAXNumI1, (int32_t *)VM_SRC1_ADDR, avl);
+    dm2vm((int32_t *)gMacjMAXNumI2, (int32_t *)VM_SRC2_ADDR, avl);
+
     asm volatile("vsetvl %[vl],%[avl],%[vtype]": [vl] "=r" (vl) : [avl] "r" (avl),[vtype] "r" (vtypeE)); 
     
-    uint32_t vcsrA0M0R0Sa = ACCSFT0 | MULSFT0 | VXRM_RNU | VXSAT1;    
-    asm volatile("csrw vcsr,%[vcsrA0M0R0Sa];"
-    :
-    : [vcsrA0M0R0Sa] "r" (vcsrA0M0R0Sa)
-    );   
+    uint32_t vcsrA16M0R0Sa = ACCSFT16 | MULSFT0 | VXRM_RNU | VXSAT1;
+    asm volatile("csrw vcsr,%[vcsrA16M0R0Sa];": : [vcsrA16M0R0Sa] "r" (vcsrA16M0R0Sa));
      
     asm volatile("vmv.v.i %[vZ],0;"
                  :[vZ]"=vd"(vZ)
@@ -467,11 +443,11 @@ void vdscmacjoi_ut()
         
     asm volatile("vle32.v %[vS1],(%[gMacjMAXNumI1]);" 
                   :[vS1]"=vr"(vS1)
-                  :[gMacjMAXNumI1]"r"(gMacjMAXNumI1)); 
+                  :[gMacjMAXNumI1]"r"(VM_SRC1_ADDR)); 
 
     asm volatile("vle32.v %[vS2],(%[gMacjMAXNumI2]);" 
                   :[vS2]"=vr"(vS2)
-                  :[gMacjMAXNumI2]"r"(gMacjMAXNumI2)); 
+                  :[gMacjMAXNumI2]"r"(VM_SRC2_ADDR)); 
                                     
                                
     asm volatile("vdscmacj.vv %[vS2],%[vS1];" 
@@ -484,9 +460,22 @@ void vdscmacjoi_ut()
 
     asm volatile("vse32.v %[vAcc],(%[gRes]);" 
                   :[vAcc]"=vr"(vAcc)
-                  :[gRes]"r"(gRes));   
+                  :[gRes]"r"(VM_RST1_ZVW_ADDR));   
 
-    printf("img res = %x\n",gRes[0]);
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)gRes, avl);
+    int32_t i;
+    for (i = 0; i < avl ; i++)
+    {
+        if (gRes[i] != vdstTv[i])
+        {
+            printf("vdscmacjoi.vv_ut data comparison failed at index %d vdst[%08x] vdstTv[%08x]!\n",i,gRes[i],vdstTv[i]);
+            return;
+        }
+    }
+    printf("vdscmacjoi.vv_ut passed!\n");
+
+    dm2vm((int32_t *)gMacjMAXNumR1, (int32_t *)VM_SRC1_ADDR, avl);
+    dm2vm((int32_t *)gMacjMAXNumR2, (int32_t *)VM_SRC2_ADDR, avl);
     
     asm volatile("vdscmacjo.vv %[vAcc],%[vZ],%[vZ];" 
                   :[vAcc]"=vr"(vAcc)
@@ -495,11 +484,11 @@ void vdscmacjoi_ut()
         
     asm volatile("vle32.v %[vS1],(%[gMacjMAXNumR1]);" 
                   :[vS1]"=vr"(vS1)
-                  :[gMacjMAXNumR1]"r"(gMacjMAXNumR1)); 
+                  :[gMacjMAXNumR1]"r"(VM_SRC1_ADDR)); 
 
     asm volatile("vle32.v %[vS2],(%[gMacjMAXNumR2]);" 
                   :[vS2]"=vr"(vS2)
-                  :[gMacjMAXNumR2]"r"(gMacjMAXNumR2)); 
+                  :[gMacjMAXNumR2]"r"(VM_SRC2_ADDR)); 
                                     
                                
     asm volatile("vdscmacj.vv %[vS1],%[vS1];" 
@@ -512,11 +501,18 @@ void vdscmacjoi_ut()
 
     asm volatile("vse32.v %[vAcc],(%[gRes]);" 
                   :[vAcc]"=vr"(vAcc)
-                  :[gRes]"r"(gRes));   
+                  :[gRes]"r"(VM_RST1_ZVW_ADDR));   
 
-    printf("real res = %x\n",gRes[0]);   
-    
-           
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)gRes, avl);
+    for (i = 0; i < avl ; i++)
+    {
+        if (gRes[i] != vdstTv[i])
+        {
+            printf("vdscmacjor.vv_ut data comparison failed at index %d vdst[%08x] vdstTv[%08x]!\n",i,gRes[i],vdstTv[i]);
+            return;
+        }
+    }
+    printf("vdscmacjor.vv_ut passed!\n");
 }
 
 #pragma (push)
@@ -582,18 +578,20 @@ void op_testUnpack()
     vint32m2_t vX;
     vint32m2_t vQ,vI;
     vint32m2_t vQr,vIr;
-    
+
     avl = 64;
     vType = TA | MA | M2 | E32;
     uint32_t shift = 16;
-    
+
+    dm2vm((int32_t *)g_unpacktestData, (int32_t *)VM_SRC1_ADDR, avl);
+   
     asm volatile("vsetvl %[vl],%[avl],%[vtype];"
                   :[vl] "=r" (vl)
                   :[avl] "r" (avl),[vtype] "r" (vType));
                   
     asm volatile("vle32.v %[vX],(%[g_unpacktestData]);"
                   :[vX]"=vd"(vX)
-                  :[g_unpacktestData]"r"(g_unpacktestData));                  
+                  :[g_unpacktestData]"r"(VM_SRC1_ADDR));                  
                   
     asm volatile("vcunpackr.v %[vI],%[vX];"
                   :[vI]"=vd"(vI)
@@ -614,22 +612,15 @@ void op_testUnpack()
                                     
     asm volatile("vse32.v  %[vIr],(%[g_unpackResultI]);"
                   :
-                  :[g_unpackResultI]"r"(g_unpackResultI),[vIr]"vr"(vIr));    
+                  :[g_unpackResultI]"r"(VM_RST1_ZVW_ADDR),[vIr]"vr"(vIr));    
 
     asm volatile("vse32.v  %[vQr],(%[g_unpackResultQ]);"
                   :
-                  :[g_unpackResultQ]"r"(g_unpackResultQ),[vQr]"vr"(vQr));    
+                  :[g_unpackResultQ]"r"(VM_RST1_ZVW_ADDR + avl*S32_SIZE),[vQr]"vr"(vQr));
+                  
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)g_unpackResultI, avl);
+    vm2dm((int32_t *)(VM_RST1_ZVW_ADDR + avl*S32_SIZE), (int32_t *)g_unpackResultQ, avl);
     int i;
-    for (i = 0; i < 64; i++)
-    {
-        if (g_unpackResultQT[i] != g_unpackResultQ[i])
-        {
-            printf("vcunpackr  fail %x\n",g_unpackResultQ[i]);
-            return;
-        }
-    }        
-    printf("vcunpackr  pass\n");                    
-
     for (i = 0; i < 64; i++)
     {
         if (g_unpackResultIT[i] != g_unpackResultI[i])
@@ -637,9 +628,161 @@ void op_testUnpack()
             printf("vcunpacki  fail\n");
             return;
         }
-    }        
+    }
     printf("vcunpacki  pass\n");     
+
+    for (i = 0; i < 64; i++)
+    {
+        if (g_unpackResultQT[i] != g_unpackResultQ[i])
+        {
+            printf("vcunpackr  fail %x\n",g_unpackResultQ[i]);
+            return;
+        }
+    }
+    printf("vcunpackr  pass\n");
+}
+
+void vdsmac_vs_ut()
+{
+	int32_t vs1[32] =
+	{
+	    0x00000001,0x00000002,0x00000003,0x00000004,0x00000005,0x00000006,0x00000007,0x00000008,
+	    0x00000001,0x00000002,0x00000003,0x00000004,0x00000005,0x00000006,0x00000007,0x00000008,
+	    0x00000001,0x00000002,0x00000003,0x00000004,0x00000005,0x00000006,0x00000007,0x00000008,
+	    0x00000001,0x00000002,0x00000003,0x00000004,0x00000005,0x00000006,0x00000007,0x00000008
+	};
+	int32_t vs2[32] =
+	{
+	    0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,
+	    0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,
+	    0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,
+	    0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002
+	};
+	int32_t vDst[32] = {0};
+	int32_t vDstT[32] =
+	{
+	    0x00000001,0x00000001,0x00000002,0x00000002,0x00000003,0x00000003,0x00000004,0x00000004,
+	    0x00000001,0x00000001,0x00000002,0x00000002,0x00000003,0x00000003,0x00000004,0x00000004,
+	    0x00000001,0x00000001,0x00000002,0x00000002,0x00000003,0x00000003,0x00000004,0x00000004,
+	    0x00000001,0x00000001,0x00000002,0x00000002,0x00000003,0x00000003,0x00000004,0x00000004
+	};
+    size_t vl,avl;
+    uint32_t vType;
+    uint32_t vcsrA1M0R0Sa = ACCSFT1 | MULSFT0 | VXRM_RNU | VXSAT1;
     
+    vint32m1_t vS1,vS2;
+    vint32m1_t vMac;
+
+    avl = 32;
+    vType = TA | MA | M1 | E32;
+    dm2vm((int32_t *)vs1, (int32_t *)VM_SRC1_ADDR, avl);
+    dm2vm((int32_t *)vs2, (int32_t *)VM_SRC2_ADDR, avl);
+    asm volatile("csrw vcsr,%[vcsrA1M0R0Sa];": : [vcsrA1M0R0Sa] "r" (vcsrA1M0R0Sa));
+    asm volatile("vsetvl %[vl],%[avl],%[vtype];"
+                  :[vl] "=r" (vl)
+                  :[avl] "r" (avl),[vtype] "r" (vType));
+
+    asm volatile("vle32.v %[vS1],(%[vs1]);\
+    		          vle32.v %[vS2],(%[vs2]);"
+                  :[vS1]"=vd"(vS1),[vS2]"=vd"(vS2)
+                  :[vs1]"r"(VM_SRC1_ADDR),[vs2]"r"(VM_SRC2_ADDR));
+
+    asm volatile("vdsmacini.i 1;\
+    		      vdsmac.vs %[vS1],%[vS2];\
+    		      vdsmaco.vs %[vMac],%[vS1],%[vS2];\
+    		      vse32.v  %[vMac],(%[vDst]);"
+                  :[vMac]"+vr"(vMac)
+                  :[vS1]"vr"(vS1),[vS2]"vr"(vS2),[vDst]"r"(VM_RST1_ZVW_ADDR));
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vDst, avl);
+    int i;
+    for (i = 0; i < avl; i++)
+    {
+        if (vDst[i] != vDstT[i])
+        {
+            printf("vdsmac.vs data comparison failed at index %d vdst[%08x] vdstTv[%08x]!\n",i,vDst[i],vDstT[i]);
+            return;
+        }
+    }
+    printf("vdsmac.vs  pass\n");
+}
+
+void vdsmac_vv_ut()
+{
+	int32_t vs1[64] =
+	{
+	    0x00000001,0x00000002,0x00000003,0x00000004,0x00000005,0x00000006,0x00000007,0x00000008,
+	    0x00000001,0x00000002,0x00000003,0x00000004,0x00000005,0x00000006,0x00000007,0x00000008,
+	    0x00000001,0x00000002,0x00000003,0x00000004,0x00000005,0x00000006,0x00000007,0x00000008,
+	    0x00000001,0x00000002,0x00000003,0x00000004,0x00000005,0x00000006,0x00000007,0x00000008,
+	    0x00000001,0x00000002,0x00000003,0x00000004,0x00000005,0x00000006,0x00000007,0x00000008,
+	    0x00000001,0x00000002,0x00000003,0x00000004,0x00000005,0x00000006,0x00000007,0x00000008,
+	    0x00000001,0x00000002,0x00000003,0x00000004,0x00000005,0x00000006,0x00000007,0x00000008,
+	    0x00000001,0x00000002,0x00000003,0x00000004,0x00000005,0x00000006,0x00000007,0x00000008
+	};
+	int32_t vs2[64] =
+	{
+	    0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,
+	    0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,
+	    0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,
+	    0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,
+	    0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,
+	    0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,
+	    0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,
+	    0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002,0x00000001,0x00000002
+	};
+	int32_t vDst[64] = {0};
+	int32_t vDstT[64] =
+	{
+	    0x00000002,0x00000004,0x00000004,0x00000008,0x00000006,0x0000000c,0x00000008,0x00000010,
+	    0x00000002,0x00000004,0x00000004,0x00000008,0x00000006,0x0000000c,0x00000008,0x00000010,
+	    0x00000002,0x00000004,0x00000004,0x00000008,0x00000006,0x0000000c,0x00000008,0x00000010,
+	    0x00000002,0x00000004,0x00000004,0x00000008,0x00000006,0x0000000c,0x00000008,0x00000010,
+	    0x00000002,0x00000004,0x00000004,0x00000008,0x00000006,0x0000000c,0x00000008,0x00000010,
+	    0x00000002,0x00000004,0x00000004,0x00000008,0x00000006,0x0000000c,0x00000008,0x00000010,
+	    0x00000002,0x00000004,0x00000004,0x00000008,0x00000006,0x0000000c,0x00000008,0x00000010,
+	    0x00000002,0x00000004,0x00000004,0x00000008,0x00000006,0x0000000c,0x00000008,0x00000010
+	};
+    size_t vl,avl;
+    uint32_t vType;
+    uint32_t vcsrA1M0R0Sa = ACCSFT1 | MULSFT0 | VXRM_RNU | VXSAT1;
+
+    vint32m2_t vS1,vS2;
+    vint32m2_t vMac;
+
+    avl = 64;
+    dm2vm((int32_t *)vs1, (int32_t *)VM_SRC1_ADDR, avl);
+    dm2vm((int32_t *)vs2, (int32_t *)VM_SRC2_ADDR, avl);
+    vType = TA | MA | M2 | E32;
+    asm volatile("csrw vcsr,%[vcsrA1M0R0Sa];": : [vcsrA1M0R0Sa] "r" (vcsrA1M0R0Sa));
+    asm volatile("vsetvl %[vl],%[avl],%[vtype];"
+                  :[vl] "=r" (vl)
+                  :[avl] "r" (avl),[vtype] "r" (vType));
+
+    asm volatile("vle32.v %[vS1],(%[vs1]);\
+    		          vle32.v %[vS2],(%[vs2]);"
+                  :[vS1]"=vd"(vS1),[vS2]"=vd"(vS2)
+                  :[vs1]"r"(VM_SRC1_ADDR),[vs2]"r"(VM_SRC2_ADDR));
+
+    asm volatile("vdsmacini.i 1;\
+    		          vdsmac.vv %[vS1],%[vS2];"
+                  :
+                  :[vS1]"vr"(vS1),[vS2]"vr"(vS2));
+
+    asm volatile("vdsmaco.vv %[vMac],%[vS1],%[vS2];\
+    		          vse32.v  %[vMac],(%[vDst]);"
+                  :[vMac]"+vr"(vMac)
+                  :[vS1]"vr"(vS1),[vS2]"vr"(vS2),[vDst]"r"(VM_RST1_ZVW_ADDR));
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vDst, avl);
+    int i;
+    for (i = 0; i < 32; i++)
+    {
+        if (vDst[i] != vDstT[i])
+        {
+            printf("vdsmac.vv data comparison failed at index %d vdst[%08x] vdstTv[%08x]!\n",i,vDst[i],vDstT[i]);
+            return;
+        }
+    }
+    printf("vdsmac.vv  pass\n");
 }
 
 
@@ -684,6 +827,9 @@ printf("vdsmac  start\n");
     avl = 64;
     vType = TA | MA | M2 | E32;
 
+    dm2vm((int32_t *)g_macestData1, (int32_t *)VM_SRC1_ADDR, avl);
+    dm2vm((int32_t *)g_macestData2, (int32_t *)VM_SRC2_ADDR, avl);
+
     asm volatile("vsetvl %[vl],%[avl],%[vtype];"
                   :[vl] "=r" (vl)
                   :[avl] "r" (avl),[vtype] "r" (vType));
@@ -696,11 +842,11 @@ printf("vdsmac  start\n");
     
     asm volatile("vle32.v %[vS1],(%[g_macestData1]);"
                   :[vS1]"=vd"(vS1)
-                  :[g_macestData1]"r"(g_macestData1));                  
+                  :[g_macestData1]"r"(VM_SRC1_ADDR));                  
 
     asm volatile("vle32.v %[vS2],(%[g_macestData2]);"
                   :[vS2]"=vd"(vS2)
-                  :[g_macestData2]"r"(g_macestData2)); 
+                  :[g_macestData2]"r"(VM_SRC2_ADDR)); 
                   
     asm volatile("vdsmac.vv %[vS1],%[vS2];" 
                   :
@@ -713,14 +859,16 @@ printf("vdsmac  start\n");
                  
     asm volatile("vse32.v  %[vMac],(%[g_macestDataRes]);"
                   :
-                  :[g_macestDataRes]"r"(g_macestDataRes),[vMac]"vr"(vMac));   
+                  :[g_macestDataRes]"r"(VM_RST1_ZVW_ADDR),[vMac]"vr"(vMac));   
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)g_macestDataRes, avl);
+
     int i;
     for (i = 0; i < 32; i++)
     {
         if (g_macestDataResT[i] != g_macestDataRes[i])
         {
             printf("vdsmac fail [%d]=%x %x\n",i,g_macestDataResT[i],g_macestDataRes[i]);
-            //return;
+            return;
         }
     }        
     printf("vdsmac  pass\n");                  
@@ -759,7 +907,7 @@ int32_t g_muljestDataResT[64] = {
 0x7FFF,0x7FFF,0x7FFF,0x7FFF,0x7FFF,0x7FFF,0x7FFF,0x7FFF,
 0x7FFF,0x7FFF,0x7FFF,0x7FFF,0x7FFF,0x7FFF,0x7FFF,0x7FFF,
 0x7FFF,0x7FFF,0x7FFF,0x7FFF,0x7FFF,0x7FFF,0x7FFF,0x7FFF};
-void op_testMulj()
+void vdscmulj_ut1()
 {
     size_t vl,avl;
     uint32_t vType;
@@ -768,6 +916,9 @@ void op_testMulj()
 
     avl = 64;
     vType = TA | MA | M2 | E32;
+
+    dm2vm((int32_t *)g_multestData1, (int32_t *)VM_SRC1_ADDR, avl);
+    dm2vm((int32_t *)g_multestData2, (int32_t *)VM_SRC2_ADDR, avl);
 
     asm volatile("vsetvl %[vl],%[avl],%[vtype];"
                   :[vl] "=r" (vl)
@@ -781,16 +932,17 @@ void op_testMulj()
     
     asm volatile("vle32.v %[vS2],(%[g_multestData2]);"
                   :[vS2]"=vd"(vS2)
-                  :[g_multestData2]"r"(g_multestData2)); 
+                  :[g_multestData2]"r"(VM_SRC2_ADDR)); 
     asm volatile("vle32.v %[vS1],(%[g_multestData1]);"
                   :[vS1]"=vd"(vS1)
-                  :[g_multestData1]"r"(g_multestData1));                                 
+                  :[g_multestData1]"r"(VM_SRC1_ADDR));                                 
     asm volatile("vdscmulj.vs %[vD],%[vS2],%[vS1];" 
                   :[vD]"=&vr"(vD)
                   :[vS1]"vr"(vS1),[vS2]"vr"(vS2));  
     asm volatile("vse32.v  %[vD],(%[g_muljestDataRes]);"
                   :
-                  :[g_muljestDataRes]"r"(g_muljestDataRes),[vD]"vr"(vD));   
+                  :[g_muljestDataRes]"r"(VM_RST1_ZVW_ADDR),[vD]"vr"(vD));   
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)g_muljestDataRes, avl);
     int i;
     for (i = 0; i < 64; i++)
     {
@@ -828,12 +980,14 @@ void vconj_ut()
         0x7FFF7FFF,0x7FFF7FFF,0x7FFF7FFF,0x7FFF7FFF,0x7FFF7FFF,0x7FFF7FFF,0x7FFF7FFF,0x7FFF7FFF,
         0x7FFF7FFF,0x7FFF7FFF,0x7FFF7FFF,0x7FFF7FFF,0x7FFF7FFF,0x7FFF7FFF,0x7FFF7FFF,0x7FFF7FFF
     };
-   uint32_t i;
+    uint32_t i;
     size_t vl;
     uint32_t len = 48;
     uint32_t vtypeL2E32 = MA | TA | M2 | E32;
 
-   asm volatile("vsetvl %[vl],%[avl],%[vtype]"
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
+
+    asm volatile("vsetvl %[vl],%[avl],%[vtype]"
              : [vl] "=r" (vl)
              : [avl] "r" (len),[vtype] "r" (vtypeL2E32));
 
@@ -842,8 +996,9 @@ void vconj_ut()
     vconj.v v2,v0;\
     vse32.v v2,(%[vdst]);"
     :
-    :  [vsrc1] "r" (vsrc1),[vdst] "r" (vdst)
+    :  [vsrc1] "r" (VM_SRC1_ADDR),[vdst] "r" (VM_RST1_ZVW_ADDR)
     );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, len);
 
     for (i = 0; i < len ; i++)
     {
@@ -854,58 +1009,6 @@ void vconj_ut()
         }
     }
     printf("vconj.v_ut passed!\n");
-}
-
-
-void vdsredsum_ut()
-{
-    uint32_t vsrc1[64] =
-    {
-        0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,
-        0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,
-        0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,
-        0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,
-        0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,
-        0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,
-        0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,
-        0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,
-   };
-    uint32_t vdst[32];
-    uint32_t vdstTv[32] =
-    {
-        0x00007FFF,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,
-        0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,
-        0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,
-        0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384
-    };
-   uint32_t i;
-    size_t vl;
-    uint32_t len = 64;
-    uint32_t vtypeL2E32 = MA | TA | M2 | E32;
-    uint32_t vcsrA6M0R0Sa = ACCSFT6 | MULSFT0 | VXRM_RNU | VXSAT1;
-
-   asm volatile("vsetvl %[vl],%[avl],%[vtype]"
-             : [vl] "=r" (vl)
-             : [avl] "r" (len),[vtype] "r" (vtypeL2E32));
-
-    asm volatile(
-    "vle32.v v0,(%[vsrc1]);\
-    csrw vcsr,%[vcsrA6M0R0Sa];\
-    vdsredsum.v v2,v0;\
-    vse32.v v2,(%[vdst]);"
-    :
-    : [vcsrA6M0R0Sa ] "r" (vcsrA6M0R0Sa ),[vsrc1] "r" (vsrc1),[vdst] "r" (vdst)
-    );
-
-    for (i = 0; i < 1; i++)
-    {
-        if (vdst[i] != vdstTv[i])
-        {
-            printf("vdsredsum.v_ut data comparison failed at index %d vdst[%d] vdstTv[%d]!\n",i,vdst[i],vdstTv[i]);
-            return;
-        }
-    }
-    printf("vdsredsum.v_ut passed!\n");
 }
 
 void vdscredsum_ut()
@@ -929,13 +1032,14 @@ void vdscredsum_ut()
         0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,
         0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384
     };
-   uint32_t i;
+    uint32_t i;
     size_t vl;
     uint32_t len = 64;
     uint32_t vtypeL2E32 = MA | TA | M2 | E32;
     uint32_t vcsrA6M0R0Sa = ACCSFT6 | MULSFT0 | VXRM_RNU | VXSAT1;
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
 
-   asm volatile("vsetvl %[vl],%[avl],%[vtype]"
+    asm volatile("vsetvl %[vl],%[avl],%[vtype]"
              : [vl] "=r" (vl)
              : [avl] "r" (len),[vtype] "r" (vtypeL2E32));
 
@@ -945,8 +1049,9 @@ void vdscredsum_ut()
     vdscredsum.v v2,v0;\
     vse32.v v2,(%[vdst]);"
     :
-    : [vcsrA6M0R0Sa ] "r" (vcsrA6M0R0Sa ),[vsrc1] "r" (vsrc1),[vdst] "r" (vdst)
+    : [vcsrA6M0R0Sa ] "r" (vcsrA6M0R0Sa ),[vsrc1] "r" (VM_SRC1_ADDR),[vdst] "r" (VM_RST1_ZVW_ADDR)
     );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, 1);
 
     for (i = 0; i < 1; i++)
     {
@@ -959,6 +1064,108 @@ void vdscredsum_ut()
     printf("vdscredsum.v_ut passed!\n");
 }
 
+
+void vdsredsum_ut()
+{
+    uint32_t vsrc1[64] =
+    {
+        0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,
+        0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,
+        0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,
+        0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,
+        0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,
+        0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,
+        0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,
+        0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF,0x00007FFF
+   };
+    uint32_t vdst[32];
+    uint32_t vdstTv[32] =
+    {
+        0x00007FFF,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,
+        0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,
+        0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,
+        0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384
+    };
+    uint32_t i;
+    size_t vl;
+    uint32_t len = 64;
+    uint32_t vtypeL2E32 = MA | TA | M2 | E32;
+    uint32_t vcsrA6M0R0Sa = ACCSFT6 | MULSFT0 | VXRM_RNU | VXSAT1;
+
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
+
+    asm volatile("vsetvl %[vl],%[avl],%[vtype]"
+             : [vl] "=r" (vl)
+             : [avl] "r" (len),[vtype] "r" (vtypeL2E32));
+
+    asm volatile(
+    "vle32.v v0,(%[vsrc1]);\
+    csrw vcsr,%[vcsrA6M0R0Sa];\
+    vdsredsum.v v2,v0;\
+    vse32.v v2,(%[vdst]);"
+    :
+    : [vcsrA6M0R0Sa ] "r" (vcsrA6M0R0Sa ),[vsrc1] "r" (VM_SRC1_ADDR),[vdst] "r" (VM_RST1_ZVW_ADDR)
+    );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, 1);
+
+    for (i = 0; i < 1; i++)
+    {
+        if (vdst[i] != vdstTv[i])
+        {
+            printf("vdsredsum.v_ut data comparison failed at index %d vdst[%d] vdstTv[%d]!\n",i,vdst[i],vdstTv[i]);
+            return;
+        }
+    }
+    printf("vdsredsum.v_ut passed!\n");
+}
+
+void vdsredsumn_ut()
+{
+    uint32_t vsrc1[64] =
+    {
+        0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,
+        0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,
+        0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,
+        0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE,0x00007FFE
+   };
+    uint32_t vdst[32];
+    uint32_t vdstTv[32] =
+    {
+    	0x00007FFE,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,
+        0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,
+        0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,
+        0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384,0x00000384
+    };
+   uint32_t i;
+    size_t vl;
+    uint32_t len = 32;
+    uint32_t vtypeL1E32 = MA | TA | M1 | E32;
+    uint32_t vcsrA5M0R0Sa = ACCSFT5 | MULSFT0 | VXRM_RNU | VXSAT1;
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
+
+    asm volatile("vsetvl %[vl],%[avl],%[vtype]"
+             : [vl] "=r" (vl)
+             : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
+
+    asm volatile(
+    "vle32.v v0,(%[vsrc1]);\
+    csrw vcsr,%[vcsrA5M0R0Sa];\
+    vdsredsumn.vi v2,v0,5;\
+    vse32.v v2,(%[vdst]);"
+    :
+    : [vcsrA5M0R0Sa ] "r" (vcsrA5M0R0Sa ),[vsrc1] "r" (VM_SRC1_ADDR),[vdst] "r" (VM_RST1_ZVW_ADDR)
+    );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, 1);
+    for (i = 0; i < 1; i++)
+    {
+        if (vdst[i] != vdstTv[i])
+        {
+            printf("vdsredsumn.v_ut data comparison failed at index %d vdst[%08x] vdstTv[%08x]!\n",i,vdst[i],vdstTv[i]);
+            return;
+        }
+    }
+    printf("vdsredsumn.v_ut passed!\n");
+}
 
 void vfsl_ut()
 {
@@ -990,6 +1197,8 @@ void vfsl_ut()
     uint32_t len = 32;
     uint32_t vtypeL1E32 = MA | TA | M1 | E32;
     uint32_t vcsrA0F16M0R0Sa = ACCSFT0 | FSFT16| MULSFT0 | VXRM_RNU | VXSAT1;
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
+    dm2vm((int32_t *)vsrc2, (int32_t *)VM_SRC2_ADDR, len);
 
     asm volatile("vsetvl %[vl],%[avl],%[vtype]"
                  : [vl] "=r" (vl)
@@ -1002,8 +1211,9 @@ void vfsl_ut()
     vfsl.vv v2,v1,v0;\
     vse32.v v2,(%[vdst]);"
     :
-    : [vsrc1] "r" (vsrc1),[vsrc2] "r" (vsrc2),[vdst] "r" (vdst)
+    : [vsrc1] "r" (VM_SRC1_ADDR),[vsrc2] "r" (VM_SRC2_ADDR),[vdst] "r" (VM_RST1_ZVW_ADDR)
     );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, len);
 
     for (i = 0; i < len; i++)
     {
@@ -1038,8 +1248,8 @@ void vfsr_ut()
     {
         0x00001C2C,0x00001C2D,0x00001C2E,0x00001C2F,0x00001C30,0x00001C31,0x00001C32,0x00001C33,
         0x00001C34,0x00001C35,0x00001C36,0x00001C37,0x00001C38,0x00001C39,0x00001C3A,0x00001C3B,
-        0x00001C3B,0x00001C3A,0x00001C39,0x00001C38,0x00001C37,0x00001C36,0x00001C35,0x00001C34,
-        0x00001C33,0x00001C32,0x00001C31,0x00001C30,0x00001C2F,0x00001C2E,0x00001C2D,0x00001C2C
+        0x00001C1C,0x00001C1D,0x00001C1E,0x00001C1F,0x00001C20,0x00001C21,0x00001C22,0x00001C23,
+        0x00001C24,0x00001C25,0x00001C26,0x00001C27,0x00001C28,0x00001C29,0x00001C2A,0x00001C2B
     };
     uint32_t i;
 
@@ -1047,6 +1257,8 @@ void vfsr_ut()
     uint32_t len = 32;
     uint32_t vtypeL1E32 = MA | TA | M1 | E32;
     uint32_t vcsrA0F16M0R0Sa = ACCSFT0 | FSFT16| MULSFT0 | VXRM_RNU | VXSAT1;
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
+    dm2vm((int32_t *)vsrc2, (int32_t *)VM_SRC2_ADDR, len);
 
     asm volatile("vsetvl %[vl],%[avl],%[vtype]"
                  : [vl] "=r" (vl)
@@ -1059,8 +1271,9 @@ void vfsr_ut()
     vfsr.vv v2,v1,v0;\
     vse32.v v2,(%[vdst]);"
     :
-    : [vsrc1] "r" (vsrc1),[vsrc2] "r" (vsrc2),[vdst] "r" (vdst)
+    : [vsrc1] "r" (VM_SRC1_ADDR),[vsrc2] "r" (VM_SRC2_ADDR),[vdst] "r" (VM_RST1_ZVW_ADDR)
     );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, len);
 
     for (i = 0; i < len; i++)
     {
@@ -1101,19 +1314,23 @@ void vluxei32_ut()
     size_t vl;
     uint32_t len = 16;
     uint32_t vtypeL2E32 = MA | TA | M2 | E32;
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
+    dm2vm((int32_t *)addr, (int32_t *)VM_SRC2_ADDR, 64);
+
 
    asm volatile("vsetvl %[vl],%[avl],%[vtype]"
              : [vl] "=r" (vl)
              : [avl] "r" (len),[vtype] "r" (vtypeL2E32));
 
-    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (vsrc1));
+    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (VM_SRC1_ADDR));
 
     asm volatile(
     "vluxei32.v v2,(%[addr]),v0;\
     vse32.v v2,(%[vdst]);"
     :
-    : [addr ] "r" (addr ),[vdst] "r" (vdst)
+    : [addr ] "r" (VM_SRC2_ADDR ),[vdst] "r" (VM_RST1_ZVW_ADDR)
     );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, len);
 
     for (i = 0; i < len; i++)
     {
@@ -1151,6 +1368,7 @@ void nolinear_recip8_ut()
     uint32_t vtypeL1E32 = MA | TA | M1 | E32;
     
     uint32_t vnlcrRecip8 = SEG8|FUNC_RECIP;
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
 
     asm volatile("csrrw zero, vnlcr, %[vnlcrRecip8];": : [vnlcrRecip8] "r" (vnlcrRecip8));
 
@@ -1164,7 +1382,7 @@ void nolinear_recip8_ut()
              : [vl] "=r" (vl)
              : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
 
-    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (vsrc1));
+    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (VM_SRC1_ADDR));
     
     asm volatile("vmv.s.x v18,%[point];"::[point] "r" (point));
     asm volatile(
@@ -1173,7 +1391,9 @@ void nolinear_recip8_ut()
     vse32.v v1,(%[mantissa]);\
     vse32.v v2,(%[exponent]);"
     :
-    : [mantissa] "r" (mantissa),[exponent] "r" (exponent));
+    : [mantissa] "r" (VM_RST1_ZVW_ADDR),[exponent] "r" (VM_RST1_ZVW_ADDR + len*4));
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)mantissa, len);
+    vm2dm((int32_t *)(VM_RST1_ZVW_ADDR + len*4), (int32_t *)exponent, len);
 
     for (i = 0; i < len; i++)
     {
@@ -1214,6 +1434,7 @@ void nolinear_sqrt8_ut()
     uint32_t vtypeL1E32 = MA | TA | M1 | E32;
     uint32_t vnlcrSqrt8 = SEG8|FUNC_SQRT;
 
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
     asm volatile("csrrw zero, vnlcr, %[vnlcrSqrt8];": : [vnlcrSqrt8] "r" (vnlcrSqrt8));
 
     uint32_t table_len = 64;
@@ -1226,7 +1447,7 @@ void nolinear_sqrt8_ut()
              : [vl] "=r" (vl)
              : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
 
-    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (vsrc1));
+    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (VM_SRC1_ADDR));
 
      asm volatile("vmv.s.x v18,%[point];"::[point] "r" (point));
     asm volatile(
@@ -1235,8 +1456,10 @@ void nolinear_sqrt8_ut()
     vse32.v v1,(%[mantissa]);\
     vse32.v v2,(%[exponent]);"
     :
-    :[mantissa] "r" (mantissa),[exponent] "r" (exponent));
+    :[mantissa] "r" (VM_RST1_ZVW_ADDR),[exponent] "r" (VM_RST1_ZVW_ADDR + len*4));
 
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)mantissa, len);
+    vm2dm((int32_t *)(VM_RST1_ZVW_ADDR + len*4), (int32_t *)exponent, len);
     for (i = 0; i < len; i++)
     {
         if (mantissa[i] != mantissaTv[i])
@@ -1277,6 +1500,7 @@ void nolinear_recipSqrt8_ut()
     uint32_t vtypeL1E32 = MA | TA | M1 | E32;
     uint32_t vnlcrRecipSqrt8 = SEG8|FUNC_RECIP_SQRT;
 
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
     asm volatile("csrrw zero, vnlcr, %[vnlcrRecipSqrt8];": : [vnlcrRecipSqrt8] "r" (vnlcrRecipSqrt8));
 
     uint32_t table_len = 64;
@@ -1289,7 +1513,7 @@ void nolinear_recipSqrt8_ut()
              : [vl] "=r" (vl)
              : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
 
-    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (vsrc1));
+    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (VM_SRC1_ADDR));
 
     
      asm volatile("vmv.s.x v18,%[point];"::[point] "r" (point));
@@ -1299,7 +1523,9 @@ void nolinear_recipSqrt8_ut()
     vse32.v v1,(%[mantissa]);\
     vse32.v v2,(%[exponent]);"
     :
-    : [mantissa] "r" (mantissa),[exponent] "r" (exponent));
+    : [mantissa] "r" (VM_RST1_ZVW_ADDR),[exponent] "r" (VM_RST1_ZVW_ADDR + len*4));
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)mantissa, len);
+    vm2dm((int32_t *)(VM_RST1_ZVW_ADDR + len*4), (int32_t *)exponent, len);
 
     for (i = 0; i < len; i++)
     {
@@ -1349,6 +1575,7 @@ void nolinear_arctan8_ut()
     uint32_t vtypeL1E32 = MA | TA | M1 | E32;
     uint32_t vnlcrArctan8 = SEG8|FUNC_ARCTAN;
 
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
     asm volatile("csrrw zero, vnlcr, %[vnlcrArctan8];": : [vnlcrArctan8] "r" (vnlcrArctan8));
 
     uint32_t table_len = 64;
@@ -1361,7 +1588,7 @@ void nolinear_arctan8_ut()
              : [vl] "=r" (vl)
              : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
 
-    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (vsrc1));
+    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (VM_SRC1_ADDR));
 
     
     asm volatile("vmv.s.x v18,%[point];"::[point] "r" (point));
@@ -1371,7 +1598,9 @@ void nolinear_arctan8_ut()
     vse32.v v1,(%[mantissa]);\
     vse32.v v2,(%[exponent]);"
     :
-    : [mantissa] "r" (mantissa),[exponent] "r" (exponent));
+    : [mantissa] "r" (VM_RST1_ZVW_ADDR),[exponent] "r" (VM_RST1_ZVW_ADDR + len*4));
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)mantissa, len);
+    vm2dm((int32_t *)(VM_RST1_ZVW_ADDR + len*4), (int32_t *)exponent, len);
 
     for (i = 0; i < len; i++)
     {
@@ -1422,6 +1651,7 @@ void nolinear_log2seg8_ut()
     uint32_t vtypeL1E32 = MA | TA | M1 | E32;
     uint32_t vnlcrLog2Seg8 = SEG8|FUNC_LOG2;
 
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
     asm volatile("csrrw zero, vnlcr, %[vnlcrLog2Seg8];": : [vnlcrLog2Seg8] "r" (vnlcrLog2Seg8));
 
     uint32_t table_len = 64;
@@ -1434,7 +1664,7 @@ void nolinear_log2seg8_ut()
              : [vl] "=r" (vl)
              : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
 
-    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (vsrc1));
+    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (VM_SRC1_ADDR));
     
     asm volatile("vmv.s.x v18,%[point];"::[point] "r" (point));
     asm volatile(
@@ -1443,7 +1673,9 @@ void nolinear_log2seg8_ut()
     vse32.v v1,(%[mantissa]);\
     vse32.v v2,(%[exponent]);"
     :
-    : [mantissa] "r" (mantissa),[exponent] "r" (exponent));
+    : [mantissa] "r" (VM_RST1_ZVW_ADDR),[exponent] "r" (VM_RST1_ZVW_ADDR + len*4));
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)mantissa, len);
+    vm2dm((int32_t *)(VM_RST1_ZVW_ADDR + len*4), (int32_t *)exponent, len);
 
     for (i = 0; i < len; i++)
     {
@@ -1493,6 +1725,7 @@ void nolinear_log10seg8_ut()
     uint32_t vtypeL1E32 = MA | TA | M1 | E32;
     uint32_t vnlcrLog10Seg8 = SEG8|FUNC_LOG10;
 
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
     asm volatile("csrrw zero, vnlcr, %[vnlcrLog10Seg8];": : [vnlcrLog10Seg8] "r" (vnlcrLog10Seg8));
 
     uint32_t table_len = 64;
@@ -1505,7 +1738,7 @@ void nolinear_log10seg8_ut()
              : [vl] "=r" (vl)
              : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
 
-    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (vsrc1));
+    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (VM_SRC1_ADDR));
 
     asm volatile("vmv.s.x v18,%[point];"::[point] "r" (point));
     asm volatile(
@@ -1514,7 +1747,9 @@ void nolinear_log10seg8_ut()
     vse32.v v1,(%[mantissa]);\
     vse32.v v2,(%[exponent]);"
     :
-    : [mantissa] "r" (mantissa),[exponent] "r" (exponent));
+    : [mantissa] "r" (VM_RST1_ZVW_ADDR),[exponent] "r" (VM_RST1_ZVW_ADDR + len*4));
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)mantissa, len);
+    vm2dm((int32_t *)(VM_RST1_ZVW_ADDR + len*4), (int32_t *)exponent, len);
 
     for (i = 0; i < len; i++)
     {
@@ -1564,6 +1799,7 @@ void nolinear_sinSeg12_ut()
     uint32_t vtypeL1E32 = MA | TA | M1 | E32;
     uint32_t vnlcrSinSeg12 = SEG12|FUNC_SIN;
 
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
     asm volatile("csrrw zero, vnlcr, %[vnlcrSinSeg12];": : [vnlcrSinSeg12] "r" (vnlcrSinSeg12));
 
     uint32_t table_len = 64;
@@ -1576,7 +1812,7 @@ void nolinear_sinSeg12_ut()
              : [vl] "=r" (vl)
              : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
 
-    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (vsrc1));
+    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (VM_SRC1_ADDR));
 
 
    asm volatile("vmv.s.x v18,%[point];"::[point] "r" (point));
@@ -1586,7 +1822,9 @@ void nolinear_sinSeg12_ut()
     vse32.v v1,(%[mantissa]);\
     vse32.v v2,(%[exponent]);"
     :
-    : [mantissa] "r" (mantissa),[exponent] "r" (exponent));
+    : [mantissa] "r" (VM_RST1_ZVW_ADDR),[exponent] "r" (VM_RST1_ZVW_ADDR + len*4));
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)mantissa, len);
+    vm2dm((int32_t *)(VM_RST1_ZVW_ADDR + len*4), (int32_t *)exponent, len);
 
     for (i = 0; i < len; i++)
     {
@@ -1636,6 +1874,7 @@ void nolinear_cosSeg12_ut()
     uint32_t vtypeL1E32 = MA | TA | M1 | E32;
     uint32_t vnlcrCosSeg12 = SEG12|FUNC_COS;
 
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
     asm volatile("csrrw zero, vnlcr, %[vnlcrCosSeg12];": : [vnlcrCosSeg12] "r" (vnlcrCosSeg12));
 
     uint32_t table_len = 64;
@@ -1648,7 +1887,7 @@ void nolinear_cosSeg12_ut()
              : [vl] "=r" (vl)
              : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
 
-    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (vsrc1));
+    asm volatile("vle32.v v0,(%[vsrc1]);": : [vsrc1] "r" (VM_SRC1_ADDR));
 
     
     asm volatile("vmv.s.x v18,%[point];"::[point] "r" (point));
@@ -1658,7 +1897,9 @@ void nolinear_cosSeg12_ut()
     vse32.v v1,(%[mantissa]);\
     vse32.v v2,(%[exponent]);"
     :
-    : [mantissa] "r" (mantissa),[exponent] "r" (exponent));
+    : [mantissa] "r" (VM_RST1_ZVW_ADDR),[exponent] "r" (VM_RST1_ZVW_ADDR + len*4));
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)mantissa, len);
+    vm2dm((int32_t *)(VM_RST1_ZVW_ADDR + len*4), (int32_t *)exponent, len);
 
     for (i = 0; i < len; i++)
     {
@@ -1681,51 +1922,24 @@ void vdsredsum_ut1()
 
     int32_t vsrc1[32] =
     {
-        0xfff52a5d,
-        0x00142704,
-        0xfff8ead3,
-        0xfff60a28,
-        0x0001f359,
-        0x00050201,
-        0xfff5e246,
-        0x00012e5f,
-        0x00027db4,
-        0xfff8f9f2,
-        0xfffeb1c8,
-        0xffe559ad,
-        0xffe504bf,
-        0xfff435d0,
-        0xfffb5c8e,
-        0x000062ac,
-        0xfff209be,
-        0xfffbc61d,
-        0x000a7dce,
-        0xffdd86fd,
-        0x00084c70,
-        0x000a18b3,
-        0x001d2e5f,
-        0x0000a411,
-        0xffdca2cb,
-        0xfffed5dc,
-        0x002157fb,
-        0x0006284a,
-        0x00053ccd,
-        0x00070f39,
-        0xfff75252,
-        0xfff05c3b
+        0xfff52a5d,0x00142704,0xfff8ead3,0xfff60a28,0x0001f359,0x00050201,0xfff5e246,0x00012e5f,
+        0x00027db4,0xfff8f9f2,0xfffeb1c8,0xffe559ad,0xffe504bf,0xfff435d0,0xfffb5c8e,0x000062ac,
+        0xfff209be,0xfffbc61d,0x000a7dce,0xffdd86fd,0x00084c70,0x000a18b3,0x001d2e5f,0x0000a411,
+        0xffdca2cb,0xfffed5dc,0x002157fb,0x0006284a,0x00053ccd,0x00070f39,0xfff75252,0xfff05c3b
    };
     uint32_t vdst[32];
     int32_t vdstTv[32] =
     {
-        0xfffd3e49
+        0xfffd3e48
     };
-   uint32_t i;
+    uint32_t i;
     size_t vl;
     uint32_t len = 32;
     uint32_t vtypeL1E32 = MA | TA | M1 | E32;
     uint32_t vcsrA5M0R0Sa = ACCSFT5 | MULSFT0 | VXRM_RNU | VXSAT1;
 
-   asm volatile("vsetvl %[vl],%[avl],%[vtype]"
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
+    asm volatile("vsetvl %[vl],%[avl],%[vtype]"
              : [vl] "=r" (vl)
              : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
 
@@ -1735,8 +1949,9 @@ void vdsredsum_ut1()
     vdsredsum.v v2,v0;\
     vse32.v v2,(%[vdst]);"
     :
-    : [vcsrA5M0R0Sa ] "r" (vcsrA5M0R0Sa ),[vsrc1] "r" (vsrc1),[vdst] "r" (vdst)
+    : [vcsrA5M0R0Sa ] "r" (vcsrA5M0R0Sa ),[vsrc1] "r" (VM_SRC1_ADDR),[vdst] "r" (VM_RST1_ZVW_ADDR)
     );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, 1);
 
 
     if (vdst[0] != vdstTv[0])
@@ -1745,6 +1960,321 @@ void vdsredsum_ut1()
         return;
     }
 
-    printf("vdsredsum.v_ut passed!\n");
+    printf("vdsredsum.v_ut1 passed!\n");
 }
 
+
+void vcpack_ut1()
+{
+    int32_t vsrc1[32] =
+    {
+        0xfff52a5d,0xfff8ead3,0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,
+        0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,
+        0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,
+        0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d,0xfff52a5d
+    };
+    int32_t vsrc2[32] =
+    {
+        0x00142704,0x0000a411,0x00142704,0x00142704,0x00142704,0x00142704,0x00142704,0x00142704,
+        0x00142704,0x00142704,0x00142704,0x00142704,0x00142704,0x00142704,0x00142704,0x00142704,
+        0x00142704,0x00142704,0x00142704,0x00142704,0x00142704,0x00142704,0x00142704,0x00142704,
+        0x00142704,0x00142704,0x00142704,0x00142704,0x00142704,0x00142704,0x00142704,0x00142704
+    };
+    int32_t vdst[32];
+    int32_t vdstTv[32] =
+    {
+        0xfff50014,0xfff90001,0xfff50014,0xfff50014,0xfff50014,0xfff50014,0xfff50014,0xfff50014,
+        0xfff50014,0xfff50014,0xfff50014,0xfff50014,0xfff50014,0xfff50014,0xfff50014,0xfff50014,
+        0xfff50014,0xfff50014,0xfff50014,0xfff50014,0xfff50014,0xfff50014,0xfff50014,0xfff50014,
+        0xfff50014,0xfff50014,0xfff50014,0xfff50014,0xfff50014,0xfff50014,0xfff50014,0xfff50014
+    };
+    size_t vl;
+    uint32_t len = 32;
+    uint32_t vtypeL1E32 = MA | TA | M1 | E32;
+    uint32_t vcsrA0M0R0Sa = ACCSFT0 | MULSFT0 | VXRM_RNU | VXSAT1;
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
+    dm2vm((int32_t *)vsrc2, (int32_t *)VM_SRC2_ADDR, len);
+
+    asm volatile("vsetvl %[vl],%[avl],%[vtype]"
+         : [vl] "=r" (vl)
+         : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
+
+    asm volatile(
+    "vle32.v v0,(%[vsrc1]);\
+    vle32.v v1,(%[vsrc2]);\
+    csrw vcsr,%[vcsrA0M0R0Sa];\
+    vcpack.vv v2,v1,v0;\
+    vse32.v v2,(%[vdst]);"
+    :
+    : [vcsrA0M0R0Sa ] "r" (vcsrA0M0R0Sa ),[vsrc1] "r" (VM_SRC1_ADDR),[vsrc2] "r" (VM_SRC2_ADDR),[vdst] "r" (VM_RST1_ZVW_ADDR)
+    );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, len);
+
+    if (vdst[0] != vdstTv[0])
+    {
+        printf("vcpack.vv_ut1 data comparison failed vdst[%x] vdstTv[%x]!\n",vdst[0],vdstTv[0]);
+        return;
+    }
+
+    printf("vcpack.vv_ut passed!\n");
+}
+
+void vdsmul_vs_ut()
+{
+    int32_t vsrc1[32] =
+    {
+        0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,
+        0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,
+        0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,
+        0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,0x00003ffd,0x00007fff
+    };
+    int32_t vsrc2[32] =
+    {
+        0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,
+        0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,
+        0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,
+        0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c
+    };
+    int32_t vdst[32];
+    int32_t vdstTv[32] =
+    {
+        0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,
+        0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,
+        0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,
+        0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E,0x02D2BE1E
+    };
+    size_t vl;
+    uint32_t len = 32;
+    uint32_t vtypeL1E32 = MA | TA | M1 | E32;
+    uint32_t vcsrA0M3R0Sa = ACCSFT0 | MULSFT3 | VXRM_RNU | VXSAT1;
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
+    dm2vm((int32_t *)vsrc2, (int32_t *)VM_SRC2_ADDR, len);
+
+    asm volatile("vsetvl %[vl],%[avl],%[vtype]"
+         : [vl] "=r" (vl)
+         : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
+
+    asm volatile(
+    "vle32.v v0,(%[vsrc1]);\
+    vle32.v v1,(%[vsrc2]);\
+    csrw vcsr,%[vcsrA0M3R0Sa];\
+    vdsmul.vs v2,v1,v0;\
+    vse32.v v2,(%[vdst]);"
+    :
+    : [vcsrA0M3R0Sa ] "r" (vcsrA0M3R0Sa),[vsrc1] "r" (VM_SRC1_ADDR),[vsrc2] "r" (VM_SRC2_ADDR),[vdst] "r" (VM_RST1_ZVW_ADDR)
+    );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, len);
+
+    for (int32_t i = 0; i < len; i++)
+    {
+        if (vdst[i] != vdstTv[i])
+        {
+            printf("vdsmul_vs_ut data comparison failed at index %d vdst[%08x] vdstTv[%08x]!\n",i,vdst[i],vdstTv[i]);
+            return;
+        }
+    }
+
+    printf("vdsmul.vs_ut passed!\n");
+}
+
+void vdsmul_vv_ut()
+{
+    int32_t vsrc1[32] =
+    {
+        0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,
+        0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,
+        0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,
+        0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c,0x00005a5c
+    };
+    int32_t vsrc2[32] =
+    {
+        0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,
+        0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,
+        0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,
+        0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,0x00003ffd,0x00007fff,0x00003ffd,0x00007fff
+    };
+    int32_t vdst[32];
+    int32_t vdstTv[32] =
+    {
+        0x02D2BE1E,0x05A5B4B5,0x02D2BE1E,0x05A5B4B5,0x02D2BE1E,0x05A5B4B5,0x02D2BE1E,0x05A5B4B5,
+        0x02D2BE1E,0x05A5B4B5,0x02D2BE1E,0x05A5B4B5,0x02D2BE1E,0x05A5B4B5,0x02D2BE1E,0x05A5B4B5,
+        0x02D2BE1E,0x05A5B4B5,0x02D2BE1E,0x05A5B4B5,0x02D2BE1E,0x05A5B4B5,0x02D2BE1E,0x05A5B4B5,
+        0x02D2BE1E,0x05A5B4B5,0x02D2BE1E,0x05A5B4B5,0x02D2BE1E,0x05A5B4B5,0x02D2BE1E,0x05A5B4B5
+    };
+    size_t vl;
+    uint32_t len = 32;
+    uint32_t vtypeL1E32 = MA | TA | M1 | E32;
+    uint32_t vcsrA0M3R0Sa = ACCSFT0 | MULSFT3 | VXRM_RNU | VXSAT1;
+    dm2vm((int32_t *)vsrc1, (int32_t *)VM_SRC1_ADDR, len);
+    dm2vm((int32_t *)vsrc2, (int32_t *)VM_SRC2_ADDR, len);
+
+    asm volatile("vsetvl %[vl],%[avl],%[vtype]"
+         : [vl] "=r" (vl)
+         : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
+
+    asm volatile(
+    "vle32.v v0,(%[vsrc1]);\
+    vle32.v v1,(%[vsrc2]);\
+    csrw vcsr,%[vcsrA0M3R0Sa];\
+    vdsmul.vv v2,v1,v0;\
+    vse32.v v2,(%[vdst]);"
+    :
+    : [vcsrA0M3R0Sa ] "r" (vcsrA0M3R0Sa),[vsrc1] "r" (VM_SRC1_ADDR),[vsrc2] "r" (VM_SRC2_ADDR),[vdst] "r" (VM_RST1_ZVW_ADDR)
+    );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, len);
+
+    for (int32_t i = 0; i < len; i++)
+    {
+        if (vdst[i] != vdstTv[i])
+        {
+            printf("vdsmul_vv_ut data comparison failed at index %d vdst[%08x] vdstTv[%08x]!\n",i,vdst[i],vdstTv[i]);
+            return;
+        }
+    }
+
+    printf("vdsmul.vv_ut passed!\n");
+}
+
+void vlsb_v_ut()
+{
+    int32_t vsrc2[32] =
+    {
+        0x00000000,0x00000001,0x00000002,0x00000004,0x00000008,0x00000010,0x00000020,0x00000040,
+		0x00000080,0x00000100,0x00000200,0x00000400,0x00000800,0x00001000,0x00002000,0x00004000,
+        0xffffffff,0xfffffffe,0xfffffffc,0xfffffff8,0xfffffff0,0xffffffe0,0xffffffc0,0xffffff80,
+	    0xffffff00,0xfffffe00,0xfffffc00,0xfffff800,0xfffff000,0xffffe000,0xffffc000,0xffff8000
+    };
+    int32_t vdst[32];
+    int32_t vdstTv[32] =
+    {
+        0,30,29,28,27,26,25,24,
+        23,22,21,20,19,18,17,16,
+        31,30,29,28,27,26,25,24,
+        23,22,21,20,19,18,17,16
+    };
+    size_t vl;
+    uint32_t len = 32;
+    uint32_t vtypeL1E32 = MA | TA | M1 | E32;
+    dm2vm((int32_t *)vsrc2, (int32_t *)VM_SRC2_ADDR, len);
+
+    asm volatile("vsetvl %[vl],%[avl],%[vtype]"
+         : [vl] "=r" (vl)
+         : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
+
+    asm volatile(
+    "vle32.v v0,(%[vsrc2]);\
+    vlsb.v v2,v0;\
+    vse32.v v2,(%[vdst]);"
+    :
+    :[vsrc2] "r" (VM_SRC2_ADDR),[vdst] "r" (VM_RST1_ZVW_ADDR)
+    );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, 1);
+
+    for (int32_t i = 0; i < len; i++)
+    {
+        if (vdst[i] != vdstTv[i])
+        {
+            printf("vlsb_v_ut data comparison failed at index %d vdst[%08x] vdstTv[%08x]!\n",i,vdst[i],vdstTv[i]);
+            return;
+        }
+    }
+
+    printf("vlsb.v_ut passed!\n");
+}
+
+void vredmaxi_ut()
+{
+    int32_t vsrc2[32] =
+    {
+        0x00000000,0x00000001,0x00000002,0x00000004,0x00000008,0x00000010,0x00000020,0x00000040,
+		0x00000080,0x00000100,0x00000200,0x00000400,0x00000800,0x00001000,0x00002000,0x00004000,
+        0xffffffff,0xfffffffe,0xfffffffc,0xfffffff8,0xfffffff0,0xffffffe0,0xffffffc0,0xffffff80,
+		0xffffff00,0xfffffe00,0xfffffc00,0xfffff800,0xfffff000,0xffffe000,0xffffc000,0xffff8000
+    };
+    int32_t vdst[32];
+    int32_t vdstTv[32] =
+    {
+    	0x00004000,15,29,28,27,26,25,24,
+        23,22,21,20,19,18,17,16,
+        31,30,29,28,27,26,25,24,
+        23,22,21,20,19,18,17,16
+    };
+    size_t vl;
+    uint32_t len = 32;
+    uint32_t vtypeL1E32 = MA | TA | M1 | E32;
+    dm2vm((int32_t *)vsrc2, (int32_t *)VM_SRC2_ADDR, len);
+
+    asm volatile("vsetvl %[vl],%[avl],%[vtype]"
+         : [vl] "=r" (vl)
+         : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
+
+    asm volatile(
+    "vle32.v v0,(%[vsrc2]);\
+    vid.v v1;\
+    vredmaxi.vv v2,v0,v1;\
+    vse32.v v2,(%[vdst]);"
+    :
+    :[vsrc2] "r" (VM_SRC2_ADDR),[vdst] "r" (VM_RST1_ZVW_ADDR)
+    );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, 2);
+
+    for (int32_t i = 0; i < 2; i++)
+    {
+        if (vdst[i] != vdstTv[i])
+        {
+            printf("vredmaxi_ut data comparison failed at index %d vdst[%08x] vdstTv[%08x]!\n",i,vdst[i],vdstTv[i]);
+            return;
+        }
+    }
+
+    printf("vredmaxi_ut passed!\n");
+}
+
+void vredmaxi_m_ut()
+{
+    int32_t vsrc2[32] =
+    {
+        0x00000000,0x00000001,0x00000002,0x00000004,0x00000008,0x00000010,0x00000020,0x00000040,
+        0x00000080,0x00000100,0x00000200,0x00000400,0x00000800,0x00001000,0x00002000,0x00004000,
+        0xffffffff,0xfffffffe,0xfffffffc,0xfffffff8,0xfffffff0,0xffffffe0,0xffffffc0,0xffffff80,
+        0xffffff00,0xfffffe00,0xfffffc00,0xfffff800,0xfffff000,0xffffe000,0xffffc000,0xffff8000
+    };
+    int32_t vdst[32];
+    int32_t vdstTv[32] =
+    {
+    	0x00002000,14,29,28,27,26,25,24,
+        23,22,21,20,19,18,17,16,
+        31,30,29,28,27,26,25,24,
+        23,22,21,20,19,18,17,16
+    };
+    size_t vl;
+    uint32_t len = 32;
+    uint32_t vtypeL1E32 = MA | TA | M1 | E32;
+    dm2vm((int32_t *)vsrc2, (int32_t *)VM_SRC2_ADDR, len);
+
+    asm volatile("vsetvl %[vl],%[avl],%[vtype]"
+         : [vl] "=r" (vl)
+         : [avl] "r" (len),[vtype] "r" (vtypeL1E32));
+
+    asm volatile(
+    "vle32.v v1,(%[vsrc2]);\
+    vid.v v2;\
+    vmsne.vi v0,v2,15;\
+    vredmaxi.vv v3,v1,v2,v0.t;\
+    vse32.v v3,(%[vdst]);"
+    :
+    :[vsrc2] "r" (VM_SRC2_ADDR),[vdst] "r" (VM_RST1_ZVW_ADDR)
+    );
+    vm2dm((int32_t *)VM_RST1_ZVW_ADDR, (int32_t *)vdst, 2);
+
+    for (int32_t i = 0; i < 2; i++)
+    {
+        if (vdst[i] != vdstTv[i])
+        {
+            printf("vredmaxi_m_ut data comparison failed at index %d vdst[%08x] vdstTv[%08x]!\n",i,vdst[i],vdstTv[i]);
+            return;
+        }
+    }
+
+    printf("vredmaxi_m_ut passed!\n");
+}
