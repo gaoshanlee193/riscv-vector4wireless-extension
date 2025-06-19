@@ -11,7 +11,7 @@
 
 #include <riscv_vector.h>
 
-#define VM_BASE             (0x00000000)
+#define VM_BASE             (0x7f000000)
 #define VM_SRC1_ADDR        (VM_BASE + 0x00001000)
 #define VM_SRC2_ADDR        (VM_BASE + 0x00001100)
 #define VM_RST1_ZVW_ADDR    (VM_BASE + 0x00002100)
@@ -177,6 +177,14 @@
 #define SEG12              (2 << 16)
 #define SEG16              (3 << 16)
 
+//---------------------vsync vs2------------------------------
+#define COPR         (1 << 0)
+#define VALU1        (1 << 1)
+#define VALU2        (1 << 2)
+#define VLD          (1 << 3)
+#define VST          (1 << 4)
+#define ALL          (0x1F)
+
 //---------------------------------------------------
 #define MAX_RX_NUM              (2)
 #define MAX_CDM_GROUP_NUM       (3)
@@ -223,6 +231,7 @@ typedef struct _cint32
 #define U16_SIZE	(sizeof(uint16_t))
 
 //---------------------------------------------------
-
-
+#define VTCM_REGION __attribute__((section(".vtcm"))) __attribute__((aligned(32)))
+extern void dm2vm(int32_t *pSrc, int32_t *pDst, int32_t len);
+extern void vm2dm(int32_t *pSrc, int32_t *pDst, int32_t len);
 #endif /* _OP_COMMON_TYPE_DEF_H_ */
