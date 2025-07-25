@@ -277,16 +277,22 @@ The complex numbers of vs2 and vs1/vs1[0] are multiplied. The intermediate resul
 VV version
 Tmp.r = vs1[j][i].r * vs2[j][i].r - vs1[j][i].i * vs2[j][i].i  // SEW = SEW/2 * SEW/2 - SEW/2 * SEW/2
 Tmp.r = alg_round_shift_right(Tmp.r, MULSFT[j][i])
+Tmp.i = vs1[j][i].r * vs2[j][i].i + vs1[j][i].i * vs2[j][i].r  // SEW = SEW/2 * SEW/2 + SEW/2 * SEW/2
+Tmp.i = alg_round_shift_right(Tmp.i, MULSFT[j][i])
 ACCREG[i].r += Tmp.r
+ACCREG[i].i += Tmp.i
 vd[0][i] = clip_low_40_SEW(alg_round_shift_right(ACCREG[i].r, accsft)) // SEW = 40bits
-ACCREG[i] = 0
+ACCREG[i].r = 0
 
 VS version
 Tmp.r = vs1[0][0].r * vs2[j][i].r - vs1[0][0].i * vs2[j][i].i  // SEW = SEW/2 * SEW/2 - SEW/2 * SEW/2
 Tmp.r = alg_round_shift_right(Tmp.r, MULSFT[j][i])
+Tmp.i = vs1[0][0].r * vs2[j][i].i + vs1[0][0].i * vs2[j][i].r  // SEW = SEW/2 * SEW/2 + SEW/2 * SEW/2
+Tmp.i = alg_round_shift_right(Tmp.i, MULSFT[j][i])
 ACCREG[i].r += Tmp.r
+ACCREG[i].i += Tmp.i
 vd[0][i] = clip_low_40_SEW(alg_round_shift_right(ACCREG[i].r, accsft)) // SEW = 40bits
-ACCREG[i] = 0
+ACCREG[i].r = 0
 ----
 
 === vdscmacoi(vector dynamic scaling complex MAC with widen output of image part)
@@ -307,18 +313,24 @@ Multiply the complex numbers of vs2 and vs1/vs1[0], perform an arithmetic shift 
 +
 ----
 VV version
-Tmp.i = vs1[j][i].r * vs2[j][i].i + vs1[j][i].i * vs2[j][i].r  // SEW = SEW/2 * SEW/2 + SEW/2 * SEW/2
-Tmp.i = alg_round_shift_right(Tmp.i, MULSFT[j][i])
-ACCREG[i].i += Tmp.i
+Tmp.r = vs1[j][i].r * vs2[j][i].r + vs1[j][i].i * vs2[j][i].i  // SEW = SEW/2 * SEW/2 + SEW/2 * SEW/2
+Tmp.r = alg_round_shift_right(Tmp.r, MULSFT[j][i])
+Tmp.i = vs1[j][i].r * vs2[j][i].i - vs1[j][i].i * vs2[j][i].r  // SEW = SEW/2 * SEW/2 - SEW/2 * SEW/2
+Tmp.i = alg_round_shift_right(Tmp.i, MULSFT[j][i]);
+ACCREG[i].r += Tmp.r;
+ACCREG[i].i += Tmp.i;
 vd[0][i] = clip_low_40_SEW(alg_round_shift_right(ACCREG[i].i, accsft)) // SEW = 40bits
-ACCREG[i] = 0
+ACCREG[i].i = 0
 
 VS version
-Tmp.i = vs1[0][0].r * vs2[j][i].i + vs1[0][0].i * vs2[j][i].r  // SEW = SEW/2 * SEW/2 + SEW/2 * SEW/2
-Tmp.i = alg_round_shift_right(Tmp.i, MULSFT[j][i])
-ACCREG[i].i += Tmp.i
+Tmp.r = vs1[0][0].r * vs2[j][i].r + vs1[0][0].i * vs2[j][i].i  // SEW = SEW/2 * SEW/2 + SEW/2 * SEW/2
+Tmp.r = alg_round_shift_right(Tmp.r, MULSFT[j][i])
+Tmp.i = vs1[0][0].r * vs2[j][i].i - vs1[0][0].i * vs2[j][i].r  // SEW = SEW/2 * SEW/2 - SEW/2 * SEW/2
+Tmp.i = alg_round_shift_right(Tmp.i, MULSFT[j][i]);
+ACCREG[i].r += Tmp.r;
+ACCREG[i].i += Tmp.i;
 vd[0][i] = clip_low_40_SEW(alg_round_shift_right(ACCREG[i].i, accsft)) // SEW = 40bits
-ACCREG[i] = 0
+ACCREG[i].i = 0
 ----
 
 === vdscmacjor(vector dynamic scaling complex conjugate MAC with widen output of real part)
@@ -341,16 +353,22 @@ The complex conjugate of vs1/vs1[0] and vs2 is multiplied. The intermediate resu
 VV version
 Tmp.r = vs1[j][i].r * vs2[j][i].r + vs1[j][i].i * vs2[j][i].i  // SEW = SEW/2 * SEW/2 + SEW/2 * SEW/2
 Tmp.r = alg_round_shift_right(Tmp.r, MULSFT[j][i])
+Tmp.i = vs1[j][i].r * vs2[j][i].i - vs1[j][i].i * vs2[j][i].r  // SEW = SEW/2 * SEW/2 - SEW/2 * SEW/2
+Tmp.i = alg_round_shift_right(Tmp.i, MULSFT[j][i])
 ACCREG[i].r += Tmp.r
+ACCREG[i].i += Tmp.i
 vd[0][i] = clip_low_40_SEW(alg_round_shift_right(ACCREG[i].r, accsft)) // SEW = 40bits
-ACCREG[i] = 0
+ACCREG[i].r = 0
 
 VS version
 Tmp.r = vs1[0][0].r * vs2[j][i].r + vs1[0][0].i * vs2[j][i].i  // SEW = SEW/2 * SEW/2 + SEW/2 * SEW/2
 Tmp.r = alg_round_shift_right(Tmp.r, MULSFT[j][i])
+Tmp.i = vs1[0][0].r * vs2[j][i].i - vs1[0][0].i * vs2[j][i].r  // SEW = SEW/2 * SEW/2 - SEW/2 * SEW/2
+Tmp.i = alg_round_shift_right(Tmp.i, MULSFT[j][i])
 ACCREG[i].r += Tmp.r
+ACCREG[i].i += Tmp.i
 vd[0][i] = clip_low_40_SEW(alg_round_shift_right(ACCREG[i].r, accsft)) // SEW = 40bits
-ACCREG[i] = 0
+ACCREG[i].r = 0
 ----
 
 === vdscmacjoi(vector dynamic scaling complex conjugate MAC with widen output of image part)
@@ -371,18 +389,24 @@ Multiply the complex conjugate of vs1/vs1[0] and vs2, perform an arithmetic shif
 +
 ----
 VV version
+Tmp.r = vs1[j][i].r * vs2[j][i].r + vs1[j][i].i * vs2[j][i].i  // SEW = SEW/2 * SEW/2 + SEW/2 * SEW/2
+Tmp.r = alg_round_shift_right(Tmp.r, MULSFT[j][i])
 Tmp.i = vs1[j][i].r * vs2[j][i].i - vs1[j][i].i * vs2[j][i].r  // SEW = SEW/2 * SEW/2 - SEW/2 * SEW/2
 Tmp.i = alg_round_shift_right(Tmp.i, MULSFT[j][i]);
+ACCREG[i].r += Tmp.r;
 ACCREG[i].i += Tmp.i;
 vd[0][i] = clip_low_40_SEW(alg_round_shift_right(ACCREG[i].i, accsft)) // SEW = 40bits
-ACCREG[i] = 0
+ACCREG[i].i = 0
 
 VS version
+Tmp.r = vs1[0][0].r * vs2[j][i].r + vs1[0][0].i * vs2[j][i].i  // SEW = SEW/2 * SEW/2 + SEW/2 * SEW/2
+Tmp.r = alg_round_shift_right(Tmp.r, MULSFT[j][i])
 Tmp.i = vs1[0][0].r * vs2[j][i].i - vs1[0][0].i * vs2[j][i].r  // SEW = SEW/2 * SEW/2 - SEW/2 * SEW/2
 Tmp.i = alg_round_shift_right(Tmp.i, MULSFT[j][i]);
+ACCREG[i].r += Tmp.r;
 ACCREG[i].i += Tmp.i;
 vd[0][i] = clip_low_40_SEW(alg_round_shift_right(ACCREG[i].i, accsft)) // SEW = 40bits
-ACCREG[i] = 0
+ACCREG[i].i = 0
 ----
 
 === vdscmulr(vector dynamic scaling complex multiply real part)
