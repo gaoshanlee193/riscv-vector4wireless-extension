@@ -134,3 +134,7 @@ i = min_i[vs2]; //First minimum value searched from lowest element
 vd[0][1] = vs1[i];
 ----
 
+
+=== vmget (vector mask get)
+
+=== vmset (vector mask set)
