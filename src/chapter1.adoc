@@ -56,4 +56,4 @@
 
 - ACCREG[i]: The i-th accumulation register inside the MAC ALU, 80 bits signed integer or 40bit signed image and real for complex value, 32 elements in total.
 - MULSFTREG[j][i]: The j-th multiply shift register i-the element inside the MAC ALU, 5bits unsigned value per element, 8*32 elements in total.
-- MSKREG[i]: index 'i' falls in 0~31, it represents the i-th bit of the mask for each element of a VR. It is the internal states of ALU. it's value is updated by seting from v0, and ALU operations. it's value can also be moved to v0.
+- MSKREG[i]: index 'i' falls in 0~127, it represents the i-th bit of the mask for each element of a VR. It is the internal states of ALU. it's value is updated by seting from v0, and ALU operations. it's value can also be moved to v0.
