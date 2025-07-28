@@ -27,10 +27,10 @@
 - zp32: Add 0 to 32 bits at lowest bits. e.g.zp32(0b'111101') = 0b'11110100000000000000000000000000'
 - sx16: sign extension to 16 bits. e.g. sx16(0b'111101') = 0xFFFD.
 - sx32: sign extension to 32 bits. e.g. sx16(0b'111101') = 0xFFFFFFFD.
-- min: Find the minimum value from vector registers.
-- max: Find the maximum value from vector registers.
-- min_i: Find the element index in the vector registers where the minimum value is located. If there are multiple element equal to minimum value, return the index of the right most and lowest vr index one.
-- max_i: Find the element index in the vector registers where the maximum value is located. If there are multiple element equal to maximum value, return the index of the right most and lowest vr index one.
+- min: min(VR, VMSK) Find the minimum value from VR(vector registers) masked by VMSK.
+- max: max(VR, VMSK) Find the maximum value from VR(vector registers) masked by VMSK.
+- min_i: min_i(VR, VMSK) Find the minimum element index from VR(vector registers) masked by VMSK. If there are multiple element enabled by VMSK equal to minimum value, return the index of the right most and lowest one.
+- max_i: max_i(VR, VMSK) Find the maximum element index from VR(vector registers) masked by VMSK. If there are multiple element enabled by VMSK equal to maximum value, return the index of the right most and lowest one.
 - lsb: The number of leading sign bit minus 1 for the absolute value of input. e.g. lsb( 0b'00010010') = 2, lsb( 0b'11111111') = lsb(abs(0b'11111111')) = lsb(0b'00000001') = 6; lsb(0b'00000000') = 0.
 - cpf_pack: Put e, i and r into the compressed complex format according to the complex compressed format. e.g. cpf_pack(e=0x3, i=0xFFFD, r=0x5) = 0x3F45
 - vcpack: extract the high 16 bits of 32-bit real numbers and 32-bit imaginary numbers in rounding mode to form a complex number in SC16 format. e.g i = 0x00058000, r = 0x00038000, vcpack(0x00058000, 0x00038000) = 0x00060004
