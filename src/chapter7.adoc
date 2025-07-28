@@ -136,7 +136,7 @@ MSKREG[i] = 0;
 vd[0][1] = vs1[i];
 ----
 
-=== vmget (vector mask get and write to v0)
+=== vmget(vector mask get and write to v0)
 . *Grammar*
 +
 vmget.v v0 +
@@ -155,7 +155,7 @@ Read the 128bits mask from MSKREG and write it to low 128bits of V0. v0 is the v
 V0 = MSKREG;
 ----
 
-=== vmset (vector mask set from v0 to MSKREG)
+=== vmset(vector mask set from v0 to MSKREG)
 . *Grammar*
 +
 vmset.v v0 +
