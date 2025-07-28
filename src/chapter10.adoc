@@ -1,4 +1,4 @@
-[[chapter10]]
+[[chapter9]]
 == Fast non-linear operations
 === Introduction
 In the fast nonlinear instructions vs2 store the fixed-point value in Q32.n format，vs1 store the point position n of the fix point format, n belongs to [0, 31]. vd stores the fix point position n of nonlinear function's output by exponent calculation instruction and it's mantissa value in Q32.n format by mantissa calculation instruction. +
