@@ -99,17 +99,19 @@ vredmaxi.vv vd, vs2, vs1, vm +
 
 . *Purpose*
 +
-Find the maximum value in the vector register and its corresponding index value and output it to the first and second elements in the target register.
+Find the maximum value in the vector register and its corresponding index value, then output it to the first and second elements in the target register.
+In parallel, it updates the MSKREG status by seting 0 to the bit that corresponds to the max value.
 
 . *Description*
 +
-vs2 saves the input value, vs1 saves the index value corresponding to each input value, finds the maximum value in vs2 and writes it into vd[0], and its corresponding index value is written into vd[1]. If the maximum value appears in multiple locations, output The first maximum value searched from low element to high element into vd. Default max value is the same as RVV 1.0, default index value is 0.
+vs2 saves the input value, vs1 saves the index value corresponding to each input value, finds the maximum value in vs2 and writes it into vd[0], and its corresponding index value is written into vd[1]. If the maximum value appears in multiple locations, output The first maximum value searched from low element to high element into vd. In parallel, it updates the MSKREG status by seting 0 to the bit that corresponds to the max value. Default max value is the same as RVV 1.0, default index value is 0.
 
 . *Operation*
 +
 ----
-vd[0][0] = max[vs2]; 
-i = max_i[vs2]; // First maximum value searched from lowest element
+vd[0][0] = max(vs2, MSKREG); 
+i = max_i(vs2, MSKREG); // First maximum value searched from lowest element
+MSKREG[i] = 0;
 vd[0][1] = vs1[i];
 ----
 
@@ -129,12 +131,46 @@ vs2 saves the input value, vs1 saves the index value corresponding to each input
 . *Operation*
 +
 ----
-vd[0][0] = min[vs2];
-i = min_i[vs2]; //First minimum value searched from lowest element
+vd[0][0] = min(vs2, MSKREG); 
+i = min_i(vs2, MSKREG); //First minimum value searched from lowest element
+MSKREG[i] = 0;
 vd[0][1] = vs1[i];
 ----
 
+=== vmget (vector mask get and write to v0)
+. *Grammar*
++
+vmget.v v0 +
 
-=== vmget (vector mask get)
+. *Purpose*
++
+Get the 128bits mask from MSKREG and write it to low 128bits of V0.
 
-=== vmset (vector mask set)
+. *Description*
++
+Read the 128bits mask from MSKREG and write it to low 128bits of V0. v0 is the vd, no vs1 and vs2, don't support vm.
+
+. *Operation*
++
+----
+V0 = MSKREG;
+----
+
+=== vmset (vector mask set from v0 to MSKREG)
+. *Grammar*
++
+vmset.v v0 +
+
+. *Purpose*
++
+set the 128bits mask from V0 low 128bits to MSKREG.
+
+. *Description*
++
+set the 128bits mask from V0 low 128bits to MSKREG. v0 is the vs1, no vs1 and vd, don't support vm.
+
+. *Operation*
++
+----
+MSKREG = v0;
+----
