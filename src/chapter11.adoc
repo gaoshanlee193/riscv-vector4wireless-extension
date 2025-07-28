@@ -178,11 +178,12 @@
 | vdscmulji.vv vd, vs2, vs1, vm   | 111100 | vm | vs2   | vs1         | 000   | vd     | 1010111
 | vdscmulji.vs vd, vs2, vs1, vm   | 111100 | vm | vs2   | vs1         | 100   | vd     | 1010111
 | vdsredsum.v vd, vs2, vm         | 010101 | vm | vs2   | 00000       | 010   | vd     | 1010111
-| vdsredsumn.vs vd, vs2, rs1      | 001101 | 1 | vs2   | rs1         | 100   | vd     | 1010111
-| vdsredsumn.vi vd, vs2, uimm     | 001101 | 1 | vs2   | imm         | 011   | vd     | 1010111
+| vdsredsumn.vs vd, vs2, rs1      | 001101 | 1  | vs2   | rs1         | 100   | vd     | 1010111
+| vdsredsumn.vi vd, vs2, uimm     | 001101 | 1  | vs2   | imm         | 011   | vd     | 1010111
 | vredmaxi.vv vd, vs2, vs1, vm    | 010011 | vm | vs2   | vs1         | 010   | vd     | 1010111
 | vredmini.vv vd, vs2, vs1, vm    | 010110 | vm | vs2   | vs1         | 010   | vd     | 1010111
-| vfft.vi vd,vs2, uimm            | 001000 | 1  | vs2   | uimm        | 011   | vd     | 1010111
+| vfft.type.v vd,vs2              | 001000 | 1  | vs2   | type        | 011   | vd     | 1010111
+| vfcvt.type.v vd,vs2             | 001000 | 1  | vs2   | type        | 011   | vd     | 1010111
 | vperm.vi vd, vs2, uimm          | 010110 | 1  | vs2   | imm         | 011   | vd     | 1010111
 | vfsl.vv vd, vs2, vs1            | 100100 | 1  | vs2   | vs1         | 000   | vd     | 1010111
 | vfsr.vv vd, vs2, vs1            | 100110 | 1  | vs2   | vs1         | 000   | vd     | 1010111
@@ -191,6 +192,8 @@
 | vnlm.vv vd, vs2, vs1, vm        | 101110 | vm | vs2   | vs1         | 010   | vd     | 1010111
 | vnlm.vs vd, vs2, vs1, vm        | 101110 | vm | vs2   | vs1         | 110   | vd     | 1010111
 | vlnlp.v vnpr, vs2               | 001100 | 1  | vs2   | 00000       | 010   | 00000  | 1010111
+| vmget.v v0                      | 011010 | 1  | 00000 | 00000       | 011   | 00000  | 1010111
+| vmset.v v0                      | 011011 | 1  | 00000 | 00000       | 011   | 00000  | 1010111
 |===============================================================================================
 +
 - *Zvw Load & Store Instruction encoding*
