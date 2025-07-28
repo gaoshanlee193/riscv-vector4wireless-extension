@@ -1,4 +1,4 @@
-= RISC-V Vector Extension for Wireless (Zvw)
+= RISC DSP Vector Extension for Wireless (RISC-DSP-w)
 Authors: Li Gaoshan
 include::../docs-resources/global-config.adoc[]
 :docgroup: RISC-V Task Group
