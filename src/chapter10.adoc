@@ -1,291 +1,216 @@
-[[chapter9]]
-== Fast non-linear operations
-=== Introduction
-In the fast nonlinear instructions vs2 store the fixed-point value in Q32.n format，vs1 store the point position n of the fix point format, n belongs to [0, 31]. vd stores the fix point position n of nonlinear function's output by exponent calculation instruction and it's mantissa value in Q32.n format by mantissa calculation instruction. +
+[[chapter10]]
+== Apendix A
 
-The segmentation of the nonlinear function is represented by five parameters R_NL_A, R_NL_B, R_NL_SEG, R_NL_SEG_EXP and funcId. R_NL_A represents the slope of the straight line, R_NL_B represents the bias of the straight line, R_NL_SEG represents the mantissa value of the starting position of the straight line on X-axis, R_NL_SEG_EXP is the exponent values in the nonlinear function calculation procedure, funcId is the nonlinear function type. The vector nonlinear function needs to perform a segmented search and linear fitting for each element of the vector.+
-
-Note: During all the following operations, the "alg_round_shift_right" is fixed with vxrm mode "vxrm=rnu", "<<" stands for alg_shift_left, and ">>" stands for alg_shift_right .+
-
-=== Instructions
-==== vlnlp(vector load nonlinear parameter)
-. *Grammar*
+=== RVV & Zvw Encoding space
+* *Zvw reuses the extension space of RVV (Func7 encoding space 1010111)*
 +
-vlnlp.v vnlpr, vs2 +
-
-. *Purpose*
+.RVV overall table
+[cols="9*", options="header"]
+|=============================================================================================================
+| inst[4:2] | 000    | 001       | 010       | 011      | 100    | 101      | 110            | 111(> 32b)
+| inst[6:5] |        |           |           |          |        |          |                |                
+| 00        | LOAD   | LOAD-FP   | custom-0  | MISC-MEM | OP-IMM | AUIPC    | OP-IMM-32      | 48b            
+| 01        | STORE  | STORE-FP  | custom-1  | AMO      | OP     | LUI      | OP-32          | 64b            
+| 10        | MADD   | MSUB      | NMSUB     | NMADD    | OP-FP  | *RVV*    | custom-2/rv128 | 48b            
+| 11        | BRANCH | JALR      | reserved  | JAL      | SYSTEM | reserved | custom-3/rv128 | ≥80b           
+|=============================================================================================================
 +
-Moving nonlinear function parameter configuration from vector register to nonlinear function parameter registers vnlpr0 and vnlpr1
-
-. *Description*
+* *Zvw follow the same Func3 encoding law of RVV*
 +
-Moving configuration from vector register vs2 to vnlpr0 and vnlpr1, 2048bits in total. LMUL is set to 2 contantly.
+.RVV Func3 encoding table
+[cols="6*", options="header"]
+|==============================================================================
+3+| funct3[2:0] | Category | Operands      | Type of scalar operand      
+| 0           | 0 | 0 | OPIVV    | vector-vector | N/A                         
+| 0           | 0 | 1 | OPFVV    | vector-vector | N/A                         
+| 0           | 1 | 0 | OPMVV    | vector-vector | N/A                         
+| 0           | 1 | 1 | OPIVI    | vector-imm    | imm[4:0]                    
+| 1           | 0 | 0 | OPIVX    | vector-scalar | GPR x register rs1          
+| 1           | 0 | 1 | OPFVF    | vector-scalar | FP f register rs1           
+| 1           | 1 | 0 | OPMVX    | vector-scalar | GPR x register rs1          
+| 1           | 1 | 1 | OPCFG    | scalars-imms  | GPR x register rs1 & rs2/imm
+|==============================================================================
 
-. *Operation*
 +
-----
-vnlpr0 = vs2[j]
-vnlpr1 = vs2[j+1] 
-----
-
-==== vnle(vector non-linear exponent calculation instruction)
-. *Grammar*
+* *Zvw Func6 encoding space in RVV*
 +
-vnle.vv vd, vs2, vs1, vm +
-vnle.vs vd, vs2, vs1, vm +
-
-. *Purpose*
+.Zvw Func6 encoding table part 1
+[cols="13*", options="header"]
+|=================================================================================================
+5+| funct6 4+| funct6 4+| funct6            
+| 000000 | V | X | I | vadd         | 000000 | V |   | vredsum     | 000000 | V | F | vfadd       
+| 000001 | V | X |   | *_vdsmac_*   | 000001 | V |   | vredand     | 000001 | V |   | vfredusum   
+| 000010 | V | X |   | vsub         | 000010 | V |   | vredor      | 000010 | V | F | vfsub       
+| 000011 |   | X | I | vrsub        | 000011 | V |   | vredxor     | 000011 | V |   | vfredosum   
+| 000100 | V | X |   | vminu        | 000100 | V |   | vredminu    | 000100 | V | F | vfmin       
+| 000101 | V | X |   | vmin         | 000101 | V |   | vredmin     | 000101 | V |   | vfredmin    
+| 000110 | V | X |   | vmaxu        | 000110 | V |   | vredmaxu    | 000110 | V | F | vfmax       
+| 000111 | V | X |   | vmax         | 000111 | V |   | vredmax     | 000111 | V |   | vfredmax    
+| 001000 |   |   | I | *_fft_/_vfcvt_* | 001000 | V | X | vaaddu      | 001000 | V | F | vfsgnj      
+| 001001 | V | X | I | vand         | 001001 | V | X | vaadd       | 001001 | V | F | vfsgnjn     
+| 001010 | V | X | I | vor          | 001010 | V | X | vasubu      | 001010 | V | F | vfsgnjx     
+| 001011 | V | X | I | vxor         | 001011 | V | X | vasub       | 001011 |   |   |             
+| 001100 | V | X | I | vrgather     | 001100 | V |   | *_vlnlp_*   | 001100 |   |   |             
+| 001101 |   | X | I | *_vdsredsumn_* | 001101 | V |   | *_vdscredsum_* | 001101 |   |   |             
+| 001110 |   | X | I | vslideup     | 001110 |   | X | vslide1up   | 001110 |   | F | vfslide1up  
+| 001110 | V |   |   | vrgatherei16 |        |   |   |             |        |   |   |             
+| 001111 |   | X | I | vslidedown   | 001111 |   | X | vslide1down | 001111 |   | F | vfslide1down
+|=================================================================================================
 +
-Computes the exponential part of the output value of a nonlinear function of an input vector.
-
-. *Description*
+.Zvw Func6 encoding table part 2
+[cols="13*", options="header"]
+|==============================================================================================
+5+| funct6 4+| funct6 4+| funct6               
+| 010000 | V | X | I | vadc       | 010000 | V |   | VWXUNARYO   | 010000 | V |   | VWFUNARYO   
+|        |   |   |   |            | 010000 |   | X | VRXUNARYO   | 010000 |   | F | VRFUNARYO   
+| 010001 | V | X | I | vmadc      | 010001 | V |   | *_vcunpackr/i_* | 010001 |   |   |             
+| 010010 | V | X |   | vsbc       | 010010 | V |   | VXUNARYO    | 010010 | V |   | VFUNARYO    
+| 010011 | V | X |   | vmsbc      | 010011 | V |   | *_vredmaxi_*    | 010011 | V |   | VFUNARY1    
+| 010100 | V | X |   | *_vdsmul_*     | 010100 | V |   | VMUNARYO    | 010100 |   |   |             
+| 010101 | V | X | I | *_vdsmacini_*  | 010101 | V |   | *_vdsredsum_*   | 010101 |   |   |             
+| 010110 |   |   |   | *_vperm_*      | 010110 | V |   | *_vredmini_*    | 010110 |   |   |             
+| 010111 | V | X | I | vmerge/vmv | 010111 | V |   | vcompress   | 010111 |   | F | vfmerge/vfmv
+| 011000 | V | X | I | vmseq      | 011000 | V |   | vmandnot    | 011000 | V | F | vmfeq       
+| 011001 | V | X | I | vmsne      | 011001 | V |   | vmand       | 011001 | V | F | vmfle       
+| 011010 | V | X |   | vmsltu     | 011010 | V |   | vmor        | 011010 |   |   | 
+| 011010 |   |   | I | vmget      | 011010 |   |   |             | 011010 |   |   |             
+| 011011 | V | X |   | vmslt      | 011011 | V |   | vmxor       | 011011 | V | F | vmflt
+| 011011 |   |   | I | vmset      | 011011 |   |   |             | 011011 |   |   |        
+| 011100 | V | X | I | vmsleu     | 011100 | V |   | vmornot     | 011100 | V | F | vmfne       
+| 011101 | V | X | I | vmsle      | 011101 | V |   | vmnand      | 011101 |   | F | vmfgt       
+| 011110 |   | X | I | vmsgtu     | 011110 | V |   | vmnor       | 011110 |   |   |             
+| 011111 |   | X | I | vmsgt      | 011111 | V |   | vmxnor      | 011111 |   | F | vmfge       
+|==============================================================================================
 +
-vs2 stores the fixed-point value, vs1 or vs1[0] stores the fixed-point value n. According to the function type configured in the nonlinear control register, the corresponding exponential result E is calculated, and the result is placed in vd.
-
-. *Operation*
+.Zvw Func6 encoding table part 3
+[cols="13*", options="header"]
+|========================================================================================
+5+| funct6 4+| funct6 4+| funct6          
+| 100000 | V | X | I | vsaddu   | 100000 | V | X | vdivu   | 10000 0 | V | F | vfdiv  
+| 100001 | V | X | I | vsadd    | 100001 | V | X | vdiv    | 100001  |   | F | vfrdiv 
+| 100010 | V | X |   | vssubu   | 100010 | V | X | vremu   | 100010  |   |   |        
+| 100011 | V | X |   | vssub    | 100011 | V | X | vrem    | 100011  |   |   |        
+| 100100 | V |   |   | *_vfsl_*     | 100100 | V | X | vmulhu  | 100100  | V | F | vfmul  
+| 100101 | V | X | I | vsll     | 100101 | V | X | vmul    | 100101  |   |   |        
+| 100110 | V |   |   | *_vfsr_*     | 100110 | V | X | vmulhsu | 100110  |   |   |        
+| 100111 | V | X |   | vsmul    | 100111 | V | X | vmulh   | 100111  |   | F | vfrsub 
+|        |   |   | I | vmv<nr>r |        |   |   |         |         |   |   |        
+| 101000 | V | X | I | vsrl     | 101000 | V |   | *_vcpack_*   | 101000  | V | F | vfmadd 
+| 101001 | V | X | I | vsra     | 101001 | V | X | vmadd   | 101001  | V | F | vfnmadd
+| 101010 | V | X | I | vssrl    | 101010 | V | X | *_vdsmaco_* | 101010  | V | F | vfmsub 
+| 101011 | V | X | I | vssra    | 101011 | V | X | vnmsub  | 101011  | V | F | vfnmsub
+| 101100 | V | X | I | vnsrl    | 101100 | V | X | *_vnle_*    | 101100  | V | F | vfmacc 
+| 101101 | V | X | I | vnsra    | 101101 | V | X | vmacc   | 101101  | V | F | vfnmacc
+| 101110 | V | X | I | vnclipu  | 101110 | V |   | *_vnlm_*    | 101110  | V | F | vfmsac 
+| 101111 | V | X | I | vnclip   | 101111 | V | X | vnmsac  | 101111  | V | F | vfnmsac
+|========================================================================================
 +
-----
-VV version
-x[i], E[i] = norm(funcId, vs2[j][i], vs1[j][i])
-x[i], s[i], E[i] = preProc(funcId, x[i], E[i])
-(vd[j][i], E[i]) = expAdjust(funcId, E[i], R_NL_SEG_EXP[1])
+.Zvw Func6 encoding table part 4
+[cols="13*", options="header"]
+|===========================================================================================
+5+| funct6 4+| funct6 4+| funct6         
+| 110000 | V |   |  | vwredsumu  | 110000 | V | X | vwaddu   | 110000 | V | F | vfwadd     
+| 110001 | V |   |  | vwredsum   | 110001 | V | X | vwadd    | 110001 | V |   | vfwredusum
+| 110010 | V | X |  | *_vdscmul_*    | 110010 | V | X | vwsubu   | 110010 | V | F | vfwsub     
+| 110011 | V | X |  | *_vdscmulj_*   | 110011 | V | X | vwsub    | 110011 | V |   | vfwredosum 
+| 110100 | V | X |  | *_vdscmac(j)_* | 110100 | V | X | vwaddu.w | 110100 | V | F | vfwadd.w  
+| 110101 | V | X |  | *_vdscmacjoi_* | 110101 | V | X | vwadd.w  | 110101 |   |   |           
+| 110110 | V | X |  | *_vdscmaco_*   | 110110 | V | X | vwsubu.w | 110110 | V | F | vfwsub.w  
+| 110111 | V | X |  | *_vdscmacor_*  | 110111 | V | X | vwsub.w  | 110111 |   |   |            
+| 111000 | V | X |  | *_vdscmacoi_*  | 111000 | V | X | vwmulu   | 111000 | V | F | vfwmul    
+| 111001 | V | X |  | *_vdscmulr_*   | 111001 | V | X | *_vdsmul_*   | 111001 |   |   |           
+| 111010 | V | X |  | *_vdscmuli_*   | 111010 | V | X | vwmulsu  | 111010 |   |   |           
+| 111011 | V | X |  | *_vdscmuljr_*  | 111011 | V | X | vwmul    | 111011 |   |   |           
+| 111100 | V | X |  | *_vdscmulji_*  | 111100 | V | X | vwmaccu  | 111100 | V | F | vfwmacc   
+| 111101 | V |   |  | *_vconj_*      | 111101 | V | X | vwmacc   | 111101 | V | F | vfwnmacc  
+| 111110 | V | X |  | *_vdscmacjor_* | 111110 |   | X | vwmaccus | 111110 | V | F | vfwmsac   
+| 111111 | V | X |  | *_vdscmacjo_*  | 111111 | V | X | vwmaccsu | 111111 | V | F | vfwnmsac  
+|===========================================================================================
 
-VS version
-x[i], E[i] = norm(funcId, vs2[j][i], vs1[0][0])
-x[i], s[i], E[i] = preProc(funcId, x[i], E[i])
-(vd[j][i], E[i]) = expAdjust(funcId, E[i], R_NL_SEG_EXP[1])
-----
-
-==== vnlm(vector non-linear mantissa calculation instruction)
-. *Grammar*
+=== Zvw Instruction encoding
+- *Zvw Instruction encoding*
 +
-vnlm.vv vd, vs2, vs1, vm +
-vnlm.vs vd, vs2, vs1, vm +
-
-. *Purpose*
+.Zvw encoding table
+[cols="8*", options="header"]
+|===============================================================================================
+| Inst. format                    | Func6  | vm | vs2   | vs1/rs1/imm | Func3 | vd/vs3 | Func7  
+| vlsb.v vd, vs2, vm              | 010100 | vm | vs2   | 00000       | 000   | vd     | 1010111
+| vdsmul.vv vd, vs2, vs1, vm      | 111001 | vm | vs2   | vs1         | 010   | vd     | 1010111
+| vdsmul.vs vd, vs2, vs1, vm      | 111001 | vm | vs2   | vs1         | 110   | vd     | 1010111
+| vdsmacini.v vs2, vm             | 010101 | vm | vs2   | 00000       | 000   | 00000  | 1010111
+| vdsmacini.s rs1, vm             | 010101 | vm | 00000 | rs1         | 100   | 00000  | 1010111
+| vdsmacini.i uimm, vm            | 010101 | vm | 00000 | imm         | 011   | 00000  | 1010111
+| vdsmac.vv vs2, vs1, vm          | 000001 | vm | vs2   | vs1         | 000   | 00000  | 1010111
+| vdsmac.vs vs2, vs1, vm          | 000001 | vm | vs2   | vs1         | 100   | 00000  | 1010111
+| vdsmaco.vv vd,vs2, vs1,vm       | 101010 | vm | vs2   | vs1         | 010   | vd     | 1010111
+| vdsmaco.vs vd,vs2, vs1, vm      | 101010 | vm | vs2   | vs1         | 110   | vd     | 1010111
+| vcpack.vv vd, vs2, vs1, vm      | 101000 | vm | vs2   | vs1         | 010   | vd     | 1010111
+| vcunpackr.v vd, vs2, vm         | 010001 | vm | vs2   | 00000       | 010   | vd     | 1010111
+| vcunpacki.v vd, vs2, vm         | 010001 | vm | vs2   | 00001       | 010   | vd     | 1010111
+| vconj.v vd, vs2, vm             | 111101 | vm | vs2   | 00000       | 000   | vd     | 1010111
+| vdscmul.vv vd, vs2, vs1, vm     | 110010 | vm | vs2   | vs1         | 000   | vd     | 1010111
+| vdscmul.vs vd, vs2, vs1, vm     | 110010 | vm | vs2   | vs1         | 100   | vd     | 1010111
+| vdscmulj.vv vd, vs2, vs1, vm    | 110011 | vm | vs2   | vs1         | 000   | vd     | 1010111
+| vdscmulj.vs vd, vs2, vs1, vm    | 110011 | vm | vs2   | vs1         | 100   | vd     | 1010111
+| vdscredsum.v vd, vs2, vm        | 001101 | vm | vs2   | 00000       | 010   | vd     | 1010111
+| vdscmac.vv vs2, vs1, vm         | 110100 | vm | vs2   | vs1         | 000   | 00000  | 1010111
+| vdscmac.vs vs2, vs1, vm         | 110100 | vm | vs2   | vs1         | 100   | 00000  | 1010111
+| vdscmacj.vv vs2, vs1, vm        | 110100 | vm | vs2   | vs1         | 000   | 00001  | 1010111
+| vdscmacj.vs vs2, vs1, vm        | 110100 | vm | vs2   | vs1         | 100   | 00001  | 1010111
+| vdscmaco.vv vd, vs2, vs1, vm    | 110110 | vm | vs2   | vs1         | 000   | vd     | 1010111
+| vdscmaco.vs vd, vs2, vs1, vm    | 110110 | vm | vs2   | vs1         | 100   | vd     | 1010111
+| vdscmacjo.vv vd, vs2, vs1, vm   | 111111 | vm | vs2   | vs1         | 000   | vd     | 1010111
+| vdscmacjo.vs vd, vs2, vs1, vm   | 111111 | vm | vs2   | vs1         | 100   | vd     | 1010111
+| vdscmacor.vv vd,vs2, vs1, vm    | 110111 | vm | vs2   | vs1         | 000   | vd     | 1010111
+| vdscmacor.vs vd,vs2, vs1, vm    | 110111 | vm | vs2   | vs1         | 100   | vd     | 1010111
+| vdscmacjor.vv vd,vs2, vs1, vm   | 111110 | vm | vs2   | vs1         | 000   | vd     | 1010111
+| vdscmacjor.vs vd,vs2, vs1, vm   | 111110 | vm | vs2   | vs1         | 100   | vd     | 1010111
+| vdscmacoi.vv vd, vs2, vs1, vm   | 111000 | vm | vs2   | vs1         | 000   | vd     | 1010111
+| vdscmacoi.vs vd, vs2, vs1, vm   | 111000 | vm | vs2   | vs1         | 100   | vd     | 1010111
+| vdscmacjoi.vv vd, vs2, vs1, vm  | 110101 | vm | vs2   | vs1         | 000   | vd     | 1010111
+| vdscmacjoi.vs vd, vs2, vs1, vm  | 110101 | vm | vs2   | vs1         | 100   | vd     | 1010111
+| vdscmulr.vv vd, vs2, vs1, vm    | 111001 | vm | vs2   | vs1         | 000   | vd     | 1010111
+| vdscmulr.vs vd, vs2, vs1, vm    | 111001 | vm | vs2   | vs1         | 100   | vd     | 1010111
+| vdscmuli.vv vd, vs2, vs1, vm    | 111010 | vm | vs2   | vs1         | 000   | vd     | 1010111
+| vdscmuli.vs vd, vs2, vs1, vm    | 111010 | vm | vs2   | vs1         | 100   | vd     | 1010111
+| vdscmuljr.vv vd, vs2, vs1, vm   | 111011 | vm | vs2   | vs1         | 000   | vd     | 1010111
+| vdscmuljr.vs vd, vs2, vs1, vm   | 111011 | vm | vs2   | vs1         | 100   | vd     | 1010111
+| vdscmulji.vv vd, vs2, vs1, vm   | 111100 | vm | vs2   | vs1         | 000   | vd     | 1010111
+| vdscmulji.vs vd, vs2, vs1, vm   | 111100 | vm | vs2   | vs1         | 100   | vd     | 1010111
+| vdsredsum.v vd, vs2, vm         | 010101 | vm | vs2   | 00000       | 010   | vd     | 1010111
+| vdsredsumn.vs vd, vs2, rs1      | 001101 | 1  | vs2   | rs1         | 100   | vd     | 1010111
+| vdsredsumn.vi vd, vs2, uimm     | 001101 | 1  | vs2   | imm         | 011   | vd     | 1010111
+| vredmaxi.vv vd, vs2, vs1, vm    | 010011 | vm | vs2   | vs1         | 010   | vd     | 1010111
+| vredmini.vv vd, vs2, vs1, vm    | 010110 | vm | vs2   | vs1         | 010   | vd     | 1010111
+| vfft.type.v vd,vs2              | 001000 | 1  | vs2   | type        | 011   | vd     | 1010111
+| vfcvt.type.v vd,vs2             | 001000 | 1  | vs2   | type        | 011   | vd     | 1010111
+| vperm.vi vd, vs2, uimm          | 010110 | 1  | vs2   | imm         | 011   | vd     | 1010111
+| vfsl.vv vd, vs2, vs1            | 100100 | 1  | vs2   | vs1         | 000   | vd     | 1010111
+| vfsr.vv vd, vs2, vs1            | 100110 | 1  | vs2   | vs1         | 000   | vd     | 1010111
+| vnle.vv vd, vs2, vs1, vm        | 101100 | vm | vs2   | vs1         | 010   | vd     | 1010111
+| vnle.vs vd, vs2, vs1, vm        | 101100 | vm | vs2   | vs1         | 110   | vd     | 1010111
+| vnlm.vv vd, vs2, vs1, vm        | 101110 | vm | vs2   | vs1         | 010   | vd     | 1010111
+| vnlm.vs vd, vs2, vs1, vm        | 101110 | vm | vs2   | vs1         | 110   | vd     | 1010111
+| vlnlp.v vnpr, vs2               | 001100 | 1  | vs2   | 00000       | 010   | 00000  | 1010111
+| vmget.v v0                      | 011010 | 1  | 00000 | 00000       | 011   | 00000  | 1010111
+| vmset.v v0                      | 011011 | 1  | 00000 | 00000       | 011   | 00000  | 1010111
+|===============================================================================================
 +
-Computes the linear portion of the output of a nonlinear function of the input vector.
-
-. *Description*
+- *Zvw Load & Store Instruction encoding*
 +
-vs2 stores the fixed-point value, vs1 or vs1[0] stores the fixed-point value n. According to the function type configured in the nonlinear control register and the segmented parameter configuration, the segmented nonlinear result is calculated. Finally, the results are put into vd after fix point format conversion. 
-
-. *Operation*
-+
-----
-VV version
-x[i], E[i] = norm(funcId, vs2[j][i], vs1[j][i])
-x[i], s[i], E[i] = preProc(funcId, x[i], E[i])
-segIdx[i] = findSeg(x[i], R_NL_SEG)
-If (segIdx[i] is valid)
-{ 
-  tmp = R_NL_A[segIdx[i]] * x[i]; //2SEW = SEW * SEW
-  tmp = clip_low_SEW(alg_round_shift_right(tmp, R_NL_SEG_EXP[2]) + R_NL_B[segIdx[i]]); //SEW = SEW + SEW
-  if R_NL_SEG_EXP[1] >= R_NL_SEG_EXP[0]
-    tmp <<= R_NL_SEG_EXP[1] - R_NL_SEG_EXP[0]
-  else
-    tmp >>= R_NL_SEG_EXP[0] - R_NL_SEG_EXP[1]
-  e[i], E[i] = expAdjust(funcId, E[i], R_NL_SEG_EXP[1]);
-  vd[j][i] = postProc(funcId, tmp, s[i], E[i]);
-}
-
-VS version
-x[i], E[i] = norm(funcId, vs2[j][i], vs1[0][0])
-x[i], s[i], E[i] = preProc(funcId, x[i], E[i])
-segIdx[i] = findSeg(x[i], R_NL_SEG)
-If (segIdx[i] is valid)
-{ 
-  tmp = R_NL_A[segIdx[i]] * x[i]; //2SEW = SEW * SEW
-  tmp = clip_low_SEW(alg_round_shift_right(tmp, R_NL_SEG_EXP[2]) + R_NL_B[segIdx[i]]); //SEW = SEW + SEW
-  if R_NL_SEG_EXP[1] >= R_NL_SEG_EXP[0]
-    tmp <<= R_NL_SEG_EXP[1] - R_NL_SEG_EXP[0]
-  else
-    tmp >>= R_NL_SEG_EXP[0] - R_NL_SEG_EXP[1]
-  e[i], E[i] = expAdjust(funcId, E[i], R_NL_SEG_EXP[1])
-  vd[j][i] = postProc(funcId, tmp, s[i], E[i])
-}
-----
-
-=== Implementation
-==== norm
-
-. *Description*
-+
-normalization for the input data to [0.5~1).
-
-. *Operation*
-+
-vs2 is 32bit fixpoint real number, vs1 is the fix point position and only low 5bits are valid, e.g. for a Q32.20 fixpoint value, it's fix point position number is 20. E∈[-31,31]
-+
-----
-x, E = norm(funcId, vs2, vs1)
-
-if funcId == 0 ||funcId == 1 || funcId == 2 || funcId == 3 || funcId == 5   % 0：reciprocal; 1: square root; 2: reciprocal of square root; 3: log2; 5: log10
-    eNorm =  lsb(vs2); // take 32 bit-width data for example,  as for one number, the negative and positive should output the same eNorm. 
-    x = vs2 << eNorm
-    E = 31 - eNorm - vs1
-else
-    x = vs2
-    E = 0
-    
-----
-
-==== preProc
-
-. *Description*
-+
-preprocess for non-linear instruction.
-
-. *Operation*
-+
-----
-x, s, E = preproc(funcId, x, E)
-
-s = 1                 % default operation
-x = x
-E = E
-
-if funcId == 0       % reciprocal
-    s = sign(x)       % if x>0 s=1; elsif x<0 s=-1; elsif x==0 s=0;
-    x = abs(x)
-
-elsif funcId == 1    % square root
-    isOddE = alg_round_shift_right(E,1) - alg_shift_right(E,1);
-    E   = E + isOddE
-    x   = x >> isOddE
-
-elsif funcId == 2    % reciprocal of square root
-    isOddE = alg_round_shift_right(E,1) - alg_shift_right(E,1);
-    E   = E + isOddE
-    x   = x >> isOddE
-
-elsif funcId == 4    % arctan
-    s = sign(x)        % if x>0 s=1; elsif x<0 s=-1; elsif x==0 s=0;
-    x = abs(x)
-
-elsif funcId == 6    % sin (x∈Q(32.30))
-    msb1 = x & 0x40000000  % get 31st bit 
-    msb2 = x & 0x20000000   % get 30th bit 
-    s    = 1 - 2*msb1
-    x    = x & 0x1fffffff   % mod(x,2^29)
-    if msb2==1 
-        x = 2^29 - x
-    
-elsif funcId == 7    % cos (x∈Q(32.30))
-    msb1 = x & 0x40000000;   % get 31st bit 
-    msb2 = x & 0x20000000;   % get 30th bit 
-    s    = 1 - 2*xor(msb1, msb2);
-    x    = x & 0x1fffffff;   % mod(x,2^29)
-    if msb2==0 
-        x = 2^29 - x
-
-----
-
-==== findSeg
-
-. *Description*
-+
-find which segment the input data belongs to in N-th segment group. 
-the fix points in R_NL_SEG are in ascending order. input x should not smaller than the R_NL_SEG[0].
-Input x should compare with each fix point in R_NL_SEG and find the max fix point which smaller than x, the index of that max fix point is the target segIdx. If x is bigger than the R_NL_SEG[N-1], the segIdx is N-1.
-
-. *Operation*
-+
-----
-segIdx = findSeg(x, R_NL_SEG[N])  % N is segment number. 
-
-for iSeg = 1:N        % input x compare with each fix point in R_NL_SEG and logic value 0 stands for "smaller".
-    lutIndex(iSeg) = (x >=R_NL_SEG[iSeg])    
-end
-segIdx = sum(lutIndex)-1          % accumulate logic value of all segments and the sum value minus 1 stands for target segment idx.
-
-----
-
-
-==== expAdjust
-
-. *Description*
-+
-adjust the exponent for the output.
-
-. *Operation*
-+
-----
-e, E = ExpAdjust(funcId, E, e)
-
-E = E                   % default operation
-e = e
-
-if funcId == 0       % reciprocal
-    E =  -E + 1
-    if (E >= 0) e = 31 - E
-    else e = 31
-
-elsif funcId == 1    % square root
-    E = (E>>1)
-    if (E >= 0) e = 31 - E
-    else e = 31   
-   
-elsif funcId == 2    % reciprocal of square root
-    E = -(E>>1)+1
-    if (E >=  0) e = 31 - E
-    else e = 31
-
-elsif funcId == 3    % log2
-    e = 26
-
-elsif funcId == 4    % arctan
-    e = 28
-
-elsif funcId == 5    % log10
-    e = 26
-
-elseif funcId == 6 || funcId == 7 % sin/cos
-    e = 31
-
-----
-
-
-==== postProc
-
-. *Description*
-+
-postprocess for non-linear instruction.
-
-. *Operation*
-+
-----
-y = postproc(funcId, tmp, s, E)
-
-if funcId == 0       % reciprocal
-    y = s * tmp
-    if (E < 0) y = y >> -E
-    
-elsif funcId == 1    % square root
-    y = s * tmp
-    if (E < 0) y = y >> -E
-
-elsif funcId == 2    % reciprocal of square root 
-    y = s * tmp
-    if (E < 0) y = y >> -E
-
-elsif funcId == 3    % log2
-    if tmp>0 tmp=0
-    if tmp<1-2^31 tmp = 1-2^31  % tmp belong to range (-1,0)
-    y = tmp>>5 + E<<26         % final output Q(32.26)
-
-elsif funcId == 4    % arctan
-    y = s*tmp + 843314857          % Q(32.30) const for pi/4
-    y = alg_round_shift_right(y,2)  % Q(32.28)
-
-elsif funcId == 5    % log10
-    if tmp>0 tmp=0
-    if tmp<1-2^31 tmp = 1-2^31          % tmp belong to range (-1,0)
-    y0 = tmp>>5 + E<<26                % log2 output Q(32.26)
-    y1 = y0<<24 + y0<<26 + y0<<27 + y0<<30 % 64bit int
-    y =  y1>>32                        % log10 final output with 32bit
-
-else                     % sin/cos 
-    y = s * tmp
-
-----
+.Zvw load & store instruction encoding table
+[cols="8*", options="header"]
+|=========================================================================================
+| Inst. format            | nf-mew-mop | vm | lumop/sumop | rs1 | width | vd/vs3 | Func7  
+| vlfcb2h.v vd, rs1, vm   | 000000     | vm | 10001       | rs1 | 101   | vd     | 0000111
+| vlfcb2w.v vd, rs1, vm   | 000000     | vm | 10010       | rs1 | 110   | vd     | 0000111
+| vlfch2w.v vd, rs1, vm   | 000000     | vm | 10011       | rs1 | 110   | vd     | 0000111
+| vlfcpa2c.v vd, rs1, vm  | 000000     | vm | 10100       | rs1 | 110   | vd     | 0000111
+| vlfcpb2c.v vd, rs1, vm  | 000000     | vm | 10101       | rs1 | 110   | vd     | 0000111
+| vsfch2b.v vs3, rs1, vm  | 000000     | vm | 10001       | rs1 | 101   | vs3    | 0100111
+| vsfcw2b.v vs3, rs1, vm  | 000000     | vm | 10010       | rs1 | 110   | vs3    | 0100111
+| vsfcw2h.v vs3, rs1, vm  | 000000     | vm | 10011       | rs1 | 110   | vs3    | 0100111
+| vsfcc2pa.v vs3, rs1, vm | 000000     | vm | 10100       | rs1 | 110   | vs3    | 0100111
+| vsfcc2pb.v vs3, rs1, vm | 000000     | vm | 10101       | rs1 | 110   | vs3    | 0100111
+|=========================================================================================
+. 

@@ -1,0 +1,72 @@
+[[chapter8]]
+== Inter-element operation instructions
+=== vperm(vector permutation)
+. *Grammar*
++
+vperm.vi vd, vs2, uimm +
+
+. *Purpose*
++
+According to the element sorting mode predefined by the customer, some elements are taken out from the elements of the source vector register, the elements are reordered according to a certain defined sorting mode and output to the destination vector register.
+
+. *Description*
++
+The original data is stored in vs2. uimm selects a predefined permutation mode PATTEN[uimm] defined below form P0~P8 and mapping the i'th elements in vs2[j][i] to the new element indexed by PATTEN[uimm][i] in vd. The numbers in original pattern is the element index in VR, the numbers in the destination pattern represents the corresponding elements indexed by it at the original VR. The values ​​represented by 'X' are useless elements of the instruction. The pattern index starts counting from 0.
++
+Patterns e.g.
++
+P0：012...31 -> 012X345X678X......X 21 22 23X, 24 to 31 elements are discarded +
+P1: 012345...31 -> 012345XX67891011XX......XX18 19 20 21 22 23XX 24 to 31 elements are discarded +
+P2: 01xxxxxxxxxxxxxxxxxxxxxxxxxxxx -> 0101010101010101XXXXXXXXXXXXXXXX 2 to 31 elements are discarded +
+P3: 01234567xxxxxxxxxxxxxxxxxxxxx -> 0011223344556677XXXXXXXXXXXXXXXX 8 to 31 elements are discarded +
+P4: 012xxxxxxxxxxxxxxxxxxxxxxxxxx -> 012012012012XXXXXXXXXXXXXXXXXXXX 3 to 31 elements are discarded +
+P5: 0123xxxxxxxxxxxxxxxxxxxxxxxxxxxx -> 000111222333XXXXXXXXXXXXXXXXXXXX 4 to 31 elements are discarded +
+P6: 0123xxxxxxxxxxxxxxxxxxxxxxxxxxxx -> 0123012301230123XXXXXXXXXXXXXXXX 4 to 31 elements are discarded +
+P7: 0123xxxxxxxxxxxxxxxxxxxxxxxxxxxx -> 0000111122223333XXXXXXXXXXXXXXXX 4 to 31 elements are discarded +
+P8: 0123 ... 31 -> 31 .... 3210 +
++
+. *Operation*
++
+----
+vd[j][i] = vs2[j][PATTEN[uimm][i]]
+----
+
+=== vfsl(vector funnel shift left)
+. *Grammar*
++
+vfsl.vv vd, vs2, vs1 +
+
+. *Purpose*
++
+The elements of two vector registers are funnel shifted left.
+
+. *Description*
++
+combine vs2 and vs1 to form a new vector vr_temp with twice the length from left to right. All elements in vr_tmp are sequentially shifted left by fsht bits, left most 'fsht' elements are shifted out and discarded. Finally, the left half of vr_tp are output to vd. not controlled by vl/vstart.LMUL > 1 is supported.
+
+. *Operation*
++
+----
+vd[j] = {vs2[j][(31- fsft) ... 0], vs1[j][31 ... (31 - fsft + 1)]}
+----
+
+
+=== vfsr(vector funnel shift right)
+. *Grammar*
++
+vfsr.vv vd, vs2, vs1 +
+
+. *Purpose*
++
+The elements of two vector registers are funnel shifted right.
+
+. *Description*
++
+combine vs2 and vs1 to form a new vector vr_temp with twice the length from left to right. All elements in vr_tmp are sequentially shifted right by 'fsht' elements, right most 'fsht' elements are shifted out and discarded. Finally, the right half of vr_tmp are output to vd. not controlled by vl/vstart.LMUL > 1 is supported.
+
+. *Operation*
++
+----
+vd[j] = {vs2[j][(fsft - 1) ... 0], vs1[j][31 ... fsft]}
+----
+

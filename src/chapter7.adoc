@@ -1,5 +1,5 @@
 [[chapter7]]
-==  Dynamic scaling Reduced operation
+== Dynamic scaling Reduced operation
 
 === vdsredsum(vector dynamic scaling reduced sum)
 . *Grammar*
@@ -173,3 +173,5 @@ set the 128bits mask from V0 low 128bits to MSKREG. v0 is the vs1, no vs1 and vd
 ----
 MSKREG = v0;
 ----
+
+.

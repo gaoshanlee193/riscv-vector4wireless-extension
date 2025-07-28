@@ -1,73 +1,294 @@
-[[chapter8]]
-== Inter-element operation instructions
+[[chapter9]]
+== Fast non-linear operations
 
-=== vperm(vector permutation)
+=== Introduction
+In the fast nonlinear instructions vs2 store the fixed-point value in Q32.n format，vs1 store the point position n of the fix point format, n belongs to [0, 31]. vd stores the fix point position n of nonlinear function's output by exponent calculation instruction and it's mantissa value in Q32.n format by mantissa calculation instruction. +
+
+The segmentation of the nonlinear function is represented by five parameters R_NL_A, R_NL_B, R_NL_SEG, R_NL_SEG_EXP and funcId. R_NL_A represents the slope of the straight line, R_NL_B represents the bias of the straight line, R_NL_SEG represents the mantissa value of the starting position of the straight line on X-axis, R_NL_SEG_EXP is the exponent values in the nonlinear function calculation procedure, funcId is the nonlinear function type. The vector nonlinear function needs to perform a segmented search and linear fitting for each element of the vector.+
+
+Note: During all the following operations, the "alg_round_shift_right" is fixed with vxrm mode "vxrm=rnu", "<<" stands for alg_shift_left, and ">>" stands for alg_shift_right .+
+
+=== Instructions
+==== vlnlp(vector load nonlinear parameter)
 . *Grammar*
 +
-vperm.vi vd, vs2, uimm +
+vlnlp.v vnlpr, vs2 +
 
 . *Purpose*
 +
-According to the element sorting mode predefined by the customer, some elements are taken out from the elements of the source vector register, the elements are reordered according to a certain defined sorting mode and output to the destination vector register.
+Moving nonlinear function parameter configuration from vector register to nonlinear function parameter registers vnlpr0 and vnlpr1
 
 . *Description*
 +
-The original data is stored in vs2. uimm selects a predefined permutation mode PATTEN[uimm] defined below form P0~P8 and mapping the i'th elements in vs2[j][i] to the new element indexed by PATTEN[uimm][i] in vd. The numbers in original pattern is the element index in VR, the numbers in the destination pattern represents the corresponding elements indexed by it at the original VR. The values ​​represented by 'X' are useless elements of the instruction. The pattern index starts counting from 0.
-+
-Patterns e.g.
-+
-P0：012...31 -> 012X345X678X......X 21 22 23X, 24 to 31 elements are discarded +
-P1: 012345...31 -> 012345XX67891011XX......XX18 19 20 21 22 23XX 24 to 31 elements are discarded +
-P2: 01xxxxxxxxxxxxxxxxxxxxxxxxxxxx -> 0101010101010101XXXXXXXXXXXXXXXX 2 to 31 elements are discarded +
-P3: 01234567xxxxxxxxxxxxxxxxxxxxx -> 0011223344556677XXXXXXXXXXXXXXXX 8 to 31 elements are discarded +
-P4: 012xxxxxxxxxxxxxxxxxxxxxxxxxx -> 012012012012XXXXXXXXXXXXXXXXXXXX 3 to 31 elements are discarded +
-P5: 0123xxxxxxxxxxxxxxxxxxxxxxxxxxxx -> 000111222333XXXXXXXXXXXXXXXXXXXX 4 to 31 elements are discarded +
-P6: 0123xxxxxxxxxxxxxxxxxxxxxxxxxxxx -> 0123012301230123XXXXXXXXXXXXXXXX 4 to 31 elements are discarded +
-P7: 0123xxxxxxxxxxxxxxxxxxxxxxxxxxxx -> 0000111122223333XXXXXXXXXXXXXXXX 4 to 31 elements are discarded +
-P8: 0123 ... 31 -> 31 .... 3210 +
-+
-. *Operation*
-+
-----
-vd[j][i] = vs2[j][PATTEN[uimm][i]]
-----
-
-=== vfsl(vector funnel shift left)
-. *Grammar*
-+
-vfsl.vv vd, vs2, vs1 +
-
-. *Purpose*
-+
-The elements of two vector registers are funnel shifted left.
-
-. *Description*
-+
-combine vs2 and vs1 to form a new vector vr_temp with twice the length from left to right. All elements in vr_tmp are sequentially shifted left by fsht bits, left most 'fsht' elements are shifted out and discarded. Finally, the left half of vr_tp are output to vd. not controlled by vl/vstart.LMUL > 1 is supported.
+Moving configuration from vector register vs2 to vnlpr0 and vnlpr1, 2048bits in total. LMUL is set to 2 contantly.
 
 . *Operation*
 +
 ----
-vd[j] = {vs2[j][(31- fsft) ... 0], vs1[j][31 ... (31 - fsft + 1)]}
+vnlpr0 = vs2[j]
+vnlpr1 = vs2[j+1] 
 ----
 
-
-=== vfsr(vector funnel shift right)
+==== vnle(vector non-linear exponent calculation instruction)
 . *Grammar*
 +
-vfsr.vv vd, vs2, vs1 +
+vnle.vv vd, vs2, vs1, vm +
+vnle.vs vd, vs2, vs1, vm +
 
 . *Purpose*
 +
-The elements of two vector registers are funnel shifted right.
+Computes the exponential part of the output value of a nonlinear function of an input vector.
 
 . *Description*
 +
-combine vs2 and vs1 to form a new vector vr_temp with twice the length from left to right. All elements in vr_tmp are sequentially shifted right by 'fsht' elements, right most 'fsht' elements are shifted out and discarded. Finally, the right half of vr_tmp are output to vd. not controlled by vl/vstart.LMUL > 1 is supported.
+vs2 stores the fixed-point value, vs1 or vs1[0] stores the fixed-point value n. According to the function type configured in the nonlinear control register, the corresponding exponential result E is calculated, and the result is placed in vd.
 
 . *Operation*
 +
 ----
-vd[j] = {vs2[j][(fsft - 1) ... 0], vs1[j][31 ... fsft]}
+VV version
+x[i], E[i] = norm(funcId, vs2[j][i], vs1[j][i])
+x[i], s[i], E[i] = preProc(funcId, x[i], E[i])
+(vd[j][i], E[i]) = expAdjust(funcId, E[i], R_NL_SEG_EXP[1])
+
+VS version
+x[i], E[i] = norm(funcId, vs2[j][i], vs1[0][0])
+x[i], s[i], E[i] = preProc(funcId, x[i], E[i])
+(vd[j][i], E[i]) = expAdjust(funcId, E[i], R_NL_SEG_EXP[1])
 ----
+
+==== vnlm(vector non-linear mantissa calculation instruction)
+. *Grammar*
++
+vnlm.vv vd, vs2, vs1, vm +
+vnlm.vs vd, vs2, vs1, vm +
+
+. *Purpose*
++
+Computes the linear portion of the output of a nonlinear function of the input vector.
+
+. *Description*
++
+vs2 stores the fixed-point value, vs1 or vs1[0] stores the fixed-point value n. According to the function type configured in the nonlinear control register and the segmented parameter configuration, the segmented nonlinear result is calculated. Finally, the results are put into vd after fix point format conversion. 
+
+. *Operation*
++
+----
+VV version
+x[i], E[i] = norm(funcId, vs2[j][i], vs1[j][i])
+x[i], s[i], E[i] = preProc(funcId, x[i], E[i])
+segIdx[i] = findSeg(x[i], R_NL_SEG)
+If (segIdx[i] is valid)
+{ 
+  tmp = R_NL_A[segIdx[i]] * x[i]; //2SEW = SEW * SEW
+  tmp = clip_low_SEW(alg_round_shift_right(tmp, R_NL_SEG_EXP[2]) + R_NL_B[segIdx[i]]); //SEW = SEW + SEW
+  if R_NL_SEG_EXP[1] >= R_NL_SEG_EXP[0]
+    tmp <<= R_NL_SEG_EXP[1] - R_NL_SEG_EXP[0]
+  else
+    tmp >>= R_NL_SEG_EXP[0] - R_NL_SEG_EXP[1]
+  e[i], E[i] = expAdjust(funcId, E[i], R_NL_SEG_EXP[1]);
+  vd[j][i] = postProc(funcId, tmp, s[i], E[i]);
+}
+
+VS version
+x[i], E[i] = norm(funcId, vs2[j][i], vs1[0][0])
+x[i], s[i], E[i] = preProc(funcId, x[i], E[i])
+segIdx[i] = findSeg(x[i], R_NL_SEG)
+If (segIdx[i] is valid)
+{ 
+  tmp = R_NL_A[segIdx[i]] * x[i]; //2SEW = SEW * SEW
+  tmp = clip_low_SEW(alg_round_shift_right(tmp, R_NL_SEG_EXP[2]) + R_NL_B[segIdx[i]]); //SEW = SEW + SEW
+  if R_NL_SEG_EXP[1] >= R_NL_SEG_EXP[0]
+    tmp <<= R_NL_SEG_EXP[1] - R_NL_SEG_EXP[0]
+  else
+    tmp >>= R_NL_SEG_EXP[0] - R_NL_SEG_EXP[1]
+  e[i], E[i] = expAdjust(funcId, E[i], R_NL_SEG_EXP[1])
+  vd[j][i] = postProc(funcId, tmp, s[i], E[i])
+}
+----
+
+=== Implementation
+==== norm
+
+. *Description*
++
+normalization for the input data to [0.5~1).
+
+. *Operation*
++
+vs2 is 32bit fixpoint real number, vs1 is the fix point position and only low 5bits are valid, e.g. for a Q32.20 fixpoint value, it's fix point position number is 20. E∈[-31,31]
++
+----
+x, E = norm(funcId, vs2, vs1)
+
+if funcId == 0 ||funcId == 1 || funcId == 2 || funcId == 3 || funcId == 5   % 0：reciprocal; 1: square root; 2: reciprocal of square root; 3: log2; 5: log10
+    eNorm =  lsb(vs2); // take 32 bit-width data for example,  as for one number, the negative and positive should output the same eNorm. 
+    x = vs2 << eNorm
+    E = 31 - eNorm - vs1
+else
+    x = vs2
+    E = 0
+    
+----
+
+==== preProc
+
+. *Description*
++
+preprocess for non-linear instruction.
+
+. *Operation*
++
+----
+x, s, E = preproc(funcId, x, E)
+
+s = 1                 % default operation
+x = x
+E = E
+
+if funcId == 0       % reciprocal
+    s = sign(x)       % if x>0 s=1; elsif x<0 s=-1; elsif x==0 s=0;
+    x = abs(x)
+
+elsif funcId == 1    % square root
+    isOddE = alg_round_shift_right(E,1) - alg_shift_right(E,1);
+    E   = E + isOddE
+    x   = x >> isOddE
+
+elsif funcId == 2    % reciprocal of square root
+    isOddE = alg_round_shift_right(E,1) - alg_shift_right(E,1);
+    E   = E + isOddE
+    x   = x >> isOddE
+
+elsif funcId == 4    % arctan
+    s = sign(x)        % if x>0 s=1; elsif x<0 s=-1; elsif x==0 s=0;
+    x = abs(x)
+
+elsif funcId == 6    % sin (x∈Q(32.30))
+    msb1 = x & 0x40000000  % get 31st bit 
+    msb2 = x & 0x20000000   % get 30th bit 
+    s    = 1 - 2*msb1
+    x    = x & 0x1fffffff   % mod(x,2^29)
+    if msb2==1 
+        x = 2^29 - x
+    
+elsif funcId == 7    % cos (x∈Q(32.30))
+    msb1 = x & 0x40000000;   % get 31st bit 
+    msb2 = x & 0x20000000;   % get 30th bit 
+    s    = 1 - 2*xor(msb1, msb2);
+    x    = x & 0x1fffffff;   % mod(x,2^29)
+    if msb2==0 
+        x = 2^29 - x
+
+----
+
+==== findSeg
+
+. *Description*
++
+find which segment the input data belongs to in N-th segment group. 
+the fix points in R_NL_SEG are in ascending order. input x should not smaller than the R_NL_SEG[0].
+Input x should compare with each fix point in R_NL_SEG and find the max fix point which smaller than x, the index of that max fix point is the target segIdx. If x is bigger than the R_NL_SEG[N-1], the segIdx is N-1.
+
+. *Operation*
++
+----
+segIdx = findSeg(x, R_NL_SEG[N])  % N is segment number. 
+
+for iSeg = 1:N        % input x compare with each fix point in R_NL_SEG and logic value 0 stands for "smaller".
+    lutIndex(iSeg) = (x >=R_NL_SEG[iSeg])    
+end
+segIdx = sum(lutIndex)-1          % accumulate logic value of all segments and the sum value minus 1 stands for target segment idx.
+
+----
+
+
+==== expAdjust
+
+. *Description*
++
+adjust the exponent for the output.
+
+. *Operation*
++
+----
+e, E = ExpAdjust(funcId, E, e)
+
+E = E                   % default operation
+e = e
+
+if funcId == 0       % reciprocal
+    E =  -E + 1
+    if (E >= 0) e = 31 - E
+    else e = 31
+
+elsif funcId == 1    % square root
+    E = (E>>1)
+    if (E >= 0) e = 31 - E
+    else e = 31   
+   
+elsif funcId == 2    % reciprocal of square root
+    E = -(E>>1)+1
+    if (E >=  0) e = 31 - E
+    else e = 31
+
+elsif funcId == 3    % log2
+    e = 26
+
+elsif funcId == 4    % arctan
+    e = 28
+
+elsif funcId == 5    % log10
+    e = 26
+
+elseif funcId == 6 || funcId == 7 % sin/cos
+    e = 31
+
+----
+
+
+==== postProc
+
+. *Description*
++
+postprocess for non-linear instruction.
+
+. *Operation*
++
+----
+y = postproc(funcId, tmp, s, E)
+
+if funcId == 0       % reciprocal
+    y = s * tmp
+    if (E < 0) y = y >> -E
+    
+elsif funcId == 1    % square root
+    y = s * tmp
+    if (E < 0) y = y >> -E
+
+elsif funcId == 2    % reciprocal of square root 
+    y = s * tmp
+    if (E < 0) y = y >> -E
+
+elsif funcId == 3    % log2
+    if tmp>0 tmp=0
+    if tmp<1-2^31 tmp = 1-2^31  % tmp belong to range (-1,0)
+    y = tmp>>5 + E<<26         % final output Q(32.26)
+
+elsif funcId == 4    % arctan
+    y = s*tmp + 843314857          % Q(32.30) const for pi/4
+    y = alg_round_shift_right(y,2)  % Q(32.28)
+
+elsif funcId == 5    % log10
+    if tmp>0 tmp=0
+    if tmp<1-2^31 tmp = 1-2^31          % tmp belong to range (-1,0)
+    y0 = tmp>>5 + E<<26                % log2 output Q(32.26)
+    y1 = y0<<24 + y0<<26 + y0<<27 + y0<<30 % 64bit int
+    y =  y1>>32                        % log10 final output with 32bit
+
+else                     % sin/cos 
+    y = s * tmp
+
+----
+.
 
