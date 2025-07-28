@@ -1,4 +1,4 @@
-[[chapter9]]
+[[chapter8]]
 == Inter-element operation instructions
 
 === vperm(vector permutation)
