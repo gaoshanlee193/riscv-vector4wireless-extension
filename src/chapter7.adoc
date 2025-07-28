@@ -91,7 +91,6 @@ For each j < nj
 }
 ----
 
-
 === vredmaxi(vector reduced max with index)
 . *Grammar*
 +
@@ -174,3 +173,4 @@ set the 128bits mask from V0 low 128bits to MSKREG. v0 is the vs1, no vs1 and vd
 ----
 MSKREG = v0;
 ----
+.
