@@ -46,7 +46,7 @@
 | 000101 | V | X |   | vmin         | 000101 | V |   | vredmin     | 000101 | V |   | vfredmin    
 | 000110 | V | X |   | vmaxu        | 000110 | V |   | vredmaxu    | 000110 | V | F | vfmax       
 | 000111 | V | X |   | vmax         | 000111 | V |   | vredmax     | 000111 | V |   | vfredmax    
-| 001000 |   |   | I | *_fft_*      | 001000 | V | X | vaaddu      | 001000 | V | F | vfsgnj      
+| 001000 |   |   | I | *_fft_/_vfcvt_* | 001000 | V | X | vaaddu      | 001000 | V | F | vfsgnj      
 | 001001 | V | X | I | vand         | 001001 | V | X | vaadd       | 001001 | V | F | vfsgnjn     
 | 001010 | V | X | I | vor          | 001010 | V | X | vasubu      | 001010 | V | F | vfsgnjx     
 | 001011 | V | X | I | vxor         | 001011 | V | X | vasub       | 001011 |   |   |             
