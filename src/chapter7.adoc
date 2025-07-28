@@ -110,7 +110,7 @@ vs2 saves the input value, vs1 saves the index value corresponding to each input
 +
 ----
 vd[0][0] = max(vs2, MSKREG); 
-i = max_i(vs2, MSKREG); // First maximum value searched from lowest element
+i = max_i(vs1, MSKREG); // First maximum value searched from lowest element
 MSKREG[i] = 0;
 vd[0][1] = vs1[i];
 ----
@@ -132,7 +132,7 @@ vs2 saves the input value, vs1 saves the index value corresponding to each input
 +
 ----
 vd[0][0] = min(vs2, MSKREG); 
-i = min_i(vs2, MSKREG); //First minimum value searched from lowest element
+i = min_i(vs1, MSKREG); //First minimum value searched from lowest element
 MSKREG[i] = 0;
 vd[0][1] = vs1[i];
 ----
