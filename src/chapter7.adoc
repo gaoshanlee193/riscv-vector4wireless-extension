@@ -131,7 +131,7 @@ vs2 saves the input value, vs1 saves the index value corresponding to each input
 +
 ----
 vd[0][0] = min(vs2, MSKREG); 
-k = min_i(vs1, MSKREG); //First minimum value searched from lowest element
+k = min_k(vs1, MSKREG); //First minimum value searched from lowest element
 MSKREG[k] = 0;
 vd[0][1] = vs1[k];
 ----
