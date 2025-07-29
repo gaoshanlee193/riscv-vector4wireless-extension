@@ -1,5 +1,5 @@
 [[chapter1]]
-== Zvw basic rules
+== Basic rules
 
 *Currently, there are some limitations for Zvw* 
 
