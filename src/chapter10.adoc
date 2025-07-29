@@ -1,8 +1,8 @@
 [[chapter10]]
 == Apendix A
 
-=== RVV & Zvw Encoding space
-* *Zvw reuses the extension space of RVV (Func7 encoding space 1010111)*
+=== Encoding space
+* *RISC-DSP-w reuses the extension space of RVV (Func7 encoding space 1010111)*
 +
 .RVV overall table
 [cols="9*", options="header"]
@@ -15,7 +15,7 @@
 | 11        | BRANCH | JALR      | reserved  | JAL      | SYSTEM | reserved | custom-3/rv128 | ≥80b           
 |=============================================================================================================
 +
-* *Zvw follow the same Func3 encoding law of RVV*
+* *RISC-DSP-w follow the same Func3 encoding law of RVV*
 +
 .RVV Func3 encoding table
 [cols="6*", options="header"]
@@ -32,9 +32,9 @@
 |==============================================================================
 
 +
-* *Zvw Func6 encoding space in RVV*
+* *RISC-DSP-w  Func6 encoding space in RVV*
 +
-.Zvw Func6 encoding table part 1
+.RISC-DSP-w Func6 encoding table part 1
 [cols="13*", options="header"]
 |=================================================================================================
 5+| funct6 4+| funct6 4+| funct6            
@@ -57,7 +57,7 @@
 | 001111 |   | X | I | vslidedown   | 001111 |   | X | vslide1down | 001111 |   | F | vfslide1down
 |=================================================================================================
 +
-.Zvw Func6 encoding table part 2
+.RISC-DSP-w Func6 encoding table part 2
 [cols="13*", options="header"]
 |==============================================================================================
 5+| funct6 4+| funct6 4+| funct6               
@@ -82,7 +82,7 @@
 | 011111 |   | X | I | vmsgt      | 011111 | V |   | vmxnor      | 011111 |   | F | vmfge       
 |==============================================================================================
 +
-.Zvw Func6 encoding table part 3
+.RISC-DSP-w Func6 encoding table part 3
 [cols="13*", options="header"]
 |========================================================================================
 5+| funct6 4+| funct6 4+| funct6          
@@ -105,7 +105,7 @@
 | 101111 | V | X | I | vnclip   | 101111 | V | X | vnmsac  | 101111  | V | F | vfnmsac
 |========================================================================================
 +
-.Zvw Func6 encoding table part 4
+.RISC-DSP-w Func6 encoding table part 4
 [cols="13*", options="header"]
 |===========================================================================================
 5+| funct6 4+| funct6 4+| funct6         
@@ -127,10 +127,10 @@
 | 111111 | V | X |  | *_vdscmacjo_*  | 111111 | V | X | vwmaccsu | 111111 | V | F | vfwnmsac  
 |===========================================================================================
 
-=== Zvw Instruction encoding
-- *Zvw Instruction encoding*
+=== RISC-DSP-w Instruction encoding
+- *RISC-DSP-w Instruction encoding*
 +
-.Zvw encoding table
+.RISC-DSP-w encoding table
 [cols="8*", options="header"]
 |===============================================================================================
 | Inst. format                    | Func6  | vm | vs2   | vs1/rs1/imm | Func3 | vd/vs3 | Func7  
@@ -196,9 +196,9 @@
 | vmset.v v0                      | 011011 | 1  | 00000 | 00000       | 011   | 00000  | 1010111
 |===============================================================================================
 +
-- *Zvw Load & Store Instruction encoding*
+- *RISC-DSP-w Load & Store Instruction encoding*
 +
-.Zvw load & store instruction encoding table
+.RISC-DSP-w load & store instruction encoding table
 [cols="8*", options="header"]
 |=========================================================================================
 | Inst. format            | nf-mew-mop | vm | lumop/sumop | rs1 | width | vd/vs3 | Func7  
