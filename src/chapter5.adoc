@@ -42,25 +42,19 @@ Initializes the shift register value for each element of the multiply accumulato
 
 . *Description*
 +
-vs1, rs1 or uimm are stored as the shift value before the accumulator accumulates, and the multiplication shift value in the multiplication and accumulation is configured through this instruction.
+vs1, rs1 or uimm are stored as the shift value before the accumulator accumulates, and the multiplication shift value in the multiplication and accumulation is configured through this instruction. *clear ACCREG after all element of the MULSFT are set.*
 
 . *Operation*
 +
 ----
 V version
-for j in (0, LMUL)
-  MULSFT[j][i] = vs2[j][i];
-ACCREG[i] = 0;
+MULSFT[j][i] = vs2[j][i];
 
 S version
-for j in (0, LMUL)
   MULSFT[j][i] = rs1;
-ACCREG[i] = 0;
 
 I version
-for j in (0, LMUL)
   MULSFT[j][i] = uimm;
-ACCREG[i] = 0;
 ----
 
 === vdsmac(vector dynamic scaling MAC)
@@ -103,7 +97,7 @@ The two fixed-point numbers perform a dynamic scaling accumulation operation, an
 
 . *Description*
 +
-The signed fixed-point number of vs1 or vs1[0] and vs2 is multiplied. The intermediate result after the multiplication retains 2 times the bit width, and then performs arithmetic shifting. The result is accumulated with the value in the accumulation register. After the accumulation, the value in the accumulation register is The value is arithmetic shifted and then truncated and output to vd, and the accumulation register is cleared. *clear ACCREG after all element of the VR are processed.*
+The signed fixed-point number of vs1 or vs1[0] and vs2 is multiplied. The intermediate result after the multiplication retains 2 times the bit width, and then performs arithmetic shifting. The result is accumulated with the value in the accumulation register. After the accumulation, the value in the accumulation register is The value is arithmetic shifted and then truncated and output to vd, and the accumulation register is cleared.
 
 . *Operation*
 +
