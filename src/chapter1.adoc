@@ -49,6 +49,7 @@
 +
 - i: the element index within a vector register. value range [0, 31].
 - j: the consecutive VR index when LMUL set to a value bigger than 1. value range [0, 7], support max LMUL = 8;
+- k: bit index in the 1024 bit mask.
 - .i: get the image part of SC data type
 - .r: get the real part of SC data type
 
