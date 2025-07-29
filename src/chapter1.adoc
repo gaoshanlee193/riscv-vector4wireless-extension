@@ -1,13 +1,13 @@
 [[chapter1]]
 == Basic rules
 
-*Currently, there are some limitations for Zvw* 
+*Currently, there are some limitations for RISC-DSP-w:* 
 
 * *It only supports RV32 and SEW=32bits, when SEW=32 SC16 is supported.*
 * *SC32 is not supported, 32 real and imaginary parts of complex number are stored in neighbor vector registers.*  
 * *The operations defined for each vector element in following instruction behavior follow RVV1.0 rule, inlcudeing but not limited to LMUL/VL/vm/ta/ma operation rules.Any new operation not specified follows RVV 1.0 rules.*
 * *For any '.vs' instruction, the 'v' register increase index while LMUL > 1, but 's' vector register don't increase index when LMUL > 1.* 
-* *All Zvw instruction only supports signed integer operations. except uimm values.*
+* *All RISC-DSP-w instruction only supports signed integer operations. except uimm values.*
 
 == Basic definition
 
