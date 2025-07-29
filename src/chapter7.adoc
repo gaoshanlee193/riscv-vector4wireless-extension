@@ -109,9 +109,9 @@ vs2 saves the input value, vs1 saves the index value corresponding to each input
 +
 ----
 vd[0][0] = max(vs2, MSKREG); 
-i = max_i(vs1, MSKREG); // First maximum value searched from lowest element
-MSKREG[i] = 0;
-vd[0][1] = vs1[i];
+k = max_k(vs1, MSKREG); // First maximum value searched from lowest element of lowest VR
+MSKREG[k] = 0;
+vd[0][1] = vs1[k];
 ----
 
 === vredmini(vector reduced min with index)
@@ -131,9 +131,9 @@ vs2 saves the input value, vs1 saves the index value corresponding to each input
 +
 ----
 vd[0][0] = min(vs2, MSKREG); 
-i = min_i(vs1, MSKREG); //First minimum value searched from lowest element
-MSKREG[i] = 0;
-vd[0][1] = vs1[i];
+k = min_i(vs1, MSKREG); //First minimum value searched from lowest element
+MSKREG[k] = 0;
+vd[0][1] = vs1[k];
 ----
 
 === vmget(vector mask get and write to v0)
@@ -143,11 +143,11 @@ vmget.v v0 +
 
 . *Purpose*
 +
-Get the 128bits mask from MSKREG and write it to low 128bits of V0.
+Get the 1024bits mask from MSKREG and write it to low 1024bits of V0.
 
 . *Description*
 +
-Read the 128bits mask from MSKREG and write it to low 128bits of V0. v0 is the vd, no vs1 and vs2, don't support vm.
+Read the 1024bits mask from MSKREG and write it to low 1024bits of V0. v0 is the vd, no vs1 and vs2, don't support vm.
 
 . *Operation*
 +
@@ -162,11 +162,11 @@ vmset.v v0 +
 
 . *Purpose*
 +
-set the 128bits mask from V0 low 128bits to MSKREG.
+set the 1024bits mask from V0 low 1024bits to MSKREG.
 
 . *Description*
 +
-set the 128bits mask from V0 low 128bits to MSKREG. v0 is the vs1, no vs1 and vd, don't support vm.
+set the 1024bits mask from V0 low 1024bits to MSKREG. v0 is the vs1, no vs1 and vd, don't support vm.
 
 . *Operation*
 +
