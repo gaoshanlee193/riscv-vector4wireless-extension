@@ -300,13 +300,13 @@ Multiply the complex numbers of vs2 and vs1/vs1[0], perform an arithmetic shift 
 +
 ----
 VV version
-Tmp.i = vs1[j][i].r * vs2[j][i].i - vs1[j][i].i * vs2[j][i].r  // SEW = SEW/2 * SEW/2 - SEW/2 * SEW/2
-Tmp.i = alg_round_shift_right(Tmp.i, MULSFT[j][i]);
+Tmp.i = vs1[j][i].r * vs2[j][i].i + vs1[j][i].i * vs2[j][i].r  // SEW = SEW/2 * SEW/2 + SEW/2 * SEW/2
+Tmp.i = alg_round_shift_right(Tmp.i, MULSFT[j][i])
 ACCREG[i].i += Tmp.i;
 vd[0][i] = clip_low_40_SEW(alg_round_shift_right(ACCREG[i].i, accsft)) // SEW = 40bits
 
 VS version
-Tmp.i = vs1[0][0].r * vs2[j][i].i - vs1[0][0].i * vs2[j][i].r  // SEW = SEW/2 * SEW/2 - SEW/2 * SEW/2
+Tmp.i = vs1[0][0].r * vs2[j][i].i + vs1[0][0].i * vs2[j][i].r  // SEW = SEW/2 * SEW/2 + SEW/2 * SEW/2
 Tmp.i = alg_round_shift_right(Tmp.i, MULSFT[j][i]);
 ACCREG[i].i += Tmp.i;
 vd[0][i] = clip_low_40_SEW(alg_round_shift_right(ACCREG[i].i, accsft)) // SEW = 40bits
