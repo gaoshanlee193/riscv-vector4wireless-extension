@@ -168,7 +168,7 @@ set the 1024bits mask from V0 low 1024bits to MSKREG.
 
 . *Description*
 +
-set the 1024bits mask from V0 low 1024bits to MSKREG. v0 is the vs1, no vs1 and vd, don't support vm.
+set the 1024bits mask from V0 low 1024bits to MSKREG. v0 at vs2, no vs1 and vd, don't support vm.
 
 . *Operation*
 +
