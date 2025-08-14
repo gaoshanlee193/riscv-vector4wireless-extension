@@ -42,6 +42,14 @@ This register is used to configure the function type and segmentation informatio
 | 15:0  | funcId    | non-linear function ID. 0：reciprocal; 1: square root; 2: reciprocal of square root; 3: log2; 4: arctan; 5: log10; 6: sin; 7: cos;
 |==============================
 
+. *VCPFLAG* (Vector coprocessor flag register)
++
+This register is used by coprocessor to feedback status information, read by processor for debug purpose. Its bits field definition are total custom definition. The address is _0x00C_.
+
+. *VCPCTRL* (Vector coprocessor control register)
++
+This register is programmed by processor to control coprocessor's behavior. coprocessor read this register as input parameters. Its bits field definition are totally custom definition. The address is _0x00D_.
+
 == Vector registers
 
 . *vnlpr0*  (1024bits vector non-linear paramter register 0)
